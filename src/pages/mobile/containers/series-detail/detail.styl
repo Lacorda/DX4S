@@ -1,0 +1,151 @@
+#series-detail
+  background-color #ffffff
+  width 100%
+  .img-section
+    width 100%
+    height px2rem(400)
+    img
+      height px2rem(400)
+      width px2rem(750)
+  .info-section
+    margin 0 10px
+    .course-title
+      text-align start
+      font-size px2rem(34)
+      line-height px2rem(33)
+      margin: 10px 0
+    .keyword
+      font-size px2rem(28)
+      line-height px2rem(48)
+      color $color-Z3
+      margin 5px 0
+      span:nth-child(n+2)
+        display inline-block
+        margin 0 0 0 10px
+        border-radius 4px
+        padding 0 5px
+        background-color $color-L1
+        color $color-Z2
+      &.threeline
+        max-height px2rem(144)
+        overflow hidden
+
+    .desc
+      font-size px2rem(28)
+      line-height px2rem(44)
+      color $color-Z3
+      &.unshowall
+        white-space normal !important
+        height px2rem(44*3)
+        display -webkit-box
+        -webkit-line-clamp 3
+        -webkit-box-orient vertical
+        overflow hidden
+        text-overflow ellipsis
+    .unfold
+      font-size px2rem(28)
+      line-height px2rem(48)
+      color $color-A1
+      text-align right
+      padding 5px
+      font-weight bold
+
+  .course-section
+    background-color $color-L1
+    .split
+      color $color-Z2
+      font-size px2rem(28)
+      line-height px2rem(48)
+      width px2rem(750)
+      padding: 10px 10px
+    .items
+      padding 0 15px
+      background-color #ffffff
+      .item-line
+        padding 15px 0px
+        &:nth-child(n+2)
+          border-top px2rem(4px) solid #eeeeee
+        .img
+          float left
+          position relative
+          width px2rem(240)
+          height px2rem(154)
+          overflow hidden
+          img
+            width 100%
+            height 100%
+            border 0
+          .status
+            position absolute
+            top px2rem(14)
+            left px2rem(-28)
+            width px2rem(120)
+            text-align center
+            font-size px2rem(24)
+            transform rotate(-45deg)
+            color #fff
+            &.status-test
+              background-color #CBAC51
+            &.status-ques
+              background-color #658AE9
+            &.status-course
+              background-color #38ACFF
+        .item-right
+          float:right;
+          width px2rem(430)
+          .title
+            color #000
+            height px2rem(80)
+            overflow hidden
+            text-overflow ellipsis
+            font-size px2rem(28)
+            line-height px2rem(40)
+            white-space normal
+          .study-text
+            color $color-Z2
+            padding-top px2rem(40)
+            width px2rem(334)
+            height px2rem(66)
+            font-size px2rem(28)
+            line-height px2rem(36)
+            float left
+            .icon
+              background url("./img/people.png") center no-repeat
+              width px2rem(24)
+              height px2rem(24)
+              display inline-block
+              background-size 100%
+              margin-right 3px
+
+          .status-mark
+            border-radius 50px
+            height px2rem(106)
+            width px2rem(106)
+            text-align center
+            float right
+            font-size px2rem(26)
+            line-height px2rem(30)
+            padding-top px2rem(30)
+            margin-top px2rem(-110)
+            transform rotate(-35deg)
+            &.unfinish
+              border 2px solid #EA3838
+              color #EA3838
+            &.finish
+              border 2px solid #38ACFF
+              color #38ACFF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

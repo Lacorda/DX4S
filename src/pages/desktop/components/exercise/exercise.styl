@@ -1,0 +1,142 @@
+.exercise-body
+  background-color: #fff
+  margin-bottom: 12px
+
+.exercise-content
+  line-height: 40px
+  .content
+    font-size: 14px
+    color: $color-Z1
+    word-break: break-all
+    word-wrap: break-word
+
+.exercise-type
+  display: inline-block
+  margin-right: 8px
+  height: 20px
+  width: 55px
+  vertical-align: middle
+  &.single
+    background: url(./img/icon-single.png) no-repeat
+    background-size: cover
+  &.multi
+    background: url(./img/icon-multi.png) no-repeat
+    background-size: cover
+  &.judge
+    background: url(./img/icon-judge.png) no-repeat
+    background-size: cover
+  &.en-single
+    background: url(./img/en-icon-single.png) no-repeat
+    background-size: cover
+  &.en-multi
+    background: url(./img/en-icon-multi.png) no-repeat
+    background-size: cover
+    width: 68px
+  &.en-judge
+    background: url(./img/en-icon-judge.png) no-repeat
+    background-size: cover
+    width: 89px
+
+.exercise-answer
+  color: $color-Z2
+  font-size: 14px
+  padding-left: 22px !important
+
+.exercise-answer-item
+  line-height: 40px
+  cursor: pointer
+  &.right
+    background-color: #f1f9ea
+  &.wrong
+    background-color: #ffe8e8
+  &:before
+    content: ''
+    width: 16px
+    height: 16px
+    margin-right: 8px
+    display: inline-block
+    vertical-align: sub
+  &.multi:before
+    background: url(./img/icon_multi.png) no-repeat
+    background-size: cover
+  &.noMulti:before
+    background: url(./img/icon_nomulti.png) no-repeat
+    background-size: cover
+  &.active.multi:before
+    background: url(./img/icon_multi_active.png) no-repeat
+    background-size: cover
+  &.active.noMulti:before
+    background: url(./img/icon_nomulti_active.png) no-repeat
+    background-size: cover
+  &:last-child
+    margin-bottom: 12px
+  &:after
+    content: ''
+    display: block
+
+.exercise-answer-item-content
+  word-break: break-all
+  word-wrap: break-word
+
+.exercise-img-content
+  margin-bottom: 8px !important
+  margin-left: 22px !important
+  line-height: 0;
+
+.exercise-answer-img
+  margin-bottom: 8px !important
+  line-height: 0;
+
+.exercise-analysis-img
+  line-height: 0
+  margin-top: 12px !important
+
+.exercise-image-viewer
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: black;
+    z-index: 9;
+    padding-top: px2rem(300);
+    overflow: hidden;
+    width: 100%
+
+.exercise-img
+  display: inline-block
+  margin-right: 20px
+  height: 128px
+  width: 218px
+  margin-top: 20px !important
+  &:nth-child(4n+0)
+    margin-right: 0
+  &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+    margin-top: 0 !important
+
+.exercise-analysis
+  padding-top: 24px
+  padding-bottom: 24px
+  padding-left: 24px
+  padding-right: 24px
+  margin-left: 22px
+  background-color: $color-A0
+  .analysis-title
+    color: $color-A1
+    font-size: 16px
+    height: 16px
+    line-height: 16px
+    margin-bottom: 12px
+  .analysis-content
+    margin: 0
+    padding: 0
+    color: $color-Z2
+    font-size: 14px
+    word-break: break-all
+    word-wrap: break-word
+  .analysis-answer
+    color: $color-Z2
+    margin-top: 8px
+    font-size: 14px
+    height: 14px
+    line-height: 14px
+    word-break: break-all
+    word-wrap: break-word

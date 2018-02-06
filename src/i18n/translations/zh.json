@@ -1,0 +1,110 @@
+[
+  {
+    "id": "app.home.title.plan",
+    "message": "课程安排"
+  },
+  {
+    "id": "app.home.title.elective",
+    "message": "选修课"
+  },
+  {
+    "id": "app.footer.course-center",
+    "defaultMessage": "课程中心"
+  },
+  {
+    "id": "app.footer.my-center",
+    "defaultMessage": "个人中心"
+  },
+  {
+    "id": "app.profile.my-learn",
+    "defaultMessage": "我的学习"
+  },
+  {
+    "id": "app.profile.my-test",
+    "defaultMessage": "我的考试"
+  },
+  {
+    "id": "app.profile.my-favorite",
+    "defaultMessage": "我的收藏"
+  },
+  {
+    "id": "app.profile.sign-in-record",
+    "defaultMessage": "签到记录"
+  },
+  {
+    "id": "app.profile.feedback-box",
+    "defaultMessage": "问题反馈"
+  },
+  {
+    "id": "app.profile.use-the-help",
+    "defaultMessage": "使用帮助"
+  },
+  {
+    "id": "app.comment.add",
+    "defaultMessage": "评论该课程"
+  },
+  {
+    "id": "app.comment.overall-evaluation",
+    "defaultMessage": "综合评价"
+  },
+  {
+    "id": "app.comment.content-rate",
+    "defaultMessage": "课程内容:"
+  },
+  {
+    "id": "app.comment.form-rate",
+    "defaultMessage": "课程形式:"
+  },
+  {
+    "id":"app.series-detail.keyword",
+    "defaultMessage": "关键字"
+  },
+  {
+    "id":"app.series-detail.objective",
+    "defaultMessage": "课程对象"
+  },
+  {
+    "id":"app.series-detail.comment",
+    "defaultMessage": "评价"
+  },
+  {
+    "id":"app.series-detail.fold",
+    "defaultMessage": "折叠"
+  },
+  {
+    "id":"app.series-detail.unfold",
+    "defaultMessage": "展开"
+  },
+  {
+    "id":"app.series-detail.course",
+    "defaultMessage": "课程"
+  },
+  {
+    "id":"app.series-detail.test",
+    "defaultMessage": "考试"
+  },
+  {
+    "id":"app.series-detail.questionnaire",
+    "defaultMessage": "问卷"
+  },
+  {
+    "id":"app.series-detail.finish",
+    "defaultMessage": "完成"
+  },
+  {
+    "id":"app.series-detail.unfinish",
+    "defaultMessage": "未完成"
+  },
+  {
+    "id":"app.series-detail.learncount",
+    "defaultMessage": "{study_count}人已学习"
+  },
+  {
+    "id":"app.series-detail.favorite",
+    "defaultMessage": "收藏"
+  },
+  {
+    "id":"app.series-detail.attendtocourse",
+    "defaultMessage": "参加该课程"
+  }
+]

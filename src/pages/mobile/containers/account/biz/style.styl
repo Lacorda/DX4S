@@ -1,0 +1,110 @@
+.a4biz
+  //min-height 100%
+  // style of info (user & tenant)
+  .info
+    height px2rem(190)
+    margin-bottom px2rem(16)
+    padding px2rem(38) 0
+    background-color #fff
+    .avatar
+      display block
+      width px2rem(114)
+      height px2rem(114)
+      margin 0 px2rem(24)
+      border-radius px2rem(57)
+    p
+      margin 0
+    .btn
+      margin-top px2rem(16)
+      margin-right px2rem(24)
+    .name
+      margin-top px2rem(18)
+      margin-bottom px2rem(18)
+      line-height px2rem(28)
+      font-size px2rem(28)
+      span
+        margin-left px2rem(42)
+        color $color-Z3
+        font-size px2rem(24)
+    .balance
+      margin-top px2rem(8)
+      margin-bottom px2rem(8)
+      line-height px2rem(24)
+      font-size px2rem(24)
+      b
+        color $color-B4
+  .search-toolbar
+    margin px2rem(24) 0
+    .search-toolbar-input
+      display inline-block
+      width px2rem(240)
+      height px2rem(56)
+      line-height px2rem(56)
+      vertical-align middle
+      margin 0 px2rem(25)
+      padding 0 px2rem(16)
+      border 1px solid $color-Z3
+      border-radius px2rem(6)
+  // logs style
+  .logs
+    padding-bottom px2rem(20)
+    background-color #fff
+    h3
+      padding px2rem(25)
+      font-size px2rem(26)
+    table
+      width 100%
+    thead
+      th
+        padding px2rem(26) 0
+    tbody
+      td
+        padding px2rem(20) px2rem(10)
+        color #777
+        text-align center
+        font-size px2rem(22)
+        &.right
+          text-align right
+  // tabs in logs
+  .tabs
+    display flex
+    padding-top px2rem(20)
+    padding-bottom px2rem(20)
+    border-top 1px solid $color-L1
+    border-bottom 1px solid $color-L1
+    font-size px2rem(28)
+    .tab-item
+      display block
+      flex-grow 1
+      height px2rem(48)
+      text-align center
+      & + .tab-item
+        border-left 1px solid $color-L1
+      span
+        display inline-block
+        padding 0 px2rem(14) px2rem(18)
+        line-height px2rem(48)
+      &.active
+        color $color-A1
+        span
+          border-bottom 2px solid $color-A1
+  // logs loading message
+  .loading-message
+    display block
+    height px2rem(32)
+    margin px2rem(32) auto px2rem(40)
+    padding px2rem(26) 0
+    line-height px2rem(32)
+    text-align center
+  // logs load more content button
+  .more
+    display block
+    margin px2rem(32) auto px2rem(40)
+
+.invoice
+  padding px2rem(25)
+  p, ol
+    color $color-Z2
+  ol
+    padding-left 0
+    list-style-position inside

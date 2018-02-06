@@ -1,0 +1,43 @@
+.media.video-js
+  position inherit
+  width 100%
+  height 100%
+  x-webkit-airplay true
+  webkit-playsinline true
+
+  .vjs-tech
+    background-color #000
+  a.vjs-close
+    position absolute
+    top 0
+    right 0
+    color #FFF
+    font-size px2rem(60)
+    line-height px2rem(80)
+    height px2rem(80)
+    width px2rem(80)
+    background-color rgba(255, 255, 255, .2)
+    -webkit-border-radius px2rem(40)
+    text-align center
+  .vjs-progress-disabled
+    &:before
+      position absolute
+      content ''
+      left 0
+      right 0
+      top 0
+      bottom 0
+      z-index 10
+      background transparent
+  .vjs-poster
+    background-size 200px 200px
+    display initial
+
+.ie9, .ie10
+  .video-js
+    .vjs-control-bar
+      display block
+
+  .vjs-no-flex.video-js
+    .vjs-progress-control
+      width 60%

@@ -1,0 +1,11 @@
+display-flex(align)
+  display -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display -ms-flexbox;  /* TWEENER - IE 10 */
+  display -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  align-items align || flex-start
+box-flex(num)
+  -webkit-box-flex: num || 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+  -webkit-flex: num || 1;       /* Safari 6.1+. iOS 7.1+, BB10 */
+  -ms-flex: num || 1;           /* IE 10 */
+  flex: num || 1;               /* NEW, Spec - Firefox, Chrome, Opera */

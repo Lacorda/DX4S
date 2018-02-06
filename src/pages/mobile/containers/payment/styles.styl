@@ -1,0 +1,474 @@
+.payment
+  height: 100%
+  ul
+    margin: 0
+    padding: 0
+    list-style-type: none
+
+  p
+    margin: 0
+    padding: 0
+
+  .loading-center
+    width: 64px
+    height: 64px
+    margin: auto
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+
+  .order-detail
+    background-color: #fff
+    margin-bottom: px2rem(16)
+    padding-top: 1px;
+
+  .order-info-item
+    margin-left: px2rem(24)
+    padding-right: px2rem(24)
+    line-height: px2rem(80)
+    height: px2rem(80)
+    font-size: px2rem(26)
+    color: $color-Z1
+    border-bottom: 1px solid $color-L1
+
+  .order-id, .order-time
+   display: inline-block
+   width: 50%
+
+  .order-time
+    text-align: right
+    color: $color-B4
+
+  .order-detail-icon-order-id
+    display: inline-block
+    width: px2rem(28)
+    height: px2rem(32)
+    margin-right: px2rem(16)
+    background: url(./img/icon_orderid.png) no-repeat
+    background-size: cover
+    vertical-align: text-top;
+
+  .order-detail-icon-time
+    display: inline-block
+    width: px2rem(32)
+    height: px2rem(32)
+    margin-right: px2rem(16)
+    background: url(./img/icon_time.png) no-repeat
+    background-size: cover
+    vertical-align: text-top;
+
+  .order-item-number, .order-total
+    margin-left: px2rem(36)
+
+  .order-total
+    font-size: px2rem(28)
+    color: $color-B4
+
+  .order-detail-isShow
+    text-align: center
+    line-height: px2rem(80)
+    height: px2rem(80)
+    font-size: px2rem(26)
+    color: $color-Z3
+
+  .pay-icon-up
+    display: inline-block
+    width: px2rem(20)
+    height: px2rem(11)
+    margin-left: px2rem(16)
+    background: url(./img/icon_up.png) no-repeat
+    background-size: cover
+    vertical-align: middle;
+
+  .pay-icon-down
+    display: inline-block
+    width: px2rem(20)
+    height: px2rem(11)
+    margin-left: px2rem(16)
+    background: url(./img/icon_down.png) no-repeat
+    background-size: cover
+    vertical-align: middle
+
+  .pay-type
+    background-color: #fff
+    padding-left: px2rem(72)
+
+  .pay-item
+    display: block;
+    position: relative
+    border-top: 1px solid $color-L1
+    line-height: px2rem(96)
+    height: px2rem(96)
+    font-size: px2rem(28)
+    color: $color-Z1
+    &:first-child
+      border-top: none
+
+  .pay-icon-alipay, .pay-icon-wcpay, .pay-icon-epay
+    position: absolute
+    left: px2rem(-56)
+    top: 0
+    bottom: 0
+    margin: auto
+    width: px2rem(32)
+    height: px2rem(32)
+
+  .pay-icon-alipay
+    background: url(./img/icon_alipay.png) no-repeat
+    background-size: cover
+
+  .pay-icon-wcpay
+    background: url(./img/icon_wcpay.png) no-repeat
+    background-size: cover
+    height: px2rem(28)
+
+  .pay-icon-epay
+    background: url(./img/icon_epay.png) no-repeat
+    background-size: cover
+
+  .pay-icon-left
+    position: absolute
+    right: px2rem(30)
+    top: 0
+    bottom: 0
+    margin: auto
+    width: px2rem(24)
+    height: px2rem(24)
+    background: url(./img/icon_left.png) no-repeat
+    background-size: cover
+
+  .order-product
+    background-color: $color-A0
+    margin-bottom: px2rem(8)
+
+  .order-product-item
+    padding-left: px2rem(24)
+    padding-top: px2rem(24)
+    padding-right: px2rem(24)
+
+  .order-product-detail
+    border-bottom: 1px solid $color-L1
+    padding-bottom: px2rem(24)
+
+  .order-product-img
+    display: inline-block
+    margin-right: px2rem(24)
+    width: px2rem(240)
+    height: px2rem(152)
+    line-height: 0
+    vertical-align: bottom;
+
+  .order-product-info
+    display: inline-block
+    width: px2rem(438)
+    height: px2rem(152)
+
+  .order-product-name
+    display: -webkit-box
+    overflow: hidden
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 2
+    color: $color-Z1
+    font-size: px2rem(28)
+    height: px2rem(78)
+    position: relative;
+    bottom: px2rem(4);
+    word-break: break-all
+    word-wrap: break-word
+
+  .order-product-buy-type
+    color: $color-Z3
+    font-size: px2rem(24)
+
+  .order-product-buy
+    clearfix()
+    position: relative;
+    top: px2rem(10);
+
+  .order-product-buy-price
+    float: left
+    color: $color-Z1
+    font-size: px2rem(24)
+    .price
+      font-size: px2rem(26)
+
+  .order-product-buy-number
+    float: right
+    color: $color-Z3
+    font-size: px2rem(26)
+    .multiply
+      font-size: px2rem(20)
+
+  .order-product-price
+    text-align: right
+    height: px2rem(80)
+    line-height: px2rem(80)
+    font-size: px2rem(24px)
+    color: $color-Z1
+    .price
+      font-size: px2rem(26)
+      position: relative;
+      top: px2rem(2);
+
+  .order-background
+    position: relative
+    height: px2rem(200)
+    line-height: px2rem(200)
+    margin-top: px2rem(16)
+    margin-right: px2rem(24)
+    margin-bottom: px2rem(32)
+    margin-left: px2rem(24)
+    border-radius: px2rem(6)
+    background: linear-gradient(to left, #199dff, #2abaff);
+    &:before
+      content: ''
+      position: absolute;
+      right: 0;
+      width: px2rem(446)
+      height: px2rem(165)
+      background: url(./img/icon_background.png) no-repeat
+      background-size: cover
+
+  .icon-orderCard
+    position: absolute
+    left: px2rem(24)
+    top: 0
+    bottom: 0
+    margin: auto
+    width: px2rem(126)
+    height: px2rem(126)
+    background: url(./img/icon_card.png) no-repeat
+    background-size: cover
+
+  .enterpris-info
+    position: absolute
+    left: px2rem(174)
+    color: #fff
+    top: 0
+    bottom: 0
+    margin: auto
+    height: px2rem(82)
+
+  .enterpris-name
+    font-size: px2rem(32)
+    line-height: px2rem(32)
+    margin-bottom: px2rem(24)
+    font-weight: bold
+
+  .enterpris-blance
+    font-size: px2rem(26)
+    line-height: px2rem(26)
+
+  .enterpris-insufficient
+    position: fixed
+    bottom: px2rem(120)
+    line-height: px2rem(40)
+    left: 0
+    right: 0
+    height: px2rem(110)
+    padding-top: px2rem(16);
+    background-color: rgba(250,60,60,0.16)
+    color: $color-B4
+    font-size: px2rem(24)
+    div
+      display: inline-block
+      margin-left: px2rem(130)
+
+
+  .enterpris-icon-warn
+    position: absolute
+    left: px2rem(90)
+    top: px2rem(22)
+    width: px2rem(28)
+    height: px2rem(28)
+    background: url(./img/icon_warm.png) no-repeat
+    background-size: cover
+
+  .no-border
+    border: none
+
+  .enterpris-phone-info
+    margin-top: px2rem(-16)
+
+  .enterpris-isBind
+    padding-left: px2rem(24)
+    line-height: px2rem(80)
+    font-size: px2rem(26)
+    color: $color-Z3
+
+  .enterpris-phone-label
+    background-color: #fff
+    padding-left: px2rem(24)
+    line-height: px2rem(88)
+    font-size: px2rem(30)
+    color: $color-Z1
+    &:after
+      content: ''
+      display: block
+      border-bottom: 1px solid $color-L1
+
+  .enterpris-phone
+    color: $color-B4
+    margin-left: px2rem(24)
+
+  .from-item
+    position: relative
+    background-color: #fff
+    padding-left: px2rem(24)
+    line-height: px2rem(88)
+    font-size: px2rem(30)
+    color: $color-Z1
+    &:not(:last-child):after
+      content: ''
+      display: block
+      border-bottom: 1px solid $color-L1
+
+  .phone-label
+    position: absolute
+    left: px2rem(24)
+    top: 0
+    bottom: 0
+    margin: auto
+    width: px2rem(48)
+    height: px2rem(48)
+    background: url(./img/icon_phone.png) no-repeat
+    background-size: cover
+
+  .phone-input, .code-input
+    border: none
+    padding-left: px2rem(72)
+    width: px2rem(460)
+
+  .code-label
+    position: absolute
+    left: px2rem(24)
+    top: 0
+    bottom: 0
+    margin: auto
+    width: px2rem(48)
+    height: px2rem(48)
+    background: url(./img/icon_code.png) no-repeat
+    background-size: cover
+
+  .border
+    border-left: 1px solid $color-L1
+    display: inline-block
+    height: px2rem(40)
+    vertical-align: middle;
+
+  .code-span
+    display: inline-block
+    width: px2rem(240)
+    text-align: center
+    &.disabled
+      color: #999
+
+  .enterpris-footer
+    position: fixed
+    bottom: 0
+    border-top: 1px solid $color-L2
+    line-height: px2rem(96)
+    text-align: center
+    font-size: px2rem(32)
+
+  .cancel, .ok
+    display: inline-block
+
+  .cancel
+    width: px2rem(300)
+    color: $color-Z1
+    background-color: #fff
+
+  .ok
+    width: px2rem(450)
+    color: #fff
+    background-color: #38acff
+    &.disabled
+      background-color: #a0d6ff
+      color: rgba(255,255,255,0.64)
+
+  .pay-success, .pay-fail
+    text-align: center
+    padding-top: px2rem(160)
+    height: 100%
+    background-color: #fff
+
+  .icon-pay-success
+    display: inline-block
+    margin-bottom: px2rem(24)
+    width: px2rem(128)
+    height: px2rem(128)
+    background: url(./img/icon_paysuccess.png) no-repeat
+    background-size: cover
+
+  .icon-pay-fail
+    display: inline-block
+    margin-bottom: px2rem(24)
+    width: px2rem(128)
+    height: px2rem(128)
+    background: url(./img/icon_payfailure.png) no-repeat
+    background-size: cover
+
+  .pay-status-msg
+    color: $color-Z2
+    font-size: px2rem(28)
+    margin-bottom: px2rem(80)
+
+  .payment-result-review-btn, .payment-result-buy-btn
+    display: inline-block
+    line-height: px2rem(72)
+    color: $color-Z1
+    text-align: center
+    font-size: px2rem(28)
+    width: px2rem(264)
+    border: 1px solid $color-L2
+    border-radius: px2rem(8)
+
+  .payment-result-review-btn
+    margin-right: px2rem(24)
+
+  .payment-result-ok-btn
+    display: inline-block
+    line-height: px2rem(72)
+    color: $color-Z1
+    text-align: center
+    font-size: px2rem(28)
+    width: px2rem(320)
+    border: 1px solid $color-L2
+    border-radius: px2rem(8)
+
+.toast-codeSuccess
+  position: absolute !important
+  left: 0 !important
+  right: 0 !important
+  top: 0 !important
+  bottom: 0 !important
+  outline: none !important
+  width: px2rem(300)
+  height: px2rem(300)
+  margin: auto !important
+
+.toast-code
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  height: px2rem(180)
+  text-align: center
+  font-size: px2rem(28)
+  color: #fff
+  margin: auto
+
+.icon-codeSuccess
+  display: inline-block
+  width: px2rem(90)
+  height: px2rem(90)
+  background: url(./img/icon_success.png) no-repeat
+  background-size: cover
+  margin-bottom: px2rem(40)
+
+
+

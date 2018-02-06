@@ -1,0 +1,56 @@
+.search-box
+  width 100%
+  padding px2rem(24)
+  background-color #FFF
+  border-bottom 1px solid $color-L1
+  display-flex(flex-start)
+  font-size px2rem(24)
+  .search
+    box-flex(1)
+    position relative
+    background-color $color-L1
+    width 100%
+    height px2rem(56)
+    line-height px2rem(56)
+    border-radius 5px
+    .search-input
+      position relative
+      z-index 9
+      width 100%
+      input[type=search]
+        width 100%
+        height 100%
+        line-height px2rem(56)
+        border none
+        padding 0 px2rem(24) 0 px2rem(62)
+        border-radius 5px
+        font-size px2rem(24)
+        color $color-Z1
+        background-color transparent
+        &.not-empty, &:focus
+          background $color-L1 url("./img/icon_search.png") no-repeat px2rem(24) center
+          background-size px2rem(28) px2rem(28)
+    .search-placeholder
+      position absolute
+      width 100%
+      height 100%
+      text-align center
+      color $color-Z3
+      top 0
+      span:before
+        content "　"
+        background url("./img/icon_search.png") no-repeat center
+        width px2rem(28)
+        height px2rem(28)
+        background-size contain
+        margin-right px2rem(10)
+  .icon-type
+    position relative
+    display block
+    width px2rem(34)
+    height px2rem(56)
+    background url("./img/icon_type.png") no-repeat center;
+    background-size contain
+    margin-left px2rem(30)
+    &:active
+      background-image url("./img/icon_type_active.png");

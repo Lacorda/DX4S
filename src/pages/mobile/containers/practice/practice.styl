@@ -1,0 +1,110 @@
+.exams
+  ul
+    margin: 0
+    padding: 0
+    list-style-type: none
+  .process-time, .process-number, .process-submit,.process-wrong
+    width: px2rem(250)
+    display: inline-block
+    font-size: px2rem(28)
+    color: $color-Z2
+    i
+      width: px2rem(24)
+      height: px2rem(24)
+      display: inline-block
+      margin-right: px2rem(8)
+    &.active
+      color: $color-A1
+      font-weight: bold
+
+  .icon-active-time
+    background: url(./img/icon-active-time.png) no-repeat
+    background-size: cover
+    position: relative
+    top: px2rem(1)
+
+  .icon-number
+    background: url(./img/icon-number.png) no-repeat
+    background-size: cover
+    position: relative
+    top: px2rem(1)
+    &.active
+      background: url(./img/icon-active-number.png) no-repeat
+      background-size: cover
+
+  .icon-submit
+    background: url(./img/icon-submit.png) no-repeat
+    background-size: cover
+    position: relative
+    top: px2rem(2)
+
+  .exercises-number-item
+    float: left
+    border-radius: 50%
+    width: px2rem(82)
+    height: px2rem(82)
+    line-height: px2rem(82)
+    margin-top: px2rem(40)
+    margin-right: px2rem(20)
+    font-size: px2rem(36)
+    color: $color-Z1
+    background-color: #ececec
+    text-align: center;
+    position: relative
+    &.active
+      color: #fff
+      background-color: $color-A1
+    &:nth-child(7n+0)
+      margin-right: 0
+  .icon-answer-right
+    position:absolute
+    background: url(./img/icon-answer-right.png) no-repeat
+    background-size: cover
+    bottom: px2rem(1)
+    right:px2rem(-3)
+    width: px2rem(30)
+    height: px2rem(30)
+  .icon-answer-wrong
+    position:absolute
+    background: url(./img/icon-answer-wrong.png) no-repeat
+    background-size: cover
+    bottom: px2rem(1)
+    right:px2rem(-3)
+    width: px2rem(30)
+    height: px2rem(30)
+  .answer-btn
+    display:block
+    width: px2rem(650)
+    height: px2rem(80)
+    line-height: px2rem(80)
+    font-size: px2rem(32)
+    background-color: #38acff
+    color: rgb(255,255,255)
+    border-radius: px2rem(8)
+    text-align:center
+    margin:px2rem(50) px2rem(25)
+  .exercise-btn
+    display: block
+    width: px2rem(650)
+    height: px2rem(80)
+    line-height: px2rem(80)
+    font-size: px2rem(32)
+    background-color: #38acff
+    color: rgb(255,255,255)
+    border-radius: px2rem(8)
+    text-align:center
+    margin:px2rem(50) px2rem(25)
+  .continue-btn
+    display: block
+    width: px2rem(650)
+    height: px2rem(80)
+    line-height: px2rem(80)
+    font-size: px2rem(32)
+    background-color: #38acff
+    color: rgb(255,255,255)
+    border-radius: px2rem(8)
+    text-align:center
+    margin:px2rem(50) px2rem(25)
+
+
+

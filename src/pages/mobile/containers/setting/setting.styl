@@ -1,0 +1,35 @@
+.setting
+  > .setting-list
+    > .views
+      margin-bottom px2rem(16)
+    > ul
+      background-color #FFF
+      list-style none
+      margin 0
+      padding 0
+      > li
+        margin-left px2rem(20)
+        padding-right px2rem(20)
+        border-top 1px solid $color-L2
+        a
+          position relative
+          display block
+          width 100%
+          color $color-Z1
+          line-height px2rem(96)
+          font-size px2rem(32)
+          background url("./img/icon_right_arrow.png") no-repeat px2rem(690) center
+          background-size px2rem(15) px2rem(27)
+        a.checked
+          background url("./img/icon_right_checked.png") no-repeat px2rem(670) center
+          background-size px2rem(32) px2rem(32)
+        a.none-background
+          background none
+        &:first-child
+          border none
+    > .logout-views
+       margin px2rem(32) 0
+       font-size px2rem(32)
+       color $color-B4
+       line-height px2rem(96)
+       text-align center

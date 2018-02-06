@@ -1,0 +1,70 @@
+.dx-flex-box
+  display flex
+  padding $distance-default $distance-default $distance-default 0
+  border-bottom 1px solid $color-L1
+  &.no-border
+    border-bottom none
+  &.disabled
+    background-color $color-A0
+    .dx-flex-info
+      opacity .48
+  input[type=checkbox]
+    input-checkbox()
+    height px2rem(152)
+    margin-right $distance-default
+  .dx-flex-img
+    display block
+    width px2rem(240)
+    height px2rem(152)
+    margin-right $distance-default
+    overflow hidden
+    position relative
+    .icon
+      position absolute
+      width px2rem(134)
+      height px2rem(134)
+      padding-top px2rem(6)
+      line-height px2rem(34)
+      color #FFF
+      text-align center
+      font-size px2rem(22)
+      background none
+      transform rotate(-45deg)
+      &.series
+        background-image linear-gradient(transparent px2rem(6), $color-B3 px2rem(6), $color-B3 px2rem(40), transparent px2rem(40))
+      &.live
+        background-image linear-gradient(transparent px2rem(6), #f84e4e px2rem(6), #f84e4e px2rem(40), transparent px2rem(40))
+      &.exam
+        background-image linear-gradient(transparent px2rem(6), #cbac51 px2rem(6), #cbac51 px2rem(40), transparent px2rem(40))
+    img
+      width px2rem(240)
+      height px2rem(152)
+  .dx-flex-info
+    flex 1
+    display block
+    .dx-flex-info-title
+      display block
+      height px2rem(88)
+      line-height px2rem(44)
+      overflow hidden
+      margin-bottom px2rem(10)
+      font-size px2rem(28)
+      color $color-Z1
+    .dx-flex-info-desc
+      color $color-Z3
+      font-size $distance-default
+    .dx-flex-info-important
+      color $color-B4
+      font-size px2rem(26)
+      small
+        font-size px2rem(24) $distance-default
+  .dx-flex-operation
+    width px2rem(44)
+    margin-left $distance-default
+
+.dx-flex-box-operation-helper
+  position relative
+  width px2rem(100)
+  height px2rem(100)
+  float right
+  margin-top px2rem(-100)

@@ -1,0 +1,17 @@
+export default {
+  submit: { id: 'app.practice.submit', en: 'OK', zh: '提交' },
+  cancel: { id: 'app.practice.cancel', en: ' Cancel', zh: '取消' },
+  prev: { id: 'app.practice.prev', en: ' Previous', zh: '上一题' },
+  next: { id: 'app.practice.next', en: ' Next', zh: '下一题' },
+  check: { id: 'app.practice.check', en: ' Check the answer', zh: '查看解析' },
+  examFinish: { id: 'app.practice.examFinish', en: ' Are you sure to submit? ', zh: '你确定交卷吗？' },
+  examUnFinish: { id: 'app.practice.examUnFinish', en: ' {noAnswerNum} questions unfinished,are you sure to submit?', zh: '你还有{noAnswerNum}题未完成，确定要交卷吗？' },
+  btnSubmit: { id: 'app.practice.btnSubmit', en: 'submit', zh: '交卷' },
+  btnCheck: { id: 'app.practice.btnCheck', en: 'check', zh: '查看' },
+  btnContinue: { id: 'app.practice.btnContinue', en: 'continue', zh: '继续' },
+  done: { id: 'app.practice.done', en: 'Well done,you have finished the exercise', zh: '恭喜！完成练习！' },
+  fail: { id: 'app.practice.fail', en: 'Come on, you can do better!', zh: '差一点，继续加油' },
+  moreExercise: { id: 'app.practice.moreExercise', en: 'Practice again', zh: '再练习一次' },
+  continue: { id: 'app.practice.continue', en: 'Continue to learn', zh: '继续学习' },
+  title: { id: 'app.practice.title', en: 'Exercises', zh: '我的练习' },
+};

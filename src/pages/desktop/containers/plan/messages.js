@@ -1,0 +1,16 @@
+export default {
+  listTitle: { id: 'app.staffTask.title.list', en: 'New hire orientation', zh: '新员工培训专属' },
+  detailTitle: { id: 'app.staffTask.title.detail', en: 'Plan details', zh: '任务详情' },
+  exam: { id: 'app.staffTask.exam', en: 'Exam', zh: '考试' },
+  live: { id: 'app.staffTask.live', en: 'Live', zh: '直播' },
+  micro: { id: 'app.staffTask.micro', en: 'Micro', zh: '微课' },
+  series: { id: 'app.staffTask.series', en: 'Series', zh: '系列' },
+  locked: { id: 'app.staffTask.locked', en: 'Locked', zh: '未解锁' },
+  completed: { id: 'app.staffTask.completed', en: 'Completed', zh: '已完成' },
+  endTime: { id: 'app.staffTask.endTime', en: 'End time', zh: '截止' },
+  rateOfProgress: { id: 'app.staffTask.rateOfProgress', en: 'Rate of progress', zh: '任务完成率' },
+  loadMore: { id: 'app.staffTask.loadMore', en: 'Loading more', zh: '点击加载更多' },
+  noMore: { id: 'app.staffTask.noMore', en: 'No more content', zh: '已无更多内容' },
+  contents: { id: 'app.staffTask.contents', en: 'Contents', zh: '培训计划内容' },
+  haveBeenLearning: { id: 'app.staffTask.haveBeenLearning', en: ' have been learning', zh: '人已学习' },
+};

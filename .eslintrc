@@ -1,0 +1,51 @@
+// Use this file as a starting point for your project's .eslintrc.
+// Copy this file, and add rule overrides as needed.
+{
+  "extends": "airbnb",
+  "globals": {
+    "__env__": true,
+    "__platform__": true,
+    "__device__": true,
+    "__PLATFORM__": true,
+    "__ENVIROMENT__": true,
+    "__DEVICE__": true
+  },
+  "plugins": [
+    "babel",
+    "react",
+    "promise"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "generator-star-spacing": 0,
+    "linebreak-style": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-useless-constructor": 0,
+    "key-spacing": [2, { "mode": "minimum" }],
+    // "no-unused-vars": [2, { "vars": "all", "args": "none" }],
+    "import/no-unresolved": [
+      2,
+      {
+        "ignore": [
+          "css/",
+          "js/",
+          "utils/",
+          "styles/",
+          "components/",
+          "hocs",
+          "img/",
+          "dxActions",
+          "dxConstants",
+          "dxReducers",
+          "dxSelectors",
+          "i18n"
+        ]
+      }
+    ],
+    "jsx-a11y/no-static-element-interactions": 0
+  },
+  "parser": "babel-eslint"
+}

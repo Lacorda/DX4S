@@ -1,0 +1,54 @@
+.distribution-required-user-selection
+  position relative
+  height 100%
+
+  .distribution-header
+    background-color #e4f4ff
+    height px2rem(56)
+    line-height px2rem(56)
+    text-align center
+    color $color-Z2
+    font-size px2rem(24)
+  .distribution-header-error
+    color $color-B4
+
+  .align-items
+    display flex
+    align-items center
+
+  input[type="checkbox"]
+    input-checkbox()
+    margin-right $distance-default
+    line-height px2rem(55)
+    min-width px2rem(44)
+
+  .user-selection-list
+    bottom px2rem(97)
+    top px2rem(258)
+
+  .user-searching-list
+    bottom px2rem(97)
+    top px2rem(106)
+
+  .avatar
+    width px2rem(55)
+    height px2rem(55)
+    margin-right $distance-default
+
+  .dx-list-comment
+    margin-left $distance-default
+    white-space nowrap
+
+  .list-operation
+    color $color-A1
+    float right
+    display inline-block
+    white-space nowrap
+    &:before
+      content: "| "
+      color: $color-L1
+      font-size px2rem(40)
+  .list-operation-danger
+    color $color-B4
+  .list-operation-disabled
+    color $color-Z4

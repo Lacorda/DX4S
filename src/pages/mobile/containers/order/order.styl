@@ -1,0 +1,270 @@
+
+#order
+  margin-bottom px2rem(100)
+  height 100%
+  #tab
+    width 100%
+    overflow hidden
+    position relative
+    .title
+      width 100%
+      height px2rem(102)
+      position fixed
+      background #fff
+      z-index 2
+      border-bottom 1px solid #ececec
+      ul
+        list-style none
+        border-radius 4px
+        width px2rem(424)
+        height px2rem(58)
+        margin px2rem(22) auto
+        border-radius px2rem(8)
+        padding 0
+        border 1px solid #38acff
+        li
+          padding 0
+          width 50%
+          text-align center
+          float left
+          color #38acff
+          height 100%
+          line-height px2rem(58)
+          font-size px2rem(24)
+        .title-active
+          background #38acff
+          color #fff !important
+      .personBtn
+        list-style none
+        border-radius 4px
+        width px2rem(213)
+        height px2rem(58)
+        margin px2rem(22) auto
+        border-radius px2rem(8)
+        padding 0
+        border px2rem(2) solid #38acff
+        background #38acff
+        color #fff
+        text-align center
+        line-height px2rem(58)
+    .nav
+      width 100%
+      padding px2rem(20) 0
+      list-style none
+      margin px2rem(100) 0 0
+      overflow hidden
+      background #fff
+      position relative
+      li
+        width 15%
+        margin 0 5%
+        float left
+        text-align center
+        padding-bottom px2rem(14)
+        font-size px2rem(28)
+      .nav-active
+        color #38acff !important
+        border-bottom 4px solid #38acff
+      .nav-border
+        position absolute
+        width px2rem(2)
+        height px2rem(24)
+        background #ccc
+        left 25%
+        top px2rem(28)
+        z-index 3
+      .nav-border1
+        left 25%
+      .nav-border2
+        left 50%
+      .nav-border3
+        left 75%
+    .emptyTop
+      margin 0
+  .order
+    width 100%
+    margin px2rem(20) 0
+    background #fff
+    overflow hidden
+    .message
+      width 100%
+      height px2rem(80)
+      position relative
+      padding 0 px2rem(24)
+      overflow hidden
+      p
+        margin 0
+        margin-top px2rem(20)
+        font-size px2rem(26)
+        img
+          width px2rem(32)
+          margin-right px2rem(10)
+      .paying
+        position absolute
+        right px2rem(30)
+        color #fa3c3c
+        top px2rem(20)
+        font-size px2rem(26)
+      .paid
+        position absolute
+        right px2rem(30)
+        color #fa3c3c
+        top px2rem(20)
+        font-size px2rem(26)
+      .canceled
+        position absolute
+        right px2rem(30)
+        top px2rem(20)
+        color #ccc
+        font-size px2rem(26)
+    ul
+      width 100%
+      list-style none
+      padding 0
+      li
+        list-style none
+        padding px2rem(24)
+        background #f5f5f5
+        margin-bottom px2rem(20)
+        overflow hidden
+        height px2rem(200)
+        .card-img
+            width px2rem(240)
+            height px2rem(152)
+            position relative
+            float left
+            overflow hidden
+            img
+              width 100%
+              height 100%
+            .type-icon
+              display inline-block
+              width px2rem(144)
+              height px2rem(36)
+              line-height px2rem(36)
+              position absolute
+              left px2rem(-42)
+              top px2rem(12)
+              transform rotate(-45deg)
+              font-size px2rem(24)
+              text-align center
+              background $brand-primary
+              color #fff
+            .icon-bg-new
+              background : #f5864f !important
+            .icon-bg-solution
+              background: #8ec051 !important;
+          .card-text
+            width px2rem(430)
+            height px2rem(160)
+            float left
+            margin-left px2rem(24)
+            a , a:hover
+              color #333
+            .title
+              width 100%
+              height px2rem(80)
+              overflow hidden
+              margin 0
+              color #000
+              font-size px2rem(28)
+              a , a:hover
+                word-break: break-all;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-height px2rem(160)
+                white-space normal
+            .type
+              width 100%
+              margin 0
+              color #a0a0a0
+              font-size px2rem(24)
+            .number
+              width 100%
+              margin px2rem(16) 0 0
+              overflow hidden
+              line-height px2rem(30)
+              .price
+                display inline-block
+                float left
+                font-size px2rem(26)
+              .person
+                display inline-block
+                float right
+                color #a0a0a0
+                font-size px2rem(24)
+    .total
+      text-align right
+      margin 0
+      height px2rem(60)
+      padding 0 px2rem(24)
+      line-height px2rem(40)
+    .operate
+      margin-left px2rem(20)
+      border-top 1px solid #ececec
+      height px2rem(80)
+      overflow:hidden
+      span
+        color #a0a0a0
+        margin-top px2rem(10)
+        display: inline-block;
+      .operate-btn
+        height px2rem(50)
+        border 1px solid #000
+        text-align center
+        color #000
+        float right
+        margin-right px2rem(30)
+        margin-top px2rem(15)
+        border-radius px2rem(4)
+        line-height px2rem(50)
+        padding 0 px2rem(10)
+        span
+          margin-top 0
+          color #000
+      .operate-btn-red
+        border-color #fa3c3c !important
+        color #fa3c3c !important
+        span
+          color #fa3c3c !important
+        a, a:hover
+          color #fa3c3c !important
+  .loading
+    text-align center
+    color #bec0c0
+  .enterHref
+    position fixed
+    width 100%
+    height px2rem(80)
+    border-top 1px solid #dcdcdc
+    bottom 0
+    left 0
+    text-align center
+    color #38acff
+    background #fff
+    line-height px2rem(80)
+  .empty
+    width px2rem(280)
+    margin px2rem(70) auto
+    img
+      width px2rem(250)
+      height px2rem(200)
+      margin 0 auto
+    p
+      text-align center
+      color #d0d0d0
+      font-size px2rem(28)
+      margin-top px2rem(24)
+    .gotoLink
+      width px2rem(256)
+      height px2rem(72)
+      line-height px2rem(72)
+      border 1px solid #ccc
+      text-align center
+      display block
+      border-radius px2rem(8)
+      font-size px2rem(28px)
+      color #f00 !important

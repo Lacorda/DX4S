@@ -1,0 +1,4 @@
+node_modules/**
+config
+examples
+*.config.js

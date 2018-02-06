@@ -1,0 +1,114 @@
+.comment
+  padding-top px2rem(32)
+  padding-left px2rem(24)
+  background #fff
+  p, ul
+    margin 0
+  .pulltext
+    margin-left px2rem(-24)
+    background $body-bg
+  .c-top
+    display-flex(flex-start)
+    padding-right px2rem(24)
+    padding-bottom px2rem(32)
+    .c-rate
+      box-flex(1)
+      p
+        margin-bottom px2rem(10)
+    .c-add
+      position relative
+      display inline-block
+      padding-top 24px
+      font-size px2rem(28)
+      text-align center
+      color $brand-primary
+      &:before
+        content ''
+        position absolute
+        left 50%
+        top 0
+        display inline-block
+        width 20px
+        height 20px
+        margin-left -10px
+        background url('img/icon-comment.png') no-repeat
+        background-size contain
+      &.enable
+        &:active
+          background url('img/icon-comment-active.png') no-repeat
+          background-size contain
+      &.disable
+        color #ccc
+        &:before
+          background url('img/icon-comment-disable.png') no-repeat
+          background-size contain
+  .c-list
+    border-top: 1px solid $color-L1
+    .c-item
+      padding-top px2rem(24)
+      padding-right px2rem(24)
+      padding-bottom px2rem(24)
+      border-bottom: 1px solid $color-L1
+      .avatar
+        float left
+        width px2rem(64)
+        height px2rem(64)
+        margin-top px2rem(4)
+        border-radius 100%
+        overflow hidden
+        img {
+          max-width 100%
+        }
+      .name-rate
+        display-flex(center)
+        padding-left px2rem(24)
+        p
+          box-flex(1)
+          text-overflow()
+          font-size px2rem(26)
+        .rate-stars
+          max-width 130px
+      .time, .content
+        margin-left px2rem(88)
+      .time
+        padding-top px2rem(6)
+        font-size px2rem(20)
+        color $color-Z5
+      .content
+        padding-top px2rem(6)
+        line-height px2rem(40)
+        font-size px2rem(24)
+        color $color-Z2
+  .c-add-rate
+    display-flex(flex-start)
+    padding-right px2rem(24)
+    padding-bottom px2rem(30)
+    padding-left px2rem(0)
+    li
+      list-style: none;
+      &:last-child
+        box-flex(1)
+      p
+        padding-right px2rem(44)
+        margin-bottom px2rem(10)
+        line-height 25px
+        font-size px2rem(28)
+        color $color-Z5
+        &:last-child{
+          margin-bottom 0;
+        }
+      .rate-stars
+        display block
+        margin-bottom px2rem(20)
+        &:last-child{
+          margin-bottom 0;
+        }
+  .c-textarea
+    padding-right px2rem(24)
+    padding-bottom px2rem(30)
+  .c-btn
+    padding-top px2rem(30)
+    padding-right px2rem(24)
+    padding-bottom px2rem(80)
+    .btn
+      width 100%

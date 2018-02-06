@@ -1,0 +1,41 @@
+.btn
+  display inline-block
+  padding px2rem(26) px2rem(30)
+  background-color #fff
+  color #666
+  border 1px solid #d9d9d9
+  border-radius 4px
+  line-height px2rem(32)
+  vertical-align middle
+  font-size px2rem(32)
+  cursor pointer
+  &:hover, &:active
+    color $brand-primary
+    border-color $brand-primary
+  &[disabled]
+    opacity .48
+  &-primary
+    background-color $brand-primary
+    border-color $brand-primary
+    color #fff
+    &:hover, &:active
+      color #fff
+      background-color #2a98e6
+      border-color #2a98e6
+  &-default
+    background-color $color-Z3
+    border-color $color-Z3
+    color #fff
+    &:hover, &:active
+      color #fff
+      background-color #b4b4b4
+      border-color #b4b4b4
+  &-block
+    width: 100%
+  &-sm
+    padding px2rem(12) px2rem(20)
+    line-height px2rem(24)
+    font-size px2rem(24)
+  &-lg
+    // width 100%
+

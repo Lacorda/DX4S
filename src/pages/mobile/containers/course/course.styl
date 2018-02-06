@@ -1,0 +1,435 @@
+.course
+  background-color #fff
+  font-size px2rem(28)
+  a
+    color #333
+  ul
+    margin 0
+    padding 0
+  li
+    list-style-type none
+
+  .banner
+    img
+      width 100%
+      height px2rem(400)
+  .tab
+    margin 0
+    padding-left 0
+    border-bottom px2rem(1) solid $color-L2
+    vertical-align baseline
+    height px2rem(97)
+    line-height px2rem(97)
+    li
+      display:inline-block
+      text-align center
+      width 50%
+      font-size px2rem(34)
+      a
+        display inline-block
+        width 100%
+        color $text-color
+        &.active
+          color $brand-primary
+          border-bottom 2px solid $brand-primary
+  .description
+    position relative
+    padding px2rem(32) px2rem(20)
+    p
+      padding 0
+      margin 0
+      span
+        display inline-block
+        line-height px2rem(32)
+    .title
+      display-flex(center)
+      font-size px2rem(32)
+      padding-bottom px2rem(32)
+      &-info
+        box-flex(1)
+        margin 0
+      .opt
+        font-size px2rem(24)
+        color $color-A1
+        &:active
+          -moz-opacity 0.48
+          opacity 0.48
+        &-enroll
+          &:before
+            content ''
+            position relative
+            display inline-block
+            width px2rem(24)
+            height px2rem(24)
+            margin-right px2rem(8)
+            background url(../../../../img/icon_add.png) no-repeat
+            background-size contain
+        &-withdraw
+          &:before
+            content ''
+            position relative
+            display inline-block
+            width px2rem(24)
+            height px2rem(24)
+            margin-right px2rem(8)
+            background url(../../../../img/icon_abandon.png) no-repeat
+            background-size contain
+
+    /*.title
+      font-size px2rem(32)
+      padding-bottom px2rem(32)*/
+    .line
+      padding px2rem(20) 0
+    .lecture
+      font-size px2rem(28)
+    .keyword
+      font-size px2rem(28)
+      line-height px2rem(60)
+      color $color-Z2
+    .tag
+      display inline-block
+      padding 0 px2rem(12)
+      font-size px2rem(24)
+      background-color $color-L1
+      border-radius px2rem(4)
+      margin-right px2rem(10)
+      line-height px2rem(48)
+    .signet
+      position absolute
+      top px2rem(84)
+      right px2rem(24)
+      width px2rem(120)
+      height px2rem(120)
+      &.pass
+        background url(./img/course-pass.png) no-repeat
+        background-size contain
+      &.fail
+        background url(./img/course-fail.png) no-repeat
+        background-size contain
+
+  .rate-line
+    margin-bottom:px2rem(32)
+  .summary
+    line-height px2rem(44)
+    &.unshowall
+      white-space normal !important
+      max-height px2rem(44*3)
+      display -webkit-box
+      -webkit-line-clamp 3
+      -webkit-box-orient vertical
+      overflow hidden
+      text-overflow ellipsis
+
+  .unfold
+    font-size px2rem(28)
+    color $color-A1
+    text-align right
+    margin-top px2rem(24)
+    font-weight bold
+
+  .caption
+      padding-right px2rem(24)
+      color #999999
+      font-size px2rem(28)
+
+  .study
+    display-flex(center)
+    padding 0 px2rem(20)
+    &-detail
+      box-flex(1)
+      margin 0
+      p
+        margin 0
+  .reward
+    margin-right:px2rem(20)
+  em
+    font-style normal;
+    color $color-B1
+
+  .train
+    display-flex(center)
+    padding 0 px2rem(20)
+    &-detail
+      box-flex(1)
+      margin 0
+      p
+        margin 0
+  .exam
+    display-flex(center)
+    padding 0 px2rem(20)
+    &-title
+      box-flex(1)
+      margin 0
+  .state
+    margin 0
+    width:px2rem(80)
+    height:px2rem(80)
+    background center no-repeat
+    background-size contain
+    &.go
+      background-image url('./img/state-normal.png')
+      width:px2rem(24)
+      height:px2rem(24)
+    &.done
+      background-image url('./img/state-done.png')
+    &.lock
+      background-image url('./img/state-lock.png')
+      width:px2rem(32)
+      height:px2rem(32)
+      margin-right px2rem(64);
+    &.fail
+      background-image url('./img/state-fail.png')
+    &.success
+      background-image url('./img/state-success.png')
+
+  .widget
+    .widget-header
+      position relative
+      padding 0 px2rem(20)
+      background $color-A0
+      height px2rem(64)
+      line-height px2rem(64)
+      font-size px2rem(28)
+    .body-box
+      > a
+        min-height px2rem(96)
+      // height px2rem(96)
+      // line-height px2rem(96)
+    .not-support
+      font-size px2rem(24)
+      color $color-Z3
+    .lock-info
+      display:inline-block
+      position absolute
+      top px2rem(16)
+      right px2rem(24)
+      height px2rem(36)
+      line-height px2rem(36)
+      padding 0 px2rem(16)
+      border-radius px2rem(20)
+      font-size:px2rem(16)
+      background-color #d4d4d4
+      &:after
+        content: ''
+        position absolute
+        bottom px2rem(-12);
+        right px2rem(24);
+        width 0
+        height 0
+        border-top px2rem(14) solid #d4d4d4
+        border-left px2rem(8) solid transparent
+        border-right px2rem(8) solid transparent
+  .mb50
+    padding-bottom 50px
+  .chapter-title
+      font-size px2rem(28)
+      height px2rem(96)
+      line-height px2rem(96)
+      span
+        display inline-block
+        padding px2rem(0) px2rem(20)
+  .chapter-list
+      border-top px2rem(1) solid $color-L1;
+      border-bottom px2rem(1) solid $color-L1;
+      li
+        position relative
+        &:last-child
+          .name
+            border-bottom:none;
+      .status
+        position absolute
+        left px2rem(-30)
+        top px2rem(20)
+        width:px2rem(58)
+        height:px2rem(58)
+
+      /*.done
+        background url('./img/icon_read.png') center no-repeat
+        background-size contain*/
+
+      .read
+        color $color-Z3
+      .name
+        display-flex(center)
+        border-bottom px2rem(1) solid $color-L1
+        padding-left 0
+        p
+          margin-right px2rem(24)
+          &:last-child
+            box-flex(1)
+            padding-left:0
+            text-overflow ellipsis
+            overflow hidden
+            white-space nowrap
+          .name
+            float left
+            max-width 88%
+            white-space nowrap
+            text-overflow ellipsis
+            overflow hidden
+            overflow hidden
+          .tag
+            float right
+            width px2rem(28)
+            height px2rem(28)
+            background-image url('./img/icon_node_read.png')
+            background-size contain
+      .type
+        display block;
+        margin 0 px2rem(24)
+        vertical-align middle
+        background center no-repeat
+        background-size contain
+        width px2rem(50)
+        height px2rem(50)
+        &.img-lock
+          background-image url('./img/type-img-lock-0.png')
+        &.doc-lock
+          background-image url('./img/type-doc-lock-0.png')
+        &.practice-lock
+          background-image url('./img/type-practice-lock-0.png')
+        &.survey-lock
+          background-image url('./img/type-survey-lock-0.png')
+        &.video-lock
+          background-image url('./img/type-video-lock-0.png')
+        &.audio-lock
+          background-image url('./img/type-audio-lock-0.png')
+        &.h5-lock
+          background-image url('./img/type-h5-lock-0.png')
+        &.live-lock
+          background-image url('./img/type-live-lock-0.png')
+
+        &.img-lock-read
+          background-image url('./img/type-img-lock-1.png')
+        &.doc-lock-read
+          background-image url('./img/type-doc-lock-1.png')
+        &.practice-lock-read
+          background-image url('./img/type-practice-lock-1.png')
+        &.survey-lock-read
+          background-image url('./img/type-survey-lock-1.png')
+        &.video-lock-read
+          background-image url('./img/type-video-lock-1.png')
+        &.audio-lock-read
+          background-image url('./img/type-audio-lock-1.png')
+        &.h5-lock-read
+          background-image url('./img/type-h5-lock-1.png')
+        &.live-lock-read
+          background-image url('./img/type-live-lock-1.png')
+
+        &.img-lock-readable
+          background-image url('./img/type-img-lock-2.png')
+        &.doc-lock-readable
+          background-image url('./img/type-doc-lock-2.png')
+        &.practice-lock-readable
+          background-image url('./img/type-practice-lock-2.png')
+        &.survey-lock-readable
+          background-image url('./img/type-survey-lock-2.png')
+        &.video-lock-readable
+          background-image url('./img/type-video-lock-2.png')
+        &.audio-lock-readable
+          background-image url('./img/type-audio-lock-2.png')
+        &.h5-lock-readable
+          background-image url('./img/type-h5-lock-2.png')
+        &.live-lock-readable
+          background-image url('./img/type-live-lock-2.png')
+
+        &.img
+          background-image url('./img/type-img-0.png')
+        &.doc
+          background-image url('./img/type-doc-0.png')
+        &.practice
+          background-image url('./img/type-practice-0.png')
+        &.survey
+          background-image url('./img/type-survey-0.png')
+        &.video
+          background-image url('./img/type-video-0.png')
+        &.audio
+          background-image url('./img/type-audio-0.png')
+        &.h5
+          background-image url('./img/type-h5-0.png')
+        &.live
+          background-image url('./img/type-live-0.png')
+
+        &.img-read
+          background-image url('./img/type-img-1.png')
+        &.doc-read
+          background-image url('./img/type-doc-1.png')
+        &.practice-read
+          background-image url('./img/type-practice-1.png')
+        &.survey-read
+          background-image url('./img/type-survey-1.png')
+        &.video-read
+          background-image url('./img/type-video-1.png')
+        &.audio-read
+          background-image url('./img/type-audio-1.png')
+        &.h5-read
+          background-image url('./img/type-h5-1.png')
+        &.live-read
+          background-image url('./img/type-live-1.png')
+  &-footer
+    position fixed
+    bottom 0
+    left 0
+    width 100%
+    height px2rem(100)
+    border-top 1px solid $color-L2
+    text-align center
+    background-color #fff
+    a
+      float left
+      display inline-block
+      height: 100%
+    .favorite
+      // width px2rem(150)
+      padding-top px2rem(4)
+      font-size px2rem(24)
+      color $color-Z1
+      &:before
+        content ''
+        position relative
+        top px2rem(6)
+        display inline-block
+        width px2rem(43)
+        height px2rem(42)
+        background url(./img/icon_favorite_empty.png) no-repeat
+        background-size contain
+      &.active
+        &:before
+          background url(./img/icon_favorite.png) no-repeat
+          background-size contain
+      p
+        margin 0
+    .task
+      // width px2rem(150)
+      padding-top px2rem(4)
+      font-size px2rem(24)
+      color $color-Z1
+      &:before
+        content ''
+        position relative
+        top px2rem(6)
+        display inline-block
+        width px2rem(43)
+        height px2rem(42)
+        background url(./img/icon_task_n.png) no-repeat
+        background-size contain
+      &:active
+        &:before
+          background url(./img/icon_task_h.png) no-repeat
+          background-size contain
+      p
+        margin 0
+    .start
+      // width px2rem(450)
+      line-height px2rem(96)
+      font-size px2rem(32)
+      color #fff
+      background $color-A1
+    .w-196
+      width px2rem(196)
+    .w-150
+      width px2rem(150)
+    .w-554
+      width px2rem(554)
+    .w-450
+      width px2rem(450)

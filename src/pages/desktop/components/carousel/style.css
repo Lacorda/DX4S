@@ -1,0 +1,88 @@
+.dx-carousel {
+  overflow: hidden !important;
+}
+
+.dx-carousel .slick-list {
+  padding-bottom: 15px !important;
+  background-color: #FFF;
+}
+
+.dx-carousel .slick-center img {
+  color: #e67e22;
+  opacity: 1;
+  transform: scale(1);
+  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, .6);
+  -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, .6);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, .6);
+}
+
+.dx-carousel img {
+  opacity: 0.5;
+  transform: scale(.95, .83333333);
+  transition: all 300ms ease;
+  width: 1200px;
+  height: 400px;
+}
+
+.dx-carousel.no-arrow {
+  overflow: hidden !important;
+}
+
+.dx-carousel-dots {
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  text-align: center
+}
+
+.dx-carousel-dots li {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 8px;
+  padding: 0;
+}
+
+.dx-carousel-dots li button {
+  cursor: pointer;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #FFF;
+  border-radius: 50%;
+  border: none;
+  outline: 0;
+  text-indent: 9em;
+  overflow: hidden;
+  opacity: .5;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.dx-carousel-dots li.slick-active button, .dx-carousel-dots li button:hover {
+  opacity: 1;
+}
+
+
+.dx-carousel-arrow {
+  position: absolute;
+  background-color: transparent;
+  width: 1200px;
+  height: 400px;
+  top: 0;
+  z-index: 1;
+}
+
+.dx-carousel-arrow-prev {
+  right: 50%;
+  margin-right: 600px;
+}
+
+.dx-carousel-arrow-next {
+  left: 50%;
+  margin-left: 600px;
+}

@@ -1,0 +1,220 @@
+.dx-header
+  height 84px
+  background-color #FFF
+  .dx-container
+    clearfix()
+    line-height 84px
+
+.dx-header-logo
+  float left
+  background url("./img/logo.png") 0 0 no-repeat
+  width 221px
+  height 54px
+  margin-top 15px
+  margin-right 80px
+  &:hover
+    text-decoration none
+
+.dx-header-nav
+  float left
+  margin 0
+  padding 0
+  list-style none
+  clearfix();
+  li
+    float left
+    a
+      display block
+      height 84px
+      font-size 16px
+      padding 0 25px
+      color $color-Z1
+      font-weight bold
+      &:hover, &.active
+        color $color-A1
+        text-decoration none
+
+.dx-header-info
+  float right
+  clearfix()
+  > *
+    float right
+    padding 0 15px
+
+// 下拉菜单
+.dx-drop-down
+  position relative
+  cursor pointer
+  .drop-down-title
+    display block
+    clearfix()
+    .text
+      float left
+    .icon
+      float left
+      display block
+      background url("./img/icon-drop-down.png") center no-repeat
+      width 8px
+      height 5px
+      vertical-align middle
+      margin-left 5px
+      margin-top 40px
+      transition transform .3s
+  &:hover
+    text-decoration none
+    .icon
+      -webkit-transform rotate(180deg)
+      -moz-transform rotate(180deg)
+      -ms-transform rotate(180deg)
+      -o-transform rotate(180deg)
+      transform rotate(180deg)
+    .drop-down-menu
+      display block
+  .drop-down-menu
+    display none
+    position absolute
+    z-index 3
+    line-height $line-height-base
+    top 79px
+    left 0
+    cursor default
+    &.content
+      .drop-down-menu-content
+        text-align center
+        .content
+          padding 10px 0
+        img
+          margin-bottom 25px
+    &.list
+      .drop-down-menu-title
+        border-bottom 1px solid $color-L1
+      .drop-down-menu-list
+        a
+          display block
+          width 100%
+          text-align center
+          color $color-Z1
+          line-height 3
+          text-decoration none
+          &:hover
+            color $color-A1
+    .triangle
+      display block
+      width 10px
+      height 10px
+      background-color #FFF
+      -webkit-transform rotate(45deg)
+      -moz-transform rotate(45deg)
+      -ms-transform rotate(45deg)
+      -o-transform rotate(45deg)
+      transform rotate(45deg)
+      -webkit-box-shadow -2px -2px 5px rgba(0, 0, 0, .3)
+      -moz-box-shadow -2px -2px 5px rgba(0, 0, 0, .3)
+      box-shadow -2px -2px 5px rgba(0, 0, 0, .3)
+      margin-left 47.5%
+      margin-bottom -5px
+    .drop-down-menu-content
+      background-color #FFF
+      -webkit-box-shadow 0 0 5px rgba(0, 0, 0, .3)
+      -moz-box-shadow 0 0 5px rgba(0, 0, 0, .3)
+      box-shadow 0 0 5px rgba(0, 0, 0, .3)
+
+.header-info-code
+  background url("./img/icon-phone.png") center no-repeat
+  width 15px
+  height 84px
+  padding-right 0
+  .drop-down-menu
+    width 152px
+
+.header-info-language
+  .drop-down-title
+    width 70px
+    text-align right
+  .drop-down-menu
+    width 152px
+    .content
+      cursor pointer
+
+.header-info-menu
+  .drop-down-title
+    .text
+      max-width 80px
+      overflow hidden
+      text-overflow ellipsis
+  .drop-down-menu
+    width 180px
+  .drop-down-menu-title
+    clearfix()
+    padding 10px 0 10px 15px
+    .photo
+      position relative
+      float left
+      width 40px
+      height 40px
+      border-radius 50%
+      overflow hidden
+      margin-right 10px
+      cursor pointer
+      &:hover
+        .photo-edit
+          display block
+      .photo-edit
+        display none
+        position absolute
+        top 0
+        left 0
+        width 40px
+        height 40px
+        background-color rgba(0, 0, 0, .32)
+        color #FFF
+        text-align center
+        line-height 40px
+        font-size 12px
+        cursor pointer
+        .photo-upload
+          overflow: hidden;
+          display: inline-block;
+          position absolute
+          width 80px
+          height 40px
+          left -40px
+          cursor pointer
+          opacity 0
+          font-size 0
+      img
+        width 100%
+        height 100%
+    .info
+      float left
+      .name
+        width 88px
+        white-space nowrap
+        overflow hidden
+        text-overflow ellipsis
+      .telephone
+        color $color-Z2
+        > a
+          color $color-Z2
+          &:hover
+            text-decoration none
+
+.header-info-notice
+  float right
+  position relative
+  display block
+  background url("./img/icon-notice.png") center no-repeat
+  width 15px
+  height 84px
+  &:hover
+    text-decoration none
+  &.has-notice
+    &:after
+      position absolute
+      right 10px
+      top 30px
+      content '　'
+      width 10px
+      height 10px
+      border-radius 50%
+      background-color red

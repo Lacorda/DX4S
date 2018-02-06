@@ -1,0 +1,43 @@
+.confirm-sms
+  .message-prompt
+    backgroun #fff
+    text-align left
+    padding-bottom px2rem(14)
+  .section-input
+    padding-bottom px2rem(14)
+    input
+      background-color #fff
+      border 1px solid $color-L2
+      border-radius px2rem(5)
+      width 100%
+      height px2rem(72)
+      display block
+    .message-error
+      color $color-B4
+      display inline-block
+      font-size px2rem(22)
+      float right
+      &:before
+        content "\3000"
+        background-size px2rem(24)
+        background-repeat no-repeat
+        background-position-y center
+        background-image url("./imgs/icon-error.png")
+  .section-code
+    clear both
+    display flex
+    white-space nowrap
+    input
+      flex 1
+    .button-code
+      padding 0 px2rem(14)
+      margin-left -1px
+      color #38ACFF
+      text-align center
+      border 1px solid $color-L2
+      height px2rem(72)
+      span
+        line-height px2rem(72)
+    .disabled
+      color #fff
+      background-color #b4b4b4

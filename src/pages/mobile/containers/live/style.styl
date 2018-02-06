@@ -1,0 +1,78 @@
+.live
+  .dx-footer
+    line-height initial
+    input[type=checkbox]
+      input-checkbox(97)
+  .footer
+    position fixed
+    bottom 0
+    left 0
+    width 100%
+    height px2rem(100)
+    border-top 1px solid $color-L2
+    text-align center
+    background-color #fff
+    a
+      display inline-block
+    .note
+      width 40%
+      line-height px2rem(96)
+      font-size px2rem(32)
+      color $color-A1
+    .enter
+      width 60%
+      line-height px2rem(96)
+      font-size px2rem(32)
+      color #fff
+      background $color-A1
+      &:active
+        background #2a98e6
+  .dx-combo-menu
+    position fixed
+    bottom 0
+    left 0
+    right 0
+  .dx-footer
+    .button
+      width px2rem(286)
+      line-height px2rem(96)
+      font-size px2rem(32)
+      color #fff
+      text-align center
+      &-primary
+        background-color #38acff
+        color #fff
+        width 100%
+    .to-cart
+      background #585a5c
+      &:active
+        background #4a4c50
+    .to-order
+      background $color-A1
+      &:active
+        background #2a98e6
+    .enter
+      flex 2
+      background $color-A1
+      &:active
+        background #2a98e6
+    .sms
+      flex 1
+      background #fff
+      color $color-A1
+    .disabled
+      background-color #b4b4b4
+      color #fff
+      border-right 1px solid #fff
+      &:active
+        background #b4b4b4
+  .alert
+    background-color #ff6060
+    color #fff
+    display flex
+    align-items center
+    justify-content center
+    height px2rem(50)
+    position fixed
+    bottom px2rem(97)
+    width 100%

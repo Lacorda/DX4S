@@ -1,0 +1,18 @@
+export default {
+  completed: { id: 'app.plan.title.hot', en: ' Completed', zh: '已完成' },
+  Uncompleted: { id: 'app.plan.title.new', en: ' Uncompleted', zh: '未完成' },
+  emptyFont: { id: 'app.plan.empty', en: ' Haven\'t you learn well ~', zh: '还没有任何课程，要加油哦！' },
+  noMore: { id: 'app.plan.noMore', en: ' No more', zh: '没有更多内容了' },
+  loding: { id: 'app.plan.loding', en: ' Loding more...', zh: '正在加载...' },
+  bottom: { id: 'app.plan.bottom', en: ' bottom', zh: '滑动到底部加载数据' },
+  mini: { id: 'app.plan.mini', en: ' Micro', zh: '微课' },
+  exam: { id: 'app.plan.exam', en: ' Exam', zh: '考试' },
+  trainingClass: { id: 'app.plan.trainingClass', en: ' trainingClass', zh: '培训课' },
+  solution: { id: 'app.plan.solution', en: 'Series', zh: '系列课' },
+  allPlans: { id: 'app.plan.all', en: 'All', zh: '全部' },
+  minors: { id: 'app.plan.minors', en: 'Elective', zh: '选修' },
+  required: { id: 'app.plan.required', en: 'Compulsory', zh: '必修' },
+  ownPurchase: { id: 'app.plan.ownPurchase', en: 'Private', zh: '自购' },
+  title: { id: 'app.plan.title', en: 'My Courses', zh: '我的学习' },
+  done: { id: 'app.plan.done', en: 'Done', zh: '已完成' },
+};

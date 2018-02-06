@@ -1,0 +1,263 @@
+.course
+  margin-top 24px
+  padding-bottom: 278px;
+  a
+    text-decoration none
+  ul
+    margin 0
+  li
+    list-style none
+  .banner
+    padding 24px
+    background-color #fff
+    height 270px
+    margin-bottom 24px
+    position relative
+    &-face
+      width 480px
+      height 100%
+    &-info
+      position: absolute
+      left 504px
+      top 24px
+      margin-left 24px
+      width 648px
+      height 270px
+      &-head
+        overflow hidden
+      &-title
+        color $color-Z1
+        font-size 22px
+        float left
+        max-width 550px
+        max-height 60px
+      &-tag
+        margin-top 24px
+        span
+          display inline-block
+          padding 5px 12px
+          margin 0 10px 10px 0
+          border 1px solid $color-L1
+          font-size 14px
+          color $color-Z2
+          white-space nowrap
+          overflow hidden
+      &-operate
+        position absolute
+        bottom 0
+        a
+          display inline-block
+          height 48px
+          line-height 48px
+          color #fff
+          width auto
+          font-size 20px
+          text-align center
+          padding: 0 15px
+          margin-right: 20px
+        .step
+          display inline-block
+          height 48px
+          line-height 48px
+        .arrow
+          display inline-block
+          width 16px
+          height 48px
+          margin 0 16px
+          background url(./img/icon_next.png) center no-repeat
+          background-size contain
+        .arrow-active
+          display inline-block
+          width 16px
+          height 48px
+          margin 0 16px
+          background url(./img/icon_next_active.png) center no-repeat
+          background-size contain
+        .start
+          &:before
+            content ''
+            position relative
+            display inline-block
+            width 15px
+            height 18px
+            margin-right 8px
+            top 2px
+            background url(./img/icon_start.png) no-repeat
+            background-size contain
+        .pass
+          &:before
+            content ''
+            position relative
+            display inline-block
+            width 20px
+            height 20px
+            margin-right 8px
+            top 3px
+            background url(./img/icon_s_pass.png) no-repeat
+            background-size contain
+        .sms
+          &:before
+            content ''
+            position relative
+            display inline-block
+            width 20px
+            height 17px
+            margin-right 8px
+            top 3px
+            background url(./img/icon_sms.png) no-repeat
+            background-size contain
+        .blue
+          background-color $color-A1
+          &:active
+            background-color #008eda
+        .gray
+          background-color $color-L2
+      &-signet
+        position absolute
+        top 56px
+        right 16px
+        &.pass
+          width 111px
+          height 88px
+          background url(./img/icon_pass.png) no-repeat
+        &.fail
+          width 111px
+          height 88px
+          background url(./img/icon_failed.png) no-repeat
+      &-desc
+        position absolute
+        bottom 0
+        left 208px
+        width 416px
+        height 15px
+        p
+          margin 0
+          display inline-block
+    .bottom-20
+      bottom 20px
+  .banner-info-time, .banner-info-type, .banner-info-leture
+    margin: 0
+    font-size: 16px
+    color: $color-Z2
+    line-height: 16px
+    margin-bottom: 18px
+  .live-status
+    padding-left: 18px;
+    background-repeat: no-repeat
+    background-position: 0 center
+    margin-left: 25px
+    &.on-live
+      background-image: url(./img/icon_onLive.png)
+      color: #009aec
+    &.about-to-start
+      background-image: url(./img/icon_notStart.png)
+      color: #82c650
+    &.over
+      background-image: url(./img/icon_over.png)
+      color: #666
+  .tabs
+    height: 50px
+    line-height: 50px
+    border-bottom: 1px solid #ececec
+    background-color: #fff
+    padding-left: 24px
+  .tab
+    display: inline-block
+    font-size: 16px
+    color: #666
+    margin-right: 40px
+    cursor: pointer
+    &.active
+      height: 50px;
+      box-sizing: border-box;
+      color: #009aec;
+      border-bottom: 4px solid #009aec;
+  .description
+    padding 24px
+    background-color #fff
+    font-size 14px
+    margin-bottom 24px
+  .more
+    width 100%
+    line-height 40px
+    text-align center
+    color #fff
+  .btn-more
+    margin 0 auto
+    background #b8b8b8
+    cursor pointer
+
+  .info
+    color: $color-Z1
+    font-size: 14px
+    margin-bottom: 30px
+
+  .formInput
+    width 308px
+    height 35px
+    border 1px solid #bec0c0
+    margin 20px auto
+    position relative
+    .formError
+      position absolute
+      right 0
+      top -20px
+      color #f00
+      font-size 12px
+      i
+        width 15px
+        height 15px
+        background #f00
+        border-radius 15px
+        font-weight bold
+        display inline-block
+        color #fff
+        text-align center
+        font-style: normal
+        margin-right 5px
+        line-height 15px
+    img
+      position absolute
+      width 20px
+      left 5px
+      top 8px
+    input
+      position absolute
+      left 40px
+      width 260px
+      height 33px
+      border none
+      outline none
+    .code
+      width 180px
+    .line
+      position absolute
+      left 220px
+      width 1px
+      height 20px
+      top 8px
+      background #bec0c0
+    .sent
+      position absolute
+      width: 90px
+      left 220px
+      text-align: center
+      color: $color-Z1
+      font-size: 14px
+      line-height: 35px
+      cursor: pointer
+
+
+
+  #confirm
+    .confirmBox
+      height: auto
+      width: 358px
+
+
+    .confirmContent
+      margin: 40px 24px 30px;
+    .confirmBtn
+      margin-bottom: 40px;
+
+

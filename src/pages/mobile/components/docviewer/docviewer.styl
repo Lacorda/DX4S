@@ -1,0 +1,57 @@
+.preview-doc
+  width 100%
+  height 100%
+  overflow scroll
+  .img
+    width 100%
+    //margin-bottom px2rem(16)
+    img
+      width 100%
+    .page
+      width 100%
+      line-height 1
+      text-align center
+      font-size px2rem(24)
+      color $color-Z2
+      padding px2rem(12) 0 px2rem(24)
+  .chapter-number
+    width 100%
+    padding-top px2rem(112)
+    .fixed-bottom
+      width 100%
+      height px2rem(112)
+      line-height px2rem(112)
+      position fixed
+      bottom 0
+      background-color #FFF
+      border-top 1px solid $color-L2
+      padding 0 px2rem(24)
+      a
+        width px2rem(160)
+        height px2rem(64)
+        text-align center
+        line-height px2rem(64)
+        border 1px solid $color-Z3
+        border-radius px2rem(3)
+        margin-top px2rem(22)
+        color $color-Z1
+        &:first-child
+          float left
+        &:last-child
+          float right
+        &.disable
+          border-color $color-Z4
+          color $color-Z4
+  .preview-end
+    width 100%
+    height px2rem(420)
+    background #FFF url("~img/icon_preview.png") no-repeat center px2rem(78)
+    background-size px2rem(220) px2rem(180)
+    text-align center
+    padding-top px2rem(260)
+    .preview-end-title
+      font-size px2rem(28)
+      color $color-Z2
+    p
+      font-size px2rem(24)
+      color $color-A1

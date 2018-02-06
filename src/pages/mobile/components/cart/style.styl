@@ -1,0 +1,36 @@
+.dx-cart
+  text-align center
+  float left
+  display inline-block
+  height: 100%
+  width px2rem(178)
+  padding-top px2rem(4)
+  font-size px2rem(24)
+  color $color-Z2
+  position relative
+  &:before
+    content ''
+    position relative
+    top px2rem(6)
+    display inline-block
+    width px2rem(44)
+    height px2rem(44)
+    background url(./img/icon_cart.png) no-repeat
+    background-size contain
+  &-count
+    position absolute
+    right 24px
+    top 3px
+    display inline-block
+    min-width px2rem(34)
+    height px2rem(34)
+    padding-top px2rem(7)
+    padding-right px2rem(2)
+    line-height px2rem(20)
+    border-radius 50%
+    font-size 12px
+    text-align center
+    background-color #f00
+    color #fff
+  p
+    margin 0

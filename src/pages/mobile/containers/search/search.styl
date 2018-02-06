@@ -1,0 +1,212 @@
+body.fixed-navbar-top
+  .slide
+    top: $navbar-height !important
+
+.search-list
+  top: px2rem(192)
+  bottom: 0
+
+
+.search
+  position: relative
+  height: 100%
+
+// 滑动层
+.slide
+  position: fixed  
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  z-index: 9999
+  visibility: hidden  
+  -webkit-transition all .1s;
+  -moz-transition all .1s;
+  transition all .1s;
+  &.active 
+    visibility: visible
+    .mask
+      opacity: 1
+    .content
+      right: 0
+  .mask
+    background-color: rgba(0,0,0,.4)
+    height: 100%;
+    width: 100%;
+    opacity: 0
+    -webkit-transition opacity .1s;
+    -moz-transition opacity .1s;
+    transition opacity .1s;
+  .content
+    position: absolute;
+    top: 0;
+    right: px2rem(-264);
+    height: 100%;
+    width px2rem(264)
+    background-color: #fff;
+    -webkit-transition right .1s;
+    -moz-transition right .1s;
+    transition right .1s;
+  dl
+    margin: 0    
+    padding px2rem(24)
+    dt
+      color $color-Z3
+      font-size px2rem(28)
+      margin-bottom px2rem(16)
+    dd
+      width px2rem(176)
+      height px2rem(64)
+      line-height px2rem(64)
+      text-align center
+      background-color #E4E4E4
+      border-radius 5px      
+      margin:0
+      padding: 0
+      margin-bottom px2rem(24)
+      &.active
+        background-color $color-A1
+        color #FFF
+  button      
+    position: absolute
+    bottom: 0
+    width: 100%
+    background-color $color-A1
+    height px2rem(97)
+    line-height px2rem(97)
+    font-size px2rem(32)
+    border none
+    color #FFF
+
+// 搜索栏
+.query
+  background-color #fff
+  padding px2rem(24)
+  font-size px2rem(24) 
+  .placeholder
+    text-align: center
+    color $color-Z4
+    background-color $color-L1
+    width 100%
+    height px2rem(56)
+    line-height px2rem(56)
+    border-radius 5px
+    span:before
+      content "\3000"
+      background url("./img/search.png") no-repeat center
+      background-size contain
+      margin-right px2rem(10)
+  form 
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding px2rem(24)
+    input
+      width 100%
+      height px2rem(56)
+      line-height px2rem(56)
+      border-radius 5px
+      background-color: transparent;
+      color $color-Z1
+      border: 0;
+      padding 0 px2rem(24) 0 px2rem(62)
+      &:focus, &.active
+        background $color-L1 url("./img/search.png") no-repeat px2rem(24) center
+        background-size px2rem(28) px2rem(28)
+// 公共
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+// 过滤栏
+ul.filter
+  display: flex   
+  background-color: #fff;   
+  li
+    flex: 1
+    padding: px2rem(24)
+    color: $color-Z1
+    display: flex
+    align-items: center
+    justify-content: center
+    &.active
+      color: $color-A1
+      .icon-filter
+        background-image: url("./img/filter_active.png")
+    .name
+      display: inline-block
+      margin-right: 3px;
+    .arrow
+      display: inline-block
+      .arrow-top
+        border-bottom: 4px solid $color-Z4
+        border-left: 3px solid transparent
+        border-right: 3px solid transparent
+        width: 0
+        height: 0  
+        &.active
+          border-bottom: 4px solid $color-A1
+      .arrow-bottom
+        border-top: 4px solid $color-Z4
+        border-left: 3px solid transparent
+        border-right: 3px solid transparent
+        width: 0
+        height: 0
+        margin-top: 2px
+        &.active
+          border-top: 4px solid $color-A1
+    .icon-filter
+      background-image: url("./img/filter_default.png")
+      width: px2rem(28)
+      height: px2rem(28)
+      background-size: contain
+
+// 列表
+ul.list
+  background-color: #fff;
+  padding-left: 12px
+  border-top: 1px solid #ececec
+  li.item
+    display: block
+    border-bottom: 1px solid #ececec
+    padding: 12px 12px 12px 0
+    &:last-child
+      border-bottom: 0
+    .link
+      display: flex
+      flex: 1
+    .item-left
+      flex-basis: px2rem(240)
+      img
+        width: px2rem(240)
+        height: px2rem(152)
+    .item-right      
+      margin-left: 10px
+      flex: 1
+      display: flex
+      flex-direction: column
+      .row-first
+        color: $color-Z1
+        font-size: px2rem(28)
+        flex: 1
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      .row-second
+        color: $color-Z3
+        font-size: px2rem(24)
+      .row-third
+        color: $color-Z3
+        font-size: px2rem(24)
+        display: flex
+        .price
+          color: $color-B4
+          flex: 1
+          display: block        
+      
+.heightlight
+  color: $color-B5    
+  

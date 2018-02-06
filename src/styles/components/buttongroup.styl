@@ -1,0 +1,23 @@
+.buttongroup
+  list-style none
+  padding 0
+  margin 0 auto
+  border-radius px2rem(8)
+  display table
+  font-size px2rem(24)
+  color $color-A1
+  li
+    display table-cell
+    padding px2rem(16) px2rem(18)
+    border 1px solid $color-A1
+    vertical-align middle
+    &:first-child
+      border-radius px2rem(8) 0 0 px2rem(8)
+    &:last-child
+      border-radius 0 px2rem(8) px2rem(8) 0
+      border-right-width 1px
+  .only-one
+    border-radius px2rem(8)!important
+  .active
+    background $color-A1
+    color #fff

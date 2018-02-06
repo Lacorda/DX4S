@@ -1,0 +1,47 @@
+.card
+  margin 0
+  list-style none
+  background #fff
+  p
+    margin 0
+  &.card-horizontal
+    padding-left px2rem(24)
+    li
+      padding-top px2rem(24)
+      padding-bottom px2rem(24)
+      border-bottom 1px solid #ccc
+      overflow hidden
+      &:last-child
+        border-bottom 0
+      .card-img
+        float left
+        position relative
+        width px2rem(243)
+        height px2rem(156)
+        overflow hidden
+        a
+          display block
+          height 100%
+        img
+          width px2rem(243)
+          height px2rem(156)
+        .type-icon
+          display inline-block
+          width px2rem(144)
+          height px2rem(36)
+          line-height px2rem(36)
+          position absolute
+          left px2rem(-42)
+          top px2rem(12)
+          transform rotate(-45deg)
+          font-size px2rem(24)
+          text-align center
+          background $brand-primary
+          color #fff
+      .card-text
+        position relative
+        margin-left px2rem(260)
+        padding-right px2rem(20)
+        a
+          display inline-block
+          color $text-color

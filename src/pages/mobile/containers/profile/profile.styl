@@ -1,0 +1,110 @@
+.profile
+  > .info-box
+    background-image url("./img/bg.jpg")
+    background-size 100%
+    width 100%
+    height px2rem(450)
+    padding-top px2rem(20)
+    position relative
+    > .info
+      width px2rem(240)
+      margin 0 auto
+      > .avatar
+        width px2rem(240)
+        height px2rem(240)
+        overflow hidden
+        border px2rem(10) solid rgba(255, 255, 255, .4)
+        border-radius px2rem(240)
+        margin-bottom px2rem(28)
+        > input[type=file]
+          opacity 0
+          overflow hidden
+          position absolute
+          width px2rem(240)
+          height px2rem(240)
+          z-index 999
+        > .default-head
+          background url("../../../../img/avatar.png") no-repeat center
+          background-size cover
+        img
+          width px2rem(240)
+          height px2rem(240)
+      > .username
+        line-height 1
+        color $color-A0
+        text-align center
+        font-size px2rem(32)
+      .exp
+        position absolute
+        right 0
+        left 0
+        bottom 0
+        height px2rem(100)
+        background-color rgba(0, 0, 0, .32)
+        display flex
+        color #fff
+        text-align center
+        align-items center
+        .icon
+          width px2rem(35)
+          height px2rem(35)
+          vertical-align middle
+          display inline-block
+          margin-right px2rem(12)
+        div
+          flex 1
+        .border-right
+          border-right 1px solid #4DA9D0
+  > .todo-list
+    > .views
+      margin-bottom px2rem(16)
+    > ul
+      background-color #FFF
+      list-style none
+      margin 0
+      padding 0
+      > li
+        margin-left px2rem(20)
+        padding-right px2rem(20)
+        border-top 1px solid $color-L2
+        a
+          position relative
+          display block
+          width 100%
+          color $color-Z1
+          line-height px2rem(88)
+          font-size px2rem(34)
+          background url("./img/icon_todo.png") no-repeat px2rem(695) center
+          background-size px2rem(15) px2rem(27)
+        &:first-child
+          border none
+        .red-dot
+          span
+            &:after
+              content ' '
+              background #f00
+              border-radius 50%
+              width px2rem(16)
+              height px2rem(16)
+              top 13px
+              margin-left px2rem(10)
+              position absolute
+  .blankarea {
+    height: 1.306666666666667rem
+  }
+
+.change-psw
+  padding: px2rem(64) px2rem(20)
+
+.about-us
+  padding: px2rem(0) px2rem(32)
+  font-size: px2rem(28)
+  line-height: px2rem(54)
+  color: #666
+  word-break: break-all;
+  .logo
+    padding: px2rem(64) px2rem(0) px2rem(88)
+    text-align: center
+    img
+      width: px2rem(275)
+      height: px2rem(203)

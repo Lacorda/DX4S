@@ -1,0 +1,110 @@
+[
+  {
+    "id": "app.home.title.plan",
+    "message": "Learning arrangement"
+  },
+  {
+    "id": "app.home.title.elective",
+    "message": "Elective course"
+  },
+  {
+    "id": "app.footer.course-center",
+    "defaultMessage": "course center"
+  },
+  {
+    "id": "app.footer.my-center",
+    "defaultMessage": "my center"
+  },
+  {
+    "id": "app.profile.my-learn",
+    "defaultMessage": "My learn"
+  },
+  {
+    "id": "app.profile.my-test",
+    "defaultMessage": "My test"
+  },
+  {
+    "id": "app.profile.my-favorite",
+    "defaultMessage": "My favorite"
+  },
+  {
+    "id": "app.profile.sign-in-record",
+    "defaultMessage": "sign-in record"
+  },
+  {
+    "id": "app.profile.feedback-box",
+    "defaultMessage": "Feedback box"
+  },
+  {
+    "id": "app.profile.use-the-help",
+    "defaultMessage": "Use the help"
+  },
+  {
+    "id": "app.comment.add",
+    "defaultMessage": "Add the evaluation"
+  },
+  {
+    "id": "app.comment.overall-evaluation",
+    "defaultMessage": "Overall-evaluation"
+  },
+  {
+    "id": "app.comment.content-rate",
+    "defaultMessage": "course content:"
+  },
+  {
+    "id": "app.comment.form-rate",
+    "defaultMessage": "course form:"
+  },
+  {
+    "id":"app.series-detail.keyword",
+    "defaultMessage": "keyword"
+  },
+  {
+    "id":"app.series-detail.objective",
+    "defaultMessage": "objective"
+  },
+  {
+    "id":"app.series-detail.comment",
+    "defaultMessage": "comment"
+  },
+  {
+    "id":"app.series-detail.fold",
+    "defaultMessage": "fold"
+  },
+  {
+    "id":"app.series-detail.unfold",
+    "defaultMessage": "unfold"
+  },
+  {
+    "id":"app.series-detail.course",
+    "defaultMessage": "course"
+  },
+  {
+    "id":"app.series-detail.test",
+    "defaultMessage": "exam"
+  },
+  {
+    "id":"app.series-detail.questionnaire",
+    "defaultMessage": "survey"
+  },
+  {
+    "id":"app.series-detail.finish",
+    "defaultMessage": "finish"
+  },
+  {
+    "id":"app.series-detail.unfinish",
+    "defaultMessage": "unfinish"
+  },
+  {
+    "id":"app.series-detail.learncount",
+    "defaultMessage": "{study_count}students have learned"
+  },
+  {
+    "id":"app.series-detail.favorite",
+    "defaultMessage": "favorite"
+  },
+  {
+    "id":"app.series-detail.attendtocourse",
+    "defaultMessage": "To attend the course"
+  }
+]

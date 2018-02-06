@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello React!</title>
+  <script src="http://cdn.bootcss.com/react/15.3.2/react.min.js"></script>
+  <script src="http://cdn.bootcss.com/react/15.3.2/react-dom.min.js"></script>
+  <script src="https://cdn.bootcss.com/babel-core/5.8.38/browser.min.js"></script>
+  <script src="dist/react-simple-ribbon.js"></script>
+</head>
+<body>
+<h1>react-simple-ribbon</h1>
+
+<h2>basic</h2>
+<div id="basic"></div>
+
+<hr>
+<h2>wait for image loaded</h2>
+<div id="wait"></div>
+
+<script type="text/babel">
+  // this same as `import Ribbon from 'path/to/ribbon'`
+  const Ribbon = SimpleRibbon.default;
+
+  const styles = {
+    position: 'relative', // important
+    width: '200px',
+    height: '200px',
+    backgroundColor: '#eeeeee'
+  };
+
+  /******************************
+   * basic
+   ******************************/
+  ReactDOM.render(
+    <div>
+      <div style={styles}>
+        <img src="http://placehold.it/200x200" />
+        <Ribbon text="new" />
+      </div>
+    </div>,
+    document.getElementById('basic')
+  );
+
+
+  /******************************
+   * wait for loading
+   ******************************/
+  class Wait extends React.Component {
+    constructor() {
+      super();
+      this.state = { imageLoaded: false };
+    }
+
+    render() {
+      const WaitRibbon = this.state.imageLoaded ? (<Ribbon text="loaded" height="60px" />) : null;
+      return (
+        <div style={styles}>
+          {WaitRibbon}
+          <img
+            src="http://placehold.it/200x200"
+            onLoad={() => this.setState({ imageLoaded: true })}
+          />
+        </div>
+      );
+    }
+  }
+
+  ReactDOM.render(
+    <Wait />,
+    document.getElementById('wait'))
+
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+.feedback-wrapper
+  padding-bottom 288px
+  .feedback
+    background #fff
+    padding 25px 25px 240px 25px
+    box-sizing border-box
+    .feedback-select, .feedback-text
+      margin-bottom 20px
+      p
+        line-height 1.25
+        background url("./img/icon-help.png") 0 center no-repeat
+        padding-left 25px
+        font-size 16px
+    ul
+      margin 0
+      padding 0
+      list-style none
+      li
+        display inline-block
+        width 76px
+        height 30px
+        line-height 30px
+        margin-right 8px
+        border 1px solid #cfcfcf
+        text-align center
+        color #666
+        cursor pointer
+        &:hover, &.active
+          background-color $color-A1
+          border-color $color-A1
+          color #FFF
+    .textarea-control
+      background-color $color-A0
+      padding 25px
+      textarea
+        width 100%
+        height 160px
+        border 1px solid $color-L2
+        padding 10px
+        box-sizing border-box
+        margin-bottom 10px
+      .feedback-btn
+        .btn-submit
+          cursor pointer
+          width 78px
+          height 30px
+          line-height 30px
+          text-align center
+          background-color $color-A1
+          color #FFF
+          border none
+        &.disable
+          .btn-submit
+            opacity .5

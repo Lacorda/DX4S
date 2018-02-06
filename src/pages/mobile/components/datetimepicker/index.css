@@ -1,0 +1,302 @@
+.datepicker-modal {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .5);
+
+  /*  display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+
+.datepicker {
+  position: absolute;
+  bottom: 0;
+  background-color: #FFF;
+  width: 100%;
+  height: 266px;
+  font-size: 16px;
+  text-align: center;
+  font-family: arial, verdana, sans-serif;
+}
+
+.datepicker .datepicker-header {
+  padding: 0 .5em;
+  min-height: 2em;
+  line-height: 2em;
+  font-size: 1.125em;
+  display: none;
+}
+
+.datepicker .datepicker-navbar {
+  padding: 0 .5em .5em .5em;
+  overflow: hidden;
+}
+
+.datepicker .datepicker-navbar-sub {
+  position: absolute;
+  top: 41px;
+  width: 100%;
+}
+
+.datepicker .datepicker-navbar-sub ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #dfdfdf;
+  background-color: #F5F5F5;
+  /*color: #007aff;*/
+}
+
+.datepicker .datepicker-navbar-sub ul li {
+  flex: 3;
+  line-height: 48px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.datepicker .datepicker-navbar-sub ul li.collapse {
+  flex: 1;
+}
+
+.datepicker .datepicker-navbar-btn {
+  height: 2.5em;
+  line-height: 2.5em;
+  float: right;
+  padding: 0 1em;
+  cursor: pointer;
+}
+
+.datepicker .datepicker-content {
+  display: flex;
+  padding: .5em .25em;
+}
+
+.datepicker .datepicker-col-1 {
+  flex: 3;
+  margin: 0 .25em;
+}
+
+.datepicker .datepicker-content .collapse {
+  flex: 1;
+  position: relative;
+}
+
+.datepicker .datepicker-viewport {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.datepicker .datepicker-viewport::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.datepicker .datepicker-wheel {
+  position: absolute;
+  height: 40px;
+  top: 50%;
+  margin-top: -20px;
+  width: 100%;
+}
+
+.datepicker .datepicker-scroll {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.datepicker .datepicker-scroll > li {
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.375em;
+  cursor: pointer;
+}
+
+.datepicker {
+  /* default */
+  /* dark */
+  /* ios */
+  /* android */
+  /* android-dark */
+}
+
+.datepicker.default {
+  background-color: #f7f7f7;
+}
+
+.datepicker.default .datepicker-wheel {
+  border-top: 1px solid #4eccc4;
+  border-bottom: 1px solid #4eccc4;
+}
+
+.datepicker.default .datepicker-scroll li {
+  color: rgba(247, 247, 247, .5);
+}
+
+.datepicker.default .datepicker-scroll li.disabled {
+  color: rgba(8, 8, 8, .7)
+}
+
+.datepicker.default .datepicker-navbar-btn {
+  color: #4eccc4;
+}
+
+.datepicker.dark {
+  background-color: #263238;
+}
+
+.datepicker.dark .datepicker-wheel {
+  border-top: 1px solid #50ccc4;
+  border-bottom: 1px solid #50ccc4;
+}
+
+.datepicker.dark .datepicker-scroll li {
+  color: rgba(38, 50, 56, .5)
+}
+
+.datepicker.dark .datepicker-scroll li.disabled {
+  color: rgba(217, 205, 199, .7);
+}
+
+.datepicker.dark .datepicker-navbar-btn {
+  color: #50ccc4;
+}
+
+.datepicker.ios {
+  background-color: #f7f7f7;
+}
+
+.datepicker.ios .datepicker-col-1 {
+  margin: 0;
+}
+
+.datepicker.ios .datepicker-viewport::after {
+  background: linear-gradient(#f7f7f7, rgba(245, 245, 245, 0) 52%, rgba(245, 245, 245, 0) 48%, #f7f7f7);
+}
+
+.datepicker.ios .datepicker-wheel {
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.datepicker.ios .datepicker-scroll li {
+  /*color:  rgba(247, 247, 247, .5)*/
+}
+
+.datepicker.ios .datepicker-scroll li.disabled {
+  color: rgba(8, 8, 8, .7);
+}
+
+.datepicker.ios .datepicker-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.datepicker.ios .datepicker-navbar-btn {
+  color: #007aff;
+}
+
+.datepicker.ios .datepicker-navbar-btn:nth-child(2) {
+  float: left;
+}
+
+.datepicker.ios .datepicker-content {
+  /*padding-top: 48px;*/
+  padding-top: 96px;
+}
+
+.datepicker.android, .datepicker.android-dark {
+  height: 294px;
+  background-color: #f5f5f5;
+}
+
+.datepicker.android .datepicker-header, .datepicker.android-dark .datepicker-header {
+  color: #31b6e7;
+  border-bottom: 2px solid #31b6e7;
+  display: block;
+}
+
+.datepicker.android .datepicker-col-1, .datepicker.android-dark .datepicker-col-1 {
+  margin: 0 .625em;
+}
+
+.datepicker.android .datepicker-viewport::after, .datepicker.android-dark .datepicker-viewport::after {
+  background-image: linear-gradient(#f5f5f5, rgba(245, 245, 245, 0) 52%, rgba(245, 245, 245, 0) 48%, #f5f5f5);
+}
+
+.datepicker.android .datepicker-wheel, .datepicker.android-dark .datepicker-wheel {
+  border-top: 2px solid #31b6e7;
+  border-bottom: 2px solid #31b6e7;
+}
+
+.datepicker.android .datepicker-scroll li, .datepicker.android-dark .datepicker-scroll li {
+  font-size: 1.125em;
+  color: rgba(245, 245, 245, .5)
+}
+
+.datepicker.android .datepicker-scroll li.disabled, .datepicker.android-dark .datepicker-scroll li.disabled {
+  color: rgba(10, 10, 10, .7)
+}
+
+.datepicker.android .datepicker-navbar, .datepicker.android-dark .datepicker-navbar {
+  display: flex;
+  border-top: 1px solid #d9d4d4;
+  padding: 0;
+}
+
+.datepicker.android .datepicker-navbar-btn, .datepicker.android-dark .datepicker-navbar-btn {
+  padding: 0;
+  color: #000;
+  flex: 1;
+}
+
+.datepicker.android .datepicker-navbar-btn:nth-child(2), .datepicker.android-dark .datepicker-navbar-btn:nth-child(2) {
+  border-left: 1px solid #d9d4d4;
+}
+
+.datepicker.android-dark {
+  background-color: #292829;
+}
+
+.datepicker.android-dark .datepicker-viewport::after {
+  background-image: linear-gradient(#282828, rgba(40, 40, 40, 0) 52%, rgba(40, 40, 40, 0) 48%, #282828);
+}
+
+.datepicker.android-dark .datepicker-scroll li {
+  color: rgba(41, 40, 41, .5)
+}
+
+.datepicker.android-dark .datepicker-scroll li.disabled {
+  color: rgba(214, 215, 214, .7)
+}
+
+.datepicker.android-dark .datepicker-navbar {
+  border-color: #424542;
+}
+
+.datepicker.android-dark .datepicker-navbar-btn {
+  color: #fff;
+}
+
+.datepicker.android-dark .datepicker-navbar-btn:nth-child(2) {
+  border-color: #424542;
+}
+
+/*# sourceMappingURL=style.css.map */

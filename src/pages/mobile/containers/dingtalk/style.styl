@@ -1,0 +1,238 @@
+$color-placehold = #ccc
+
+.dd-home
+  width 100%
+  overflow hidden
+.dd-carousel
+  display block
+  position relative
+  overflow hidden
+  height px2rem(268)
+  background-color #fff
+  .inner
+    position relative
+  a, img
+    display block
+    width px2rem(750)
+    height px2rem(268)
+    background-color $color-placehold
+  i
+    animation-duration 20s
+    animation-timing-function linear
+    animation-iteration-count infinite
+    &:nth-child(1)
+      animation-delay -1s
+    &:nth-child(2)
+      animation-delay 4s
+    &:nth-child(3)
+      animation-delay 9s
+    &:nth-child(4)
+      animation-delay 14s
+.dd-entrance
+  // display flex
+  height px2rem(192)
+  margin-bottom px2rem(16)
+  padding px2rem(32) 0
+  background-color #fff
+  .wrapper
+    float left
+    width 25%
+    // flex-grow 1
+  a
+    display block
+    margin 0 auto
+    img
+      display block
+      margin 0 auto px2rem(16)
+      width px2rem(88)
+      height px2rem(88)
+      background-color $color-placehold
+      border-radius px2rem(44)
+      text-indent 100vw
+    span
+      display block
+      color $color-Z1
+      text-align center
+      font-size px2rem(24)
+.dd-section
+  margin-bottom px2rem(16)
+  padding 0 px2rem(24)
+  background-color #fff
+  h2
+    margin 0
+    padding-top px2rem(32)
+    padding-bottom px2rem(24)
+    color $color-Z2
+    font-size px2rem(24)
+    .ico
+      display inline-block
+      width px2rem(24)
+      height px2rem(24)
+      margin-right px2rem(8)
+      background-size 100%
+      vertical-align middle
+.dd-s
+  &1 .ico
+    background-image url("./img/s1-ico.png")
+  &2 .ico
+    background-image url("./img/s2-ico.png")
+  &3 .ico
+    background-image url("./img/s3-ico.png")
+
+.dd-s1
+  p
+    clearfix()
+    margin 0 0 px2rem(24)
+    padding-bottom px2rem(24)
+    border-bottom 1px solid $color-L1
+    &:last-child
+      margin-bottom 0
+      border-bottom 0
+  a
+    color $color-Z1
+  img
+    display block
+    float right
+    width px2rem(180)
+    height px2rem(112)
+    margin-top px2rem(8)
+    margin-left px2rem(48)
+    background-color $color-placehold
+.dd-s2
+  padding-bottom px2rem(24)
+  dl
+    margin 0
+    clearfix()
+    img
+      display block
+      width px2rem(226)
+      height px2rem(146)
+      background-color $color-placehold
+  dt
+    float left
+    margin-right px2rem(12)
+    &:last-child
+      margin-right 0
+.dd-s3
+  padding-bottom px2rem(24)
+  dl
+    margin 0
+    clearfix()
+    img
+      display block
+      width px2rem(226)
+      height px2rem(226)
+      background-color $color-placehold
+  dt
+    float left
+    margin-right px2rem(12)
+    &:last-child
+      margin-right 0
+
+@keyframes color {
+  0% {
+    background-color #7f7f7f
+  }
+  5% {
+    background-color #fff
+  }
+  20% {
+    background-color #fff
+  }
+  25% {
+    background-color #7f7f7f
+  }
+  100% {
+    background-color #7f7f7f
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity 0
+    z-index 2
+  }
+  5% {
+    opacity 1
+    z-index 1
+  }
+  20% {
+    opacity 1
+    z-index 1
+  }
+  25% {
+    opacity 0
+    z-index 0
+  }
+  100% {
+    opacity 0
+    z-index 0
+  }
+}
+
+@keyframes slide {
+  // 0% { left: 0; }
+  // 45% { left: 0; }
+  // 50% { left: -100%; }
+  // 95% { left: -100%; }
+  // 100% { left: -200%; }
+  0% { left: 0; }
+  // pic 1
+  20% { left: 0; }
+  // scroll to 2
+  25% { left: - px2rem(750 * 1); }
+  // pic 2
+  45% { left: - px2rem(750 * 1); }
+  // scroll to 3
+  50% { left: - px2rem(750 * 2); }
+  // pic 3
+  70% { left: - px2rem(750 * 2); }
+  // scroll to 4
+  75% { left: - px2rem(750 * 3); }
+  // pic 4
+  95% { left: - px2rem(750 * 3); }
+  // scroll to 5
+  100% { left: - px2rem(750 * 4); }
+}
+
+// @keyframes slide {
+//   0% {
+//     left px2rem(750)
+//     // opacity 0
+//     z-index 2
+//   }
+//   5% {
+//     left 0
+//     z-index 1
+//   }
+//   25% {
+//     left 0
+//     z-index 1
+//   }
+//   30% {
+//     left - px2rem(750)
+//     // opacity 0
+//     z-index 0
+//   }
+//   30.01% {
+//     left px2rem(750)
+//     // opacity 0
+//     z-index 0
+//   }
+//   100% {
+//     left px2rem(750)
+//     // opacity 0
+//     z-index 0
+//   }
+// }
+ .swipe
+  overflow hidden
+  visibility hidden
+  position relative
+  &-wrap
+    overflow hidden
+    position relative
+    div
+      float left
+      width 100%
+      position relative

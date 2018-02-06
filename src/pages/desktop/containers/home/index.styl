@@ -1,0 +1,115 @@
+// 新员工培训
+.cultivate
+  background-color: #FFF;
+  .dx-container
+    clearfix()
+    position relative
+    height 113px
+    padding 20px 0 40px
+    border-bottom 1px solid $color-L1
+  .more
+    position absolute
+    top 0
+    right 10px
+    color $color-Z2
+  .cultivate-icon
+    float left
+    background url("./img/icon-cultivate.png") center no-repeat
+    width 270px
+    height 113px
+    margin-right 20px
+  .cultivate-link
+    display block
+    float left
+    color $color-Z1
+  .cultivate-course
+    clearfix()
+    //float left
+    width 910px
+    margin 0
+    padding 0
+    list-style none
+    li
+      box-sizing border-box
+      float left
+      width 33.33333%
+      height 113px
+      line-height 113px
+      padding-top 32px
+      &:last-child
+        .wrap
+          border-right none
+      .wrap
+        width 100%
+        border-right 1px solid $color-L1
+        height 48px
+        line-height 48px
+        text-align center
+        .text
+          display inline-block
+          white-space nowrap
+          overflow overflow
+          text-overflow ellipsis
+          padding-left 45px
+          background-position left center
+          background-repeat no-repeat
+          text-align left
+          max-width 265px
+          &.cultivate-course-name
+            background-image url("./img/icon-course-name.png")
+            padding-left 35px
+          &.cultivate-course-deadline
+            background-image url("./img/icon-course-deadline.png")
+          &.cultivate-course-rate
+            background-image url("./img/icon-course-rate.png")
+
+// list styles
+.dx-hot-list
+  padding 30px 0 10px 0
+  .dx-hot-list-title
+    clearfix()
+    margin-bottom 20px
+    .title
+      float left
+      font-size 18px
+    .more
+      float right
+      margin-right 5px
+      color $color-Z2
+  .dx-hot-list-content
+    clearfix()
+    .dx-card
+      float left
+
+.home-plan-list
+  background-color #FFF
+
+.home-elective-list
+  padding-bottom 278px
+
+// icon-sign-in
+.home-icon-sign-in
+  display block
+  position fixed
+  z-index 2
+  background url("./img/icon-sign-in.png") no-repeat
+  width 78px
+  height 74px
+  right 50px
+  bottom 260px
+  &:hover
+    text-decoration none
+
+.home-plan-list .dx-course-empty, .home-elective-list .dx-course-empty
+  background url("./img/icon_empty.png") center 0 no-repeat
+  padding-top 160px
+  padding-bottom 40px
+  text-align center
+  color $color-Z3
+  .empty-link
+    color $color-A1
+
+.empty-banners
+  width 100%
+  height 400px
+  background-color #FFF

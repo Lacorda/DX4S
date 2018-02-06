@@ -1,0 +1,87 @@
+.dx-combo-menu
+  background #fff
+  z-index 2
+  padding px2rem(48) px2rem(24) 0 px2rem(24)
+  &-wrap
+    position fixed
+    float left
+    z-index 1
+    top 0
+    bottom 0
+    left 0
+    right 0
+    background-color rgba(0, 0, 0, .5)
+  &-section
+    padding-bottom px2rem(48)
+  &-title
+    display flex
+    justify-content space-between
+    margin-bottom px2rem(24)
+    &-close
+      display block
+      width px2rem(28)
+      height px2rem(28)
+      background url("./img/icon_close.png") no-repeat center
+      background-size contain
+      &:acitve
+        background-image url("./img/icon_close_active.png")
+  &-tabs
+    a
+      border-radius px2rem(8)
+      color $color-Z2
+      display inline-block
+      text-align center
+      vertical-align middle
+      height px2rem(56)
+      line-height px2rem(56)
+      background-color #f2f2f2
+      border-color #f2f2f2
+      margin-right px2rem(24)
+      font-size px2rem(24)
+    .active
+      background-color $color-A1
+      border-color $color-A1
+      color #fff
+  .way a
+    width px2rem(240)
+  .range a
+    padding 0 px2rem(16)
+
+  .border-bottom
+    border-bottom 1px solid $color-L2
+  .count
+    padding-top px2rem(24)
+    padding-bottom px2rem(126)
+    .opt
+      width px2rem(56)
+      height px2rem(56)
+      margin-right 1px
+      font-size px2rem(38)
+      display inline-block
+      text-align center
+      background-color #f2f2f2
+      color #808080
+    input[type=number]
+      display inline-block
+      width px2rem(176)
+      font-size px2rem(28)
+      color $color-Z1
+      text-align center
+      height px2rem(56)
+      line-height 100%
+      margin-right 1px
+      background-color #f2f2f2
+      border-color #f2f2f2
+      margin-bottom 0
+      padding 0
+      border-width 0
+      position relative
+      top px2rem(-4)
+
+  .unit-cost
+    padding-top px2rem(24)
+    padding-bottom px2rem(126)
+    .price
+      ont-size px2rem(28)
+      color #fa3c3c
+      margin-left px2rem(24)

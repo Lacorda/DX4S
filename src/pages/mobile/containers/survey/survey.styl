@@ -1,0 +1,120 @@
+.survey
+  ul
+    margin 0
+    padding 0
+  li
+    list-style-type none
+
+  .question
+    border-bottom 1px solid $color-L1
+    padding px2rem(32) px2rem(24)
+    background-color #fff
+    label
+      display inline-block
+    img
+      display block
+      margin px2rem(10) 0
+      max-width px2rem(220)
+    .title
+      font-size px2rem(30)
+      color $color-Z1
+    .type
+      display inline-block
+      border-radius px2rem(4)
+      padding 0 px2rem(5)
+      margin 0 px2rem(16)
+      &.single
+        border 1px solid $color-B3
+        color $color-B3
+      &.multi
+        border 1px solid $color-A1
+        color $color-A1
+    .empty
+      position relative
+      display inline-block
+      margin-left px2rem(48)
+      margin-right px2rem(8)
+      font-size px2rem(24)
+      color $color-B4
+      &:before
+        content ''
+        position absolute
+        left -16px
+        top 3px
+        display inline-block
+        width px2rem(24)
+        height px2rem(24)
+        background url('../../../../img/icon_warn.png') no-repeat
+        background-size contain
+    .options
+      font-size px2rem(28)
+      color $color-Z2
+      .pics
+        margin-left 42px
+      li
+        padding-top px2rem(32)
+      label
+        margin-left px2rem(16)
+      input[type=radio], input[type=checkbox]
+        -webkit-appearance none
+        appearance none
+        height px2rem(36)
+        width px2rem(36)
+        margin 0
+        cursor pointer
+        vertical-align middle
+        background transparent
+        border none
+        position relative
+        text-align center
+        margin-right px2rem(20)
+        &::after
+          content ' '
+          position absolute
+          background url("../../../../img/icon_check_empty_32.png")
+          background-size px2rem(36) px2rem(36)
+          height px2rem(36)
+          width px2rem(36)
+        &:checked::after
+          content ' '
+          position absolute
+          background url("../../../../img/icon_check_32.png")
+          background-size px2rem(36) px2rem(36)
+          height px2rem(36)
+          width px2rem(36)
+  .footer
+    padding-top px2rem(138)
+    .submit-button
+      > button
+        width 100%
+      &.fixed
+        position fixed
+        padding: 0 px2rem(24)
+        background-color #fff
+        width 100%
+        bottom 0
+        text-align center
+        height px2rem(98)
+
+  .hidden
+    display none
+  .after-submit
+    text-align center
+    height 50%
+    margin auto
+    position absolute
+    top 0
+    left 0
+    bottom 0
+    right 0
+    h3
+      &:before
+        content ''
+        position absolute
+        left 45%
+        top -28px
+        display inline-block
+        width px2rem(84)
+        height px2rem(87)
+        background url(./img/result.png) no-repeat
+        background-size contain

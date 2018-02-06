@@ -1,0 +1,151 @@
+header.preview-sidebar
+  padding 20px 15px
+  background-color #dcdcdc
+  .sidebar-description
+    width 170px
+    display inline-block
+    .sidebar-title
+      color #545454
+      font-size 14px
+      text-overflow ellipsis
+      white-space nowrap
+    .sidebar-lecture
+      margin-top 12px
+      font-size 12px
+      color #8b8b8b
+  img
+    width 120px
+    height 70px
+    display inline-block
+    vertical-align middle
+
+.preview-chapter-index
+  position absolute
+  padding 24px 20px
+  font-size 14px
+  color #333333
+  top 140px
+  bottom 0
+  left -15px
+  right 0
+  .preview-chapter-wrapper
+    position absolute
+    top 20px
+    bottom 0
+    right 0
+    left 20px
+    overflow-x hidden
+    overflow-y scroll
+  .node-line
+    position absolute
+    left 82px
+    top 50px
+    bottom 0
+    border-right 1px solid #dcdcdc
+  span
+    vertical-align top
+  .chapter-node-title
+    height 40px
+    line-height 40px
+    background-image url("./img/icon-chapter.png")
+    background-repeat no-repeat
+    background-position 8px center
+    span
+      display inline-block
+      text-align center
+    span:nth-child(1)
+      margin-left 10px
+      text-align center
+      width 45px
+    span:nth-child(2)
+      width 12px
+    span.chapter-name
+      margin-left 15px
+      max-width 190px
+      text-overflow ellipsis
+  .chapter-node
+    height 40px
+    line-height 40px
+    padding-left 55px
+    position relative
+    cursor pointer
+    &:hover
+      background-color #dcdcdc
+    img
+      display inline-block
+      width 15px
+      height 15px
+      line-height 100%
+    img.node-type
+      position absolute
+      left 285px
+      top 14px
+    span
+      display inline-block
+      max-width 190px
+      white-space nowrap
+      text-overflow ellipsis
+      height 100%
+      vertical-align middle
+      margin-left 15px
+
+.previewer-wrapper
+  position fixed
+  top 0
+  bottom 0
+  left 0
+  right 320px
+  padding 20px 50px 20px 20px
+  transition: right .5s
+  background-color #a0a0a0
+  &-full-screen
+    right 0
+  .previewer-con
+    position absolute
+    top 20px
+    bottom 20px
+    right 70px
+    left 20px
+    box-shadow 0 0 8px 2px rgba(0, 0, 0, .3)
+    overflow auto
+    background-color $color-A0
+  .h5-wrapper
+    overflow-scrolling touch
+    overflow-y hidden
+    width 100%
+    height 100%
+    iframe
+      border none
+      width 100% !important
+      height 100% !important
+
+  .preview-previewer-image
+    position relative
+    height 100%
+    width 100%
+    display flex
+    align-items center
+    overflow hidden
+    img
+      margin 0 auto
+      display block
+      height 100%
+      width auto
+  .preview-footer
+    position absolute
+    width 100%
+    height 40px
+    line-height 40px
+    left 0
+    bottom 0
+    background #000
+    &-icon
+      display inline-block
+      cursor pointer
+      width 18px
+      height 40px
+    &-fullscreen
+      background url("./img/icon-fullscreen.png") 0 center no-repeat
+      position absolute
+      right 24px
+

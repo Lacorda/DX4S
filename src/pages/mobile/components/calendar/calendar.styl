@@ -1,0 +1,73 @@
+#calendar
+  width 100%
+  .header
+    background-color $color-A1
+    line-height px2rem(56)
+    height px2rem(56)
+    color #FFF
+    text-align center
+    > span
+      display inline-block
+    > .pre, > .next
+      width px2rem(14)
+      height px2rem(56)
+      background url("./img/icon_pre.png") no-repeat center
+      background-size px2rem(14) px2rem(20)
+    > .next
+      background-image url("./img/icon_next.png")
+    > .label
+      width px2rem(268)
+      text-align center
+
+  .week-name
+    display flex
+    width 100%
+    line-height px2rem(40)
+    height px2rem(40)
+    font-size px2rem(20)
+    text-align center
+    > .day
+      flex 1
+      display block
+      border none
+      background-color $color-A1
+      color #FFF
+  .week
+    display flex
+    width 100%
+    height px2rem(104)
+    font-size px2rem(32)
+    > .day
+      flex 1
+      display block
+      border-left 1px solid $color-A0
+      border-bottom 1px solid $color-A0
+      background-color #FFF
+      &:nth-child(1)
+        border-left none
+      > .number
+        display block
+        width px2rem(104)
+        height px2rem(104)
+        padding px2rem(10)
+      &.today
+        > .number
+          color $color-A1
+          border 1px solid $color-A1
+        &.selected
+          > .number
+            background-color #FFF
+            color $color-A1
+      &.selected
+        > .number
+          background-color $color-A1
+          color #FFF
+      &.signed
+        > .number
+          background url("./img/icon_signed.png") no-repeat px2rem(66) px2rem(60)
+          background-size px2rem(32)
+          color $color-B3
+      &.different-month
+        > .number
+          color $color-Z4
+          background #fbfbfb

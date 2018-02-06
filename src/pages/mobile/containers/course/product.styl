@@ -1,0 +1,445 @@
+.product
+  background-color #fff
+  font-size px2rem(28)
+  padding-bottom px2rem(156)
+  a
+    color #333
+  ul
+    margin 0
+    padding 0
+  li
+    list-style-type none
+
+  .banner
+    img
+      width 100%
+      height px2rem(375)
+  .mr20
+    margin-right px2rem(20)
+  .ml24
+    margin-left px2rem(24)
+  .mb24
+    margin-bottom px2rem(24)
+  .mb50
+    padding-bottom 50px
+  .mr40
+    padding-right px2rem(40)
+  .pr16
+    padding-right px2rem(16)
+  .pb24
+    padding-bottom px2rem(24)
+  .pb126
+    padding-bottom px2rem(126)
+  .detail
+    padding px2rem(32) 0
+    margin-left px2rem(24)
+    .title
+      margin-bottom  px2rem(24)
+      font-size px2rem(32)
+      color $color-Z1
+      &-sub
+        border-bottom 1px solid $color-L2
+        padding-bottom  px2rem(26)
+        color $color-Z3
+        font-size px2rem(26)
+        div
+          display inline-block
+          margin-right px2rem(48)
+    .buy
+      padding px2rem(30) 0
+      .price
+        color $color-B4
+        font-size px2rem(32)
+        display inline-block
+        margin-right px2rem(48)
+      .count
+        color $color-Z3
+        font-size px2rem(26)
+        display inline-block
+    .tag
+      display inline-block
+      padding 0 px2rem(16)
+      font-size px2rem(24)
+      background-color #e4f4ff
+      border-radius px2rem(4)
+      margin-right px2rem(16)
+      line-height px2rem(48)
+    .desc
+      color $color-Z2
+      padding-top px2rem(26)
+      font-size px2rem(28)
+  .widget
+    .widget-header
+      position relative
+      padding 0 px2rem(24)
+      background $color-A0
+      height px2rem(64)
+      line-height px2rem(64)
+      font-size px2rem(28)
+      color $color-Z2
+  .chapter-title
+      font-size px2rem(28)
+      height px2rem(96)
+      line-height px2rem(96)
+      span
+        display inline-block
+        padding px2rem(0) px2rem(20)
+  .chapter-list
+      border-top px2rem(1) solid $color-L1;
+      border-bottom px2rem(1) solid $color-L1;
+      li
+        position relative
+        &:last-child
+          .name
+            border-bottom:none;
+      .name
+        display-flex(center)
+        border-bottom px2rem(1) solid $color-L1
+        padding-left 0
+        margin-left px2rem(24)
+        margin-right px2rem(24)
+        p
+          &:last-child
+            box-flex(1)
+            padding-left:0
+            text-overflow ellipsis
+            overflow hidden
+            white-space nowrap
+          .name-title
+            float left
+            max-width 88%
+            text-overflow ellipsis
+            overflow hidden
+            line-height 22px
+          .name-view
+            font-size px2rem(24)
+            color $color-A1
+            float right
+            line-height 22px
+      .type
+        display block;
+        margin 0 px2rem(24) 0 0
+        vertical-align middle
+        background center no-repeat
+        background-size contain
+        width:px2rem(50)
+        height:px2rem(50)
+        &.img
+          background-image url('./img/type-img-0.png')
+        &.doc
+          background-image url('./img/type-doc-1.png')
+        &.practice
+          background-image url('./img/type-practice-0.png')
+        &.survey
+          background-image url('./img/type-survey-0.png')
+        &.video
+          background-image url('./img/type-video-1.png')
+        &.audio
+          background-image url('./img/type-audio-1.png')
+        &.h5
+          background-image url('./img/type-h5-0.png')
+        &.live
+          background-image url('./img/type-live-0.png')
+  .exam-title
+    color $color-Z1
+    font-size px2rem(28)
+    &:before
+      content ''
+      position relative
+      top px2rem(4)
+      display inline-block
+      width px2rem(28)
+      height px2rem(28)
+      margin-right px2rem(8)
+      background url(./img/icon_exam.png) no-repeat
+      background-size contain
+  .train
+    &-title
+      color $color-Z1
+      font-size px2rem(28)
+      &:before
+        content ''
+        position relative
+        top px2rem(4)
+        display inline-block
+        width px2rem(28)
+        height px2rem(28)
+        margin-right px2rem(8)
+        background url(./img/icon_train.png) no-repeat
+        background-size contain
+    &-line
+      color $color-Z2
+      font-size px2rem(24)
+    &-time
+      display inline-block
+      &:before
+        content ''
+        position relative
+        top px2rem(4)
+        display inline-block
+        width px2rem(24)
+        height px2rem(24)
+        margin-right px2rem(8)
+        background url(./img/icon_train_time.png) no-repeat
+        background-size contain
+    &-count
+      display inline-block
+      &:before
+        content ''
+        position relative
+        top px2rem(4)
+        display inline-block
+        width px2rem(24)
+        height px2rem(24)
+        margin-right px2rem(8)
+        background url(./img/icon_train_count.png) no-repeat
+        background-size contain
+    &-score
+      display inline-block
+      &:before
+        content ''
+        position relative
+        top px2rem(4)
+        display inline-block
+        width px2rem(24)
+        height px2rem(24)
+        margin-right px2rem(8)
+        background url(./img/icon_train_score.png) no-repeat
+        background-size contain
+    &-desc
+      color $color-Z2
+      font-size px2rem(24)
+  .price-val
+    font-size px2rem(28)
+    color $color-B4
+  .not-onshelvers
+    color $color-B4
+    font-size px2rem(24)
+    &:before
+      content ''
+      position relative
+      top px2rem(4)
+      display inline-block
+      width px2rem(24)
+      height px2rem(24)
+      margin-right px2rem(8)
+      background url(./img/icon_warning.png) no-repeat
+      background-size contain
+  .opacity64
+    -moz-opacity 0.64
+    opacity 0.64
+  .icon
+    &.quiz
+      background-image linear-gradient(transparent px2rem(6), #cbac51 px2rem(6), #cbac51 px2rem(40), transparent px2rem(40))
+    &.survey
+      background-image linear-gradient(transparent px2rem(6), #658adf px2rem(6), #658adf px2rem(40), transparent px2rem(40))
+  &-footer
+    position fixed
+    bottom 0
+    left 0
+    width 100%
+    height px2rem(100)
+    border-top 1px solid $color-L2
+    text-align center
+    background-color #fff
+    a
+      float left
+      display inline-block
+      height: 100%
+    .cart
+      width px2rem(178)
+      padding-top px2rem(4)
+      font-size px2rem(24)
+      color $color-Z2
+      position relative
+      &:before
+        content ''
+        position relative
+        top px2rem(6)
+        display inline-block
+        width px2rem(44)
+        height px2rem(44)
+        background url(./img/icon_cart.png) no-repeat
+        background-size contain
+      &-count
+        position absolute
+        right 24px
+        top 3px
+        display inline-block
+        min-width px2rem(34)
+        height px2rem(34)
+        padding-top px2rem(7)
+        padding-right px2rem(2)
+        line-height px2rem(20)
+        border-radius 50%
+        font-size 12px
+        text-align center
+        background-color #f00
+        color #fff
+      p
+        margin 0
+    .add
+      width px2rem(286)
+      line-height px2rem(96)
+      font-size px2rem(32)
+      color #fff
+      background #585a5c
+      &:active
+        background #4a4c50
+    .shopping
+      width px2rem(286)
+      line-height px2rem(96)
+      font-size px2rem(32)
+      color #fff
+      background $color-A1
+      &:active
+        background #2a98e6
+    .pop
+      width 100%
+      line-height px2rem(96)
+      font-size px2rem(32)
+      color #fff
+      background $color-A1
+  &-pop
+    position fixed
+    bottom px2rem(97)
+    width 100%
+    background-color #fff
+    &-wrap
+      position fixed
+      z-index 1
+      top 0
+      bottom 0
+      left 0
+      right 0
+      background-color rgba(0, 0, 0, .5)
+    &-header
+      display-flex(center)
+      padding px2rem(48) px2rem(24) px2rem(24) px2rem(24)
+      .pop-title
+        box-flex(1)
+        font-size px2rem(28)
+        color $color-Z1
+      .close
+        display block
+        width px2rem(28)
+        height px2rem(28)
+        background url("./img/icon_close.png") no-repeat center
+        background-size contain
+        &:acitve
+          background-image url("./img/icon_close_active.png")
+    &-tab
+      padding: 0 px2rem(24) px2rem(48) px2rem(24);
+      a
+        width px2rem(240)
+        font-size px2rem(24)
+    a
+      border-radius px2rem(8)
+      color $color-Z2
+      display inline-block
+      text-align center
+      vertical-align middle
+      height px2rem(56)
+      line-height px2rem(56)
+      background-color #f2f2f2
+      border-color #f2f2f2
+      margin-right px2rem(24)
+    .active
+      background-color $color-A1
+      border-color $color-A1
+      color #fff
+    &-range
+      a
+        font-size px2rem(16)
+        margin-bottom px2rem(24)
+        padding 0 px2rem(16)
+      .title
+        padding 0 0 px2rem(24) px2rem(24)
+        color $color-Z1
+        span
+          display inline-block
+          font-size px2rem(28)
+      .prices
+        margin-left px2rem(24)
+        padding-bottom px2rem(24)
+        border-bottom 1px solid $color-L2
+      .price
+        font-size px2rem(28)
+        color $color-B4
+    &-count
+      display-flex(center)
+      padding px2rem(24) px2rem(24) px2rem(126)
+      .title
+        box-flex(1)
+        font-size px2rem(28)
+        color $color-Z1
+      .count
+        width px2rem(300)
+        height px2rem(56)
+        display-flex(center)
+        input
+          border 1px solid #f2f2f2
+          border-width 0 0 px2rem(1) 0
+          display inline-block
+          height px2rem(54)
+          line-height px2rem(54)
+          width px2rem(176)
+          font-size px2rem(28)
+          color $color-Z1
+          text-align center
+          height px2rem(56)
+          margin-right 1px
+          background-color #f2f2f2
+          border-color #f2f2f2
+          border-radius 0
+        .opt
+          width px2rem(56)
+          height px2rem(56)
+          margin-right 1px
+          font-size px2rem(38)
+          box-flex(1)
+          &.add
+            &:before
+              content ''
+              position relative
+              top px2rem(8)
+              display inline-block
+              width px2rem(44)
+              height px2rem(40)
+              background url("./img/icon_num_add.png") no-repeat
+              background-size contain
+          &.minus
+            &:before
+              content ''
+              position relative
+              top px2rem(8)
+              display inline-block
+              width px2rem(44)
+              height px2rem(40)
+              background url("./img/icon_num_minus.png") no-repeat
+              background-size contain
+        a
+          border-radius 0
+          &:last-child
+            margin-right 0
+  .go-study
+    position fixed
+    bottom px2rem(100)
+    left 0
+    width 100%
+    height px2rem(56)
+    line-height px2rem(56)
+    background-color #ff6060;
+    color #fff
+    text-align center
+    font-size px2rem(24)
+    &:after
+      content ''
+      position relative
+      top 0
+      display inline-block
+      width px2rem(8)
+      height px2rem(14)
+      margin-left px2rem(10)
+      background url(./img/icon_small_arrow.png) no-repeat
+      background-size contain

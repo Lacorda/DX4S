@@ -1,0 +1,772 @@
+.exams
+  padding-top: 24px
+  padding-bottom: 188px
+  width: 1200px
+  margin: auto
+  ul
+    margin: 0
+    padding: 0
+    list-style-type: none
+
+  .tabs
+    height: 50px
+    line-height: 50px
+    border-bottom: 1px solid $color-L1
+    background-color: #fff
+    padding-left: 24px
+
+  .tab
+    display: inline-block
+    font-size: 16px
+    color: #666
+    margin-right: 40px
+    cursor: pointer
+    &.active
+      height: 50px;
+      box-sizing: border-box;
+      color: #009aec
+      border-bottom: 4px solid #009aec
+
+  .info
+    width: 100%
+
+  .range
+    position absolute
+    right: 24px
+    top: 24px
+    cursor: pointer
+    &:before
+      content ''
+      position relative
+      display inline-block
+      width 21px
+      height 21px
+      background url(./img/icon_add.png) no-repeat
+      background-size contain
+    &.active
+      &:before
+        background url(./img/icon_add_active.png) no-repeat
+        background-size contain
+
+  .info-body
+    padding: 24px
+    line-height: 0
+    margin-bottom: 24px
+    position: relative
+
+  .info-cover
+    width: 480px
+    height: 270px
+    vertical-align: top;
+
+  .info-name
+    color: $color-Z1
+    margin: 0
+    font-size: 22px
+    font-weight: normal
+    line-height: 22px
+    margin-bottom: 24px
+    text-overflow ellipsis
+    white-space nowrap
+    overflow: hidden
+    width: 648px
+  .info-opt
+    font-size px2rem(24)
+    color $color-A1
+    &:active
+      -moz-opacity 0.48
+      opacity 0.48
+    &-enroll
+      &:before
+        content ''
+        position relative
+        display inline-block
+        width px2rem(24)
+        height px2rem(24)
+        margin-right px2rem(8)
+        background url(../../../../img/icon_add.png) no-repeat
+        background-size contain
+    &-withdraw
+      &:before
+        content ''
+        position relative
+        display inline-block
+        width px2rem(24)
+        height px2rem(24)
+        margin-right px2rem(8)
+        background url(../../../../img/icon_abandon.png) no-repeat
+        background-size contain
+
+  .info-time, .info-exercise, .info-try, .info-standard
+    margin: 0
+    font-size: 16px
+    color: $color-Z2
+    line-height: 16px
+    margin-bottom: 18px
+
+  .info-best
+    margin-left: 40px
+    color: #fa3c3c
+
+  .info-source
+    height: 50px
+    padding-left: 24px
+    line-height: 50px
+    font-size: 18px
+    color: $color-Z2
+    border-bottom: 1px solid $color-L1
+
+  .info-source-name
+    padding-left: 24px
+    height: 64px
+    line-height: 64px
+    color: $color-Z1
+    margin: 0
+    font-size: 14px
+    font-weight: normal
+
+  .enter
+    font-size: 14px
+    position: absolute
+    right: 24px
+    top: 0
+    bottom: 0
+    margin: auto
+    text-decoration: none
+    color: $color-A1
+
+  .icon-enter
+    display: inline-block
+    width: 7px
+    height: 11px
+    background-size: cover
+    background url("./img/icon_enter.png") center no-repeat
+    margin-left: 8px
+
+  .icon-pass, .icon-no-pass
+    position: absolute
+    right: 40px
+    top: 80px
+    width: 111px
+    height: 88px
+
+  .icon-no-pass
+    background url("./img/icon_failed.png") center no-repeat
+    background-size: cover
+
+  .icon-pass
+    background url("./img/icon_pass.png") center no-repeat
+    background-size: cover
+
+  .start
+    width: 160px
+    display: block
+    background-color: $color-A1
+    height: 48px
+    line-height: 48px
+    font-size: 18px
+    text-align: center
+    color: #fff
+    text-decoration: none;
+    position: relative;
+    top: 38px;
+    &:before
+      content: ''
+      display: inline-block
+      width: 15px
+      height: 18px
+      margin-right: 8px
+      background url("./img/icon_start.png") center no-repeat
+      background-size: cover
+      vertical-align: text-top;
+    &.disabled
+      color: rgba(255,255,255,0.48)
+      background:  #a0d6ff
+
+  .record
+    border-bottom: 1px solid $color-L1
+    margin: 0 24px
+    line-height: 56px
+    position: relative
+    div
+      display: inline-block
+
+  .record-score
+    width: 62px
+    text-align: right
+    margin-right: 378px
+
+  .score
+    font-size: 22px
+    line-height: 16px
+    color: $color-Z2
+    font-weight: bold
+    font-style: oblique
+    vertical-align: text-bottom
+    margin-right: 8px
+
+  .score-unit
+    color: $color-Z2
+    font-size: 14px
+    line-height: 14px
+
+  .record-spend, .record-create
+    color: $color-Z2
+
+  .record-create
+    font-size: 14px
+
+  .record-spend
+    margin-right: 40px
+    font-size: 16px
+    width: 98px
+
+  .icon-time
+    width: 20px
+    height: 20px
+    display: inline-block
+    margin-right: 8px
+    background url("./img/icon_time_non.png") center no-repeat
+    background-size: cover
+    vertical-align: sub;
+
+  .icon-bestgrade
+    width: 41px
+    height: 40px
+    display: inline-block
+    margin-right: 12px
+    background url("./img/icon_bestGrade.png") center no-repeat
+    background-size: cover
+    vertical-align: middle
+
+  .icon-time-active
+    width: 20px
+    height: 20px
+    display: inline-block
+    margin-right: 8px
+    background url("./img/icon_time_active.png") center no-repeat
+    background-size: cover
+    vertical-align: sub;
+
+  .record-review
+    position: absolute
+    right: 24px
+    color: $color-A1
+    font-size: 16px
+    top: 0
+    bottom: 0
+    height: 24px
+    text-decoration: none
+
+  .rank
+    border-bottom: 1px solid $color-L1
+    margin: 0 24px
+    line-height: 56px
+    height: 56px
+
+  .icon-NO1, .icon-NO2, .icon-NO3
+    width: 26px
+    height: 30px
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+  .icon-NO1
+    background url("./img/icon_1.png") center no-repeat
+    background-size: cover
+
+  .icon-NO2
+    background url("./img/icon_2.png") center no-repeat
+    background-size: cover
+
+  .icon-NO3
+    background url("./img/icon_3.png") center no-repeat
+    background-size: cover
+
+  .rank-NO
+    width: 26px
+    text-align: center
+    font-style: oblique
+    font-size: 22px
+    line-height: 22px
+    color: $color-Z2
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 22px
+
+  .rank-NO-active
+    width: 26px
+    text-align: center
+    font-style: oblique
+    font-size: 22px
+    line-height: 22px
+    color: $color-A1
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 22px
+
+  .rank-img
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    margin-left: 46px
+    margin-right: 20px
+    vertical-align: middle
+
+  .rank-name
+    display: inline-block
+    color: $color-Z1
+    font-size: 16px
+    width: 440px
+
+  .rank-name-active
+    display: inline-block
+    color: $color-A1
+    font-size: 16px
+    width: 440px
+
+  .rank-spend
+    display: inline-block
+    color: $color-Z2
+    font-size: 16px
+
+  .rank-spend-active
+    display: inline-block
+    color: $color-A1
+    font-size: 16px
+
+  .rank-score
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 24px
+    margin: auto
+    height: 22px
+    line-height: 0;
+    color: $color-Z2
+
+  .rank-score-active
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 24px
+    margin: auto
+    height: 22px
+    line-height: 0;
+    color: $color-A1
+
+  .rank-score-num
+    font-size: 22px
+    line-height: 22px
+    font-style: oblique
+    margin-right: 8px
+    font-weight: bold
+
+  .rank-score-unit
+    font-size: 16px
+    position: relative;
+    bottom: 1px;
+
+  .rank-notify
+    height: 80px
+    line-height: 80px
+    margin-bottom: 16px
+    color: $color-Z4
+    font-size: 24px
+    padding-left: 24px
+    background-color: #fff
+
+  .rank-list
+    background-color: #fff
+    padding-bottom: 160px
+
+  .rank-footer
+    border-top: 1px solid $color-L1
+    padding: 0 24px
+    height: 64px
+    line-height: 64px
+    font-size: 16px
+    background-color: #fff
+    color: $color-Z2
+
+  .process-header
+    position: relative
+    background-color: #fff
+    padding: 24px
+
+  .process-time, .process-name, .process-submit, .process-isShowWrong
+    display: inline-block
+    cursor: pointer
+
+  .process-name
+    font-size: 18px
+    color: $color-Z1
+    line-height: 18px
+    height: 18px
+    margin-bottom: 24px
+
+  .process-time
+    float: right
+    margin-right: 24px
+    color: $color-A1
+    font-size: 16px
+    position: relative
+    top: 4px
+
+  .process-isShowWrong
+    float: right
+    font-size: 14px
+    color: $color-Z1
+
+  .process-submit
+    float: right
+    width: 78px
+    height: 30px
+    text-align: center
+    color: #fff
+    font-size: 14px
+    line-height: 30px
+    background-color: $color-A1
+
+  .result-header
+    margin-top: 60px
+    margin-bottom: 40px
+
+  .icon-user-deck
+    width: 255px
+    height: 165px
+    margin: 0 auto
+    background url("./img/icon-user-deck.png") center no-repeat
+    background-size: contain
+
+  .icon-user-default-img
+    width: 155px
+    height: 155px
+    margin: 0 auto
+    background url("./img/icon-user-img.png") center no-repeat
+    background-size: contain
+
+  .icon-user-img
+    width: 155px
+    height: 155px
+    margin: 0 auto
+    border: 2px solid #585858;
+    border-radius: 50%
+
+  .icon-score-deck
+    width: 270px
+    height: 68px
+    margin: 0 auto
+    background url("./img/icon-score-deck.png") center no-repeat
+    background-size: contain
+    text-align: center
+    color: #fff
+    padding-top: 2px
+    margin-top: -20px
+
+  .exam-score
+    margin-top: 10px
+    margin-bottom: 2px
+    line-height: 0
+
+  .process-score
+    margin-right: 4px
+    font-size: 22px
+    height: 22px
+    line-height: 22px
+
+  .process-score-unit
+    font-size: 16px
+    height: 16px
+    line-height: 16px
+
+  .exam-time
+    font-size: 16px
+    height: 16px
+    line-height: 16px
+
+  .result-body
+    margin-bottom: 24px
+    text-align: center
+
+  .exam-status
+    color: $color-Z1
+    font-size: 18px
+    height: 18px
+    line-height: 18px
+    margin-bottom: 24px
+
+  .exam-best-score
+    color: $color-Z1
+    font-size: 18px
+    height: 18px
+    line-height: 18px
+    margin-bottom: 12px
+
+  .exam-chance
+    color: $color-Z2
+    font-size: 16px
+    height: 16px
+    line-height: 16px
+
+  .exam-reviewable
+    color: $color-A1
+    font-size: 16px
+    height: 16px
+    line-height: 16px
+    cursor: pointer
+
+  .result-footer
+    text-align: center
+
+  .go-back-btn, .submit-best-btn
+    display: block
+    text-align: center
+    height: 48px
+    width: 274px
+    line-height: 48px
+    font-size: 18px
+    color: #fff
+    background-color: $color-A1
+    margin: auto
+    text-decoration: none
+
+  .go-back-btn
+    margin-bottom: 12px
+
+  .icon-active-time
+    background-size: cover
+    position: relative
+    top: px2rem(1)
+
+  .icon-number
+    background-size: cover
+    position: relative
+    top: px2rem(1)
+    &.active
+      background-size: cover
+
+  .process-panel
+    background-color: #fff
+    margin-bottom: 24px
+    clearfix()
+
+  .exercises-number-item
+    float: left
+    width: 40px
+    height: 40px
+    line-height: 40px
+    margin-top: 4.48px
+    margin-right: 4.48px
+    font-size: 14px
+    color: $color-Z2
+    background-color: $color-A0
+    text-align: center;
+    position: relative
+    &.wrong:after
+      content: ''
+      position: absolute
+      width: 14px;
+      height: 14px;
+      background url("./img/icon_iswrong.png") no-repeat
+      background-size: cover
+      bottom: -2px
+      right: -2px
+    &.right:after
+      content: ''
+      position: absolute
+      width: 14px;
+      height: 14px;
+      background url("./img/icon_right.png") no-repeat
+      background-size: cover
+      bottom: -2px
+      right: -2px
+    &.active
+      color: #fff
+      background-color: $color-A1
+    &:nth-child(26n+0)
+      margin-right: 0
+
+  .process-panel-taggle
+    font-size: 14px
+    color: $color-Z2
+    text-align: center
+    span
+      cursor: pointer
+
+  .icon-up, .icon-down
+    width: 11px
+    height: 7px
+    display: inline-block
+    margin-left: 8px
+
+  .icon-up
+    background url("./img/icon_up.png") center no-repeat
+    background-size: cover
+
+  .icon-down
+    background url("./img/icon_down.png") center no-repeat
+    background-size: cover
+
+  .br48
+    border-right: 1px solid $color-L1
+    display: inline-block;
+    height: px2rem(48)
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+  .br40
+    border-right: 1px solid $color-L1
+    display: inline-block;
+    height: px2rem(40)
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+  .b40
+    border-right: 1px solid $color-L1
+    height: 40px
+
+  .ml24
+    margin-left: 24px
+
+  .mlr40
+    margin-left: 40px
+    margin-right: 300px
+
+  .text-color-A1
+    color: $color-A1
+
+  .text-color-Z1
+    color: $color-Z1
+
+  .bb
+    border-bottom: 1px solid $color-L1
+
+  .dib
+    display: inline-block
+
+  .pt24
+    padding-top: px2rem(24)
+
+  .pb32
+    padding-bottom: px2rem(32)
+
+  .plr24
+    padding-left: 24px
+
+  .pt32
+    padding-top: px2rem(32)
+
+  .bgf
+    background: #fff
+
+  .mr64
+    margin-right: px2rem(64)
+
+  .mb16
+    margin-bottom: px2rem(16)
+
+  .lh24
+    line-height: px2rem(24)
+
+  .lh96
+    line-height: px2rem(96)
+
+  .cB2
+    color: $color-B2
+
+  .pr
+    position: relative
+
+  .red
+    color: $color-B4
+
+  .mb24
+    margin-bottom: 24px
+
+  .bgA0
+    background: $color-A0
+
+  .cOrange
+    color: #eaae34
+
+  .mb100
+    margin-bottom: 100px
+
+  .minh600
+    min-height: 600px
+
+  .no-msg
+    text-align: center
+    color: #bec0c0
+  .no-rank
+    background-color: #fff
+    &:before
+      content: ''
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      margin-top: 120px;
+      background url("./img/icon_rank_null.png") no-repeat
+      background-size: cover;
+
+  .no-history
+    background-color: #fff
+    &:before
+      content: ''
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      margin-top: 120px;
+      background url("./img/icon_exam_null.png") no-repeat
+      background-size: cover
+
+  .revocation
+    text-align: center
+    margin-top: px2rem(100)
+
+  .noPanel
+    height: 50px
+    box-sizing: border-box
+    padding: 0
+    line-height: 50px
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+
+  .process-body
+    margin-top: 24px
+    padding: 24px
+    background-color: #fff
+
+  .icon-wrong-active, .icon-wrong
+    width: 16px
+    height: 16px
+    display: inline-block
+    margin-right: 8px
+    vertical-align: sub
+
+  .icon-wrong-active
+    background url("./img/icon_wrong_active.png") center no-repeat
+    background-size: cover
+
+  .icon-wrong
+    background url("./img/icon_wrong.png") center no-repeat
+    background-size: cover
+
+  .exams-sticky
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.12), 0px 2px 4px rgba(0,0,0,0.24)
+
+  .submit-isShowWrong
+    position: relative
+    top: 5px
+    margin-right: 24px

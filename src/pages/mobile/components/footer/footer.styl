@@ -1,0 +1,67 @@
+.footer
+  padding-top px2rem(138)
+  .fixed-bottom
+    position fixed
+    background-color #FFF
+    width 100%
+    left 0
+    bottom 0
+    height px2rem(98)
+    z-index 5
+    > .line
+      position absolute
+      left 50% - 1px
+      top px2rem(25)
+      background-color #e5e6e6
+      width 1px
+      height px2rem(48)
+      overflow hidden
+    > ul
+      list-style none
+      margin 0
+      padding 0
+      display flex
+      width 100%
+      > li
+        flex 1
+        border-top 1px solid $color-L1
+        > a
+          display block
+          width 100%
+          color $color-Z2
+          font-size px2rem(20)
+          text-align center
+          height px2rem(98)
+          line-height 1
+
+          background-repeat no-repeat
+          background-position center px2rem(10)
+          background-size px2rem(50)
+          padding-top px2rem(68)
+          &.active
+            color $color-A1
+          &.menu_home
+            background-image url("img/icon_home.png")
+            &.active
+                background-image url("img/icon_home_active.png")
+          &.menu_profile
+            margin 0 auto
+            width 58px
+            position relative
+            background-image url("img/icon_profile.png")
+            &.active
+              background-image url("img/icon_profile_active.png")
+          &.menu_mall
+            background-image url("img/icon_mall.png")
+            &.active
+              background-image url("img/icon_mall_active.png")
+        .red-dot
+          &:before
+            content ' '
+            background #f00
+            border-radius 50%
+            width px2rem(16)
+            height px2rem(16)
+            top 7px
+            right 16px
+            position absolute

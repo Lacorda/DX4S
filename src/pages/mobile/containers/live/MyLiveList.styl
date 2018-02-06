@@ -1,0 +1,95 @@
+.live-list-mine
+  background-color #fff
+  position relative
+  width 100%
+  height 100%
+  &-content
+    top px2rem(94)
+    bottom 0
+  .live-item
+    border-bottom 1px solid $color-L1
+    display flex
+    padding px2rem(14) 0
+    .cover
+      width px2rem(268)
+      justify-content center
+      align-items center
+      .cover-image
+        position relative
+        width px2rem(240)
+        height px2rem(152)
+        margin auto
+        img
+          width px2rem(240)
+          height px2rem(152)
+        .cover-footer
+          position absolute
+          bottom 0
+          left 0
+          right 0
+          height px2rem(32)
+          line-height px2rem(32)
+          color #fff
+          background-color rgba(0, 0, 0, .64)
+          font-size px2rem(22)
+    .live-info
+      flex 1
+      padding 0 px2rem(24)
+      .title
+        font-size px2rem(28)
+        height px2rem(80)
+        overflow hidden
+      .other
+        font-size px2rem(24)
+        .lecture
+          color $color-Z4
+        .live-status
+          float right
+          &-not_start
+            color $color-B3
+            &:before
+              content ''
+              position relative
+              top px2rem(3)
+              margin-right px2rem(8)
+              display inline-block
+              width px2rem(24)
+              height px2rem(24)
+              background url("./imgs/icon-coming.png") no-repeat
+              background-size contain
+          &-about_to_start
+            color $color-B3
+            &:before
+              content ''
+              position relative
+              top px2rem(3)
+              margin-right px2rem(8)
+              display inline-block
+              width px2rem(24)
+              height px2rem(24)
+              background url("./imgs/icon-coming.png") no-repeat
+              background-size contain
+          &-on_live
+            color $color-A1
+            &:before
+              content ''
+              position relative
+              top px2rem(3)
+              margin-right px2rem(8)
+              display inline-block
+              width px2rem(24)
+              height px2rem(24)
+              background url("./imgs/icon-going.png") no-repeat
+              background-size contain
+          &-over
+            color $color-Z2
+            &:before
+              content ''
+              position relative
+              top px2rem(3)
+              margin-right px2rem(8)
+              display inline-block
+              width px2rem(24)
+              height px2rem(24)
+              background url("./imgs/icon-end.png") no-repeat
+              background-size contain

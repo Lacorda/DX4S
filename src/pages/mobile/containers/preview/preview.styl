@@ -1,0 +1,55 @@
+.preview
+  height 100%
+  .preview-box
+    height 92%
+    position relative
+    overflow scroll
+  .process-panel-web
+    top 0 !important
+  .h5-wrapper
+    -webkit-overflow-scrolling touch
+    overflow-y scroll
+    width 100%
+    height 100%
+    iframe
+      border none
+      width 100% !important
+      height 100% !important
+  .chapter-number
+    width 100%
+    height 8%
+    bottom 0
+    background white
+    position fixed
+    .fixed-bottom
+      width 100%
+      height 100%
+      padding 0 px2rem(24)
+      line-height 100%
+      border-top 1px solid $color-L2
+      text-align center
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      .preview-footer-page
+        display block
+        -webkit-flex: 1;
+        flex: 1;
+      a
+        user-select none
+        display inline-block
+        width px2rem(160)
+        height px2rem(64)
+        text-align center
+        line-height px2rem(64)
+        border 1px solid $color-Z3
+        border-radius px2rem(3)
+        color $color-Z1
+        &.first-node, &.last-node
+          border-color $color-Z4
+          color $color-Z4
+        &.disabled
+          opacity .48

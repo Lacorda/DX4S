@@ -1,0 +1,58 @@
+.publish-box
+  .publish-header
+    background-color #e4f4ff
+    height px2rem(56)
+    line-height px2rem(56)
+    text-align center
+    color $color-Z2
+    font-size px2rem(24)
+  .dx-flex-info-title
+    height px2rem(76) !important
+    line-height px2rem(38) !important
+    margin-bottom 0 !important
+  .dx-flex-info-desc
+    &.mb20
+      margin-bottom px2rem(18)
+    &.mt20
+      margin-top px2rem(42)
+    .icon-added
+      display inline-block
+      vertical-align middle
+      font-size px2rem(18)
+      margin-left px2rem(24)
+      background-color $color-A1
+      padding px2rem(5)
+      line-height 1
+      text-align center
+      color #FFF
+      border-radius 2px
+  .last-page
+    height px2rem(100)
+    line-height px2rem(100)
+    text-align center
+    font-size px2rem(22)
+    color $color-Z3
+  .first-loading
+    margin-top 40%
+    text-align center
+    color $color-Z3
+  .publish-footer
+    height px2rem(97)
+    margin-top px2rem(24)
+
+  .refresh-distance
+    top px2rem(105)
+    bottom px2rem(97)
+
+  &.has-notice
+    .refresh-distance
+      top px2rem(105) + px2rem(56)
+
+
+.fixed-navbar-top
+  .publish-box
+    .refresh-distance
+      top $navbar-height + px2rem(105)
+    &.has-notice
+      .refresh-distance
+        top $navbar-height + px2rem(105) + px2rem(56)

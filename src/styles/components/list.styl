@@ -1,0 +1,87 @@
+operationIcon(type)
+  background-image url("~img/icon_" + type + ".png")
+  background-repeat no-repeat
+  background-size px2rem(30)
+
+listIcon(type)
+  operationIcon(type)
+  background-position 95%
+
+ul.dx-list
+  margin 0
+  padding 0
+  list-style none
+  background-color $color-A0
+  &.dx-list-form
+    span
+      position relative
+      display inline-block
+    span:nth-child(1)
+      float left
+      width 20%
+    span:nth-child(2)
+      margin-left $distance-default
+      width 70%
+    input
+      padding 0
+      margin 0
+      width 100%
+      border none
+    li
+      overflow auto
+      zoom 1
+  span.dx-list-form-operation
+    position absolute
+    right 5%
+    width px2rem(30)
+    height px2rem(30)
+  .dx-list-form-operation-remove
+    operationIcon("remove")
+    &:active
+      operationIcon("remove_active")
+  .dx-list-title
+    font-size px2rem(28)
+    line-height px2rem(44)
+    margin-bottom px2rem(10)
+  .dx-list-comment
+    font-size $distance-default
+    color $color-Z4
+
+  li
+    position relative
+    padding $distance-default
+    background-color #ffffff
+    border-bottom 1px solid $color-L1
+    &.one-slide
+      padding 0 0 0 $distance-default
+      border-bottom none
+    &:last-child
+      border-bottom none
+    &.disabled
+      background-color $color-A0
+    .dx-list-view
+      position absolute
+      bottom $distance-default
+      right $distance-default
+      font-size px2rem(24)
+      color $color-A1
+  li.section-title
+    background-color transparent
+    padding-top px2rem(12)
+    padding-bottom px2rem(12)
+    line-height px2rem(40)
+    color $color-Z3
+  li.align-center
+    display flex
+    align-items center
+  li.space-between
+    display flex
+    align-items center
+    justify-content space-between
+  li.list-indie
+    margin-top px2rem(15)
+  li.drop-down
+    listIcon("drop_down")
+  li.arrow-right
+    listIcon("arrow_right")
+

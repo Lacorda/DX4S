@@ -1,0 +1,73 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+
+// Floats
+// -------------------------
+
+.clearfix
+  clearfix()
+
+.center-block
+  display block
+  margin-left auto
+  margin-right auto
+
+.pull-right
+  float right !important
+
+.pull-left
+  float left !important
+
+
+
+// Toggling content
+// -------------------------
+
+// Note Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.hide
+  display none !important
+
+.show
+  display block !important
+
+.invisible
+  visibility hidden
+
+.text-hide
+  text-hide()
+
+
+
+// Hide from screenreaders and browsers
+//
+// Credit HTML5 Boilerplate
+
+.hidden
+  display none !important
+
+
+
+// For Affix plugin
+// -------------------------
+
+.affix
+  position fixed
+
+.list-no-msg
+  text-align center
+  color #bec0c0
+  &:before {
+    content ''
+    display inline-block
+    width px2rem(266)
+    height px2rem(200)
+    margin-top px2rem(60)
+    background url('../img/list_no_msg.png') no-repeat
+    background-size contain
+  }
+
+.full-fill
+  height 100%
+  width 100%

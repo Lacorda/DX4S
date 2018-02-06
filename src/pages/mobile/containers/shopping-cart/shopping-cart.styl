@@ -1,0 +1,220 @@
+.empty-cart
+  height 100%
+  background-color #fff
+.shopping-cart
+  padding-bottom px2rem(100)
+  .mb0
+    margin-bottom 0!important
+  .tab
+    padding px2rem(22)
+    padding px2rem(22) 0
+    background #fff
+    border-bottom 1px solid $color-L1
+  .dx-list
+    background-color transparent
+  .one-slide
+    margin-bottom px2rem(14)
+    background-color #fff
+  .dx-flex-info
+    select
+      width px2rem(278)
+      height px2rem(48)
+      border 1px solid #f2f2f2
+      appearance none
+      -moz-appearance none
+      -webkit-appearance none
+      border-radius 0
+      background url("./img/icon_down.png") no-repeat scroll right center transparent
+      background-size px2rem(46) px2rem(46)
+      padding-right px2rem(46)
+    .amount
+      width px2rem(278)
+      height px2rem(48)
+      border px2rem(1) solid #f2f2f2
+      margin-top px2rem(20)
+      display-flex(center)
+      text-align center
+      input
+        border 1px solid #f2f2f2
+        height px2rem(48)
+        width px2rem(124)
+        font-size px2rem(26)
+        color $color-Z1
+        text-align center
+        margin-right px2rem(2)
+        background-color #fff
+        border-radius 0
+      .opt
+        width px2rem(72)
+        height px2rem(48)
+        line-height px2rem(48)
+        font-size px2rem(38)
+        box-flex(1)
+        &.add
+          &:before
+            content ''
+            position relative
+            top px2rem(4)
+            display inline-block
+            width px2rem(44)
+            height px2rem(40)
+            background url("./img/icon_num_add.png") no-repeat
+            background-size contain
+        &.minus
+          &:before
+            content ''
+            position relative
+            top px2rem(4)
+            display inline-block
+            width px2rem(44)
+            height px2rem(40)
+            background url("./img/icon_num_minus.png") no-repeat
+            background-size contain
+  .dx-flex-box
+    border-bottom none
+  .buy-info
+    position relative
+  .price
+    display inline-block
+    color $color-B4
+    &-val
+      font-size px2rem(26)
+    &-unit
+      font-size px2rem(24)
+  .count
+    display inline-block
+    color $color-Z3
+    right px2rem(24)
+    position absolute
+    &-sign
+      font-size px2rem(20)
+    &-num
+      font-size px2rem(26)
+  .edit
+    position absolute
+    bottom px2rem(40)
+    &:before
+      content ''
+      position relative
+      top px2rem(4)
+      display inline-block
+      width px2rem(44)
+      height px2rem(40)
+      background url(./img/icon_edit.png) no-repeat
+      background-size contain
+  .done
+    position absolute
+    top 5px
+    font-size px2rem(26)
+    color $color-A1
+    white-space nowrap
+  .remove
+    position absolute
+    bottom 10px
+    &:before
+      content ''
+      position relative
+      top px2rem(4)
+      display inline-block
+      width px2rem(44)
+      height px2rem(40)
+      background url(./img/icon_delete.png) no-repeat
+      background-size contain
+  .icon
+    /*&.course
+      background-image linear-gradient(transparent px2rem(6), #38acff px2rem(6), #38acff px2rem(40), transparent px2rem(40))*/
+    &.quiz
+      background-image linear-gradient(transparent px2rem(6), #cbac51 px2rem(6), #cbac51 px2rem(40), transparent px2rem(40))
+    &.survey
+      background-image linear-gradient(transparent px2rem(6), #658adf px2rem(6), #658adf px2rem(40), transparent px2rem(40))
+  &-footer
+    position fixed
+    bottom 0
+    left 0
+    width 100%
+    height px2rem(100)
+    display-flex(flex-start)
+    border-top 1px solid $color-L2
+    text-align center
+    background-color #fff
+    a
+      display inline-block
+      height 100%
+    .total
+      width px2rem(178)
+      line-height px2rem(96)
+      padding-top px2rem(4)
+      font-size px2rem(24)
+      color $color-Z2
+      box-flex(1)
+      display-flex(flex-start)
+      &-all
+        padding-left px2rem(24)
+        padding-right px2rem(4)
+        input
+          float left
+        .inputlabel
+          float left
+      &-sum
+        font-size px2rem(28)
+        text-align left
+        .sum-title
+          margin-right px2rem(4)
+          float left
+        .sum-price
+          color #fa3c3c
+          float left
+          white-space nowrap
+          overflow hidden
+          max-width px2rem(224)
+    .checkout
+      width px2rem(264)
+      line-height px2rem(96)
+      font-size px2rem(32)
+      color #fff
+      background $color-A1
+    input[type=checkbox]
+      input-checkbox()
+      height px2rem(96)
+      margin-right px2rem(16)
+  .cart-empty
+    text-align center
+    padding-top px2rem(160)
+    height 100%
+  .icon-cart-empty
+    display inline-block
+    width px2rem(280)
+    height px2rem(280)
+    background url(./img/icon_cart_empty.png) no-repeat
+    background-size cover
+  .cart-empty-msg
+    color $color-Z4
+    font-size px2rem(28)
+  .live-time
+    position absolute
+    padding-left px2rem(5)
+    left 0
+    bottom -12px
+    width 100%
+    font-size px2rem(22)
+    height px2rem(32)
+    line-height px2rem(32)
+    background-color #000
+    opacity .6
+    overflow hidden
+    color #fff
+  .tag
+    display inline-block
+    padding 0 px2rem(16)
+    font-size px2rem(22)
+    background-color $color-A0
+    color $color-Z3
+    border-radius px2rem(4)
+    margin-right px2rem(16)
+  .opacity48
+    -moz-opacity 0.48
+    opacity 0.48
+.cart-toast-msg
+  text-align center
+  span
+    display block

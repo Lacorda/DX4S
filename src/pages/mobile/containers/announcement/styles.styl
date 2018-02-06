@@ -1,0 +1,346 @@
+.announcement
+  height: 100%;
+  ul, ol
+    list-style-type: none
+    margin: 0
+    padding: 0
+
+  h1, h2, h3, h4, h5, h6, p
+    margin: 0
+    font-weight: normal
+
+  .announcement-icon
+    display: inline-block
+
+  .announcement-item
+    position: relative;
+    margin-top: px2rem(16)
+    padding-left: px2rem(24)
+    padding-right: px2rem(24)
+    padding-top: px2rem(24)
+    padding-bottom: px2rem(24)
+    background-color: #fff
+    height: px2rem(170)
+    line-height: 0;
+
+  .announcement-item-header
+    clearfix()
+
+  .announcement-item-title
+    font-size: px2rem(30)
+    line-height: px2rem(32)
+    height: px2rem(32) !important
+    font-weight: bold
+    color: $color-Z1
+    float: left
+    max-width: px2rem(460)
+
+  .announcement-item-date
+    font-size: px2rem(22)
+    line-height: px2rem(22)
+    height: px2rem(22)
+    color: $color-Z3
+    float: right
+
+  .announcement-item-content
+    font-size: px2rem(26)
+    line-height: px2rem(42)
+    margin-top: px2rem(16)
+    margin-right: px2rem(48)
+    color: $color-Z2
+
+  .icon-new
+    width: px2rem(56)
+    height: px2rem(24)
+    background: url(./img/icon-new.png) no-repeat
+    background-size: cover
+    margin-left: px2rem(16)
+    margin-top: px2rem(2)
+
+  .icon-enter
+    position: absolute
+    right: px2rem(24)
+    top: 0
+    bottom: 0
+    margin: auto
+    width: px2rem(24)
+    height: px2rem(24)
+    background: url(./img/icon-enter.png) no-repeat
+    background-size: cover
+
+  .announcement-detail
+    padding-top: px2rem(24)
+    padding-left: px2rem(24)
+    padding-right: px2rem(24)
+    padding-bottom: px2rem(120)
+    min-height: 100%;
+    background-color: #fff
+
+  .announcement-detail-header
+    margin-bottom: px2rem(24)
+
+  .announcement-detail-title
+    font-size: px2rem(36)
+    font-weight: bold
+    color: $color-Z1
+    line-height: px2rem(46)
+
+  .announcement-detail-info
+    clearfix()
+    margin-top: px2rem(16)
+
+  .announcement-detail-publisher, .announcement-detail-date
+    font-size: px2rem(22)
+    color: $color-Z3
+    height: px2rem(22)
+    line-height: px2rem(22)
+
+  .announcement-detail-publisher
+    float: left
+
+  .announcement-detail-date
+    float: right
+
+  .announcement-detail-content
+    font-size: px2rem(28)
+    color: $color-Z2
+    line-height: px2rem(34)
+    padding-bottom: px2rem(40)
+    word-break: break-all
+    word-wrap: break-word
+    width: 100%
+    a
+      font-size: px2rem(28)
+      color: $color-A1
+    img
+      max-width: 100%
+
+  .announcement-detail-accessories
+    background-color: $color-A0
+    padding-top: px2rem(16)
+    padding-bottom: px2rem(10)
+    padding-left: px2rem(10)
+    padding-right: px2rem(10)
+
+  .announcement-detail-accessories-header
+    margin-bottom: px2rem(10)
+
+  .announcement-detail-image-viewer
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: black;
+    z-index: 9;
+    overflow: hidden;
+    width: 100%
+
+  .icon-paperclip
+    display: inline-block
+    width: px2rem(24)
+    height: px2rem(24)
+    background: url(./img/icon-paperclip.png) no-repeat
+    background-size: cover
+    margin-right: px2rem(12)
+
+  .accessories-tag
+    font-size: px2rem(28)
+    color: $color-Z2
+    line-height: px2rem(28)
+    height: px2rem(28)
+
+  .accessories-tag-number
+    font-size: px2rem(22)
+    color: $color-Z2
+    line-height: px2rem(22)
+    margin-left: px2rem(10)
+    height: px2rem(22)
+
+  .announcement-detail-accessories-content
+    padding-top: px2rem(8)
+    padding-bottom: px2rem(8)
+    padding-right: px2rem(16)
+    padding-left: px2rem(16)
+    background-color: #fff
+
+  .announcement-detail-accessory
+    font-size: px2rem(24)
+    color: $color-Z2
+    line-height: px2rem(40)
+    padding-top: px2rem(16)
+    word-break: break-all
+    &:first-child
+      padding-top: 0
+
+  .announcement-detail-footer
+    position: fixed
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: $color-A0
+    height: px2rem(100)
+    line-height: px2rem(100)
+    border-top 1px solid $color-L2
+
+  .announcement-detail-comment
+    height: px2rem(72)
+    width: px2rem(480)
+    line-height: px2rem(72)
+    display: inline-block
+    margin-left: px2rem(24)
+    margin-right: px2rem(24)
+    text-align: center
+    background-color: #38acff
+    font-size: px2rem(32)
+    color: #fff
+    border-radius: px2rem(8)
+    &.disabled
+      background-color: #a0d6ff
+      color: rgba(255,255,255,0.48)
+
+  .announcement-detail-comments
+    width: px2rem(112)
+    color: $color-B4
+    display: inline-block
+    font-size: px2rem(20)
+    &:before
+      content: ''
+      display: inline-block
+      position absolute
+      width: px2rem(40)
+      height: px2rem(40)
+      background: url(./img/icon-a-comment.png) no-repeat
+      background-size: cover
+      top: 0
+      bottom: 0
+      margin-top: auto
+      margin-bottom: auto
+      margin-left: px2rem(20)
+    &.disabled
+      &:before
+        background: url(./img/icon-a-comment-active.png) no-repeat
+        background-size: cover
+
+  .announcement-detail-comments-count
+    position: relative;
+    top: px2rem(-16)
+    left: px2rem(64)
+
+  .announcement-detail-like
+    color: $color-B4
+    display: inline-block
+    font-size: px2rem(20)
+    width: px2rem(100)
+    &:before
+      content: ''
+      display: inline-block
+      position absolute
+      width: px2rem(40)
+      height: px2rem(40)
+      background: url(./img/icon-like.png) no-repeat
+      background-size: cover
+      top: 0
+      bottom: 0
+      margin-top: auto
+      margin-bottom: auto
+      margin-left: px2rem(10)
+    &.liked
+      &:before
+        background: url(./img/icon-like-active.png) no-repeat
+        background-size: cover
+
+  .announcement-detail-like-count
+    position: relative;
+    top: px2rem(-16)
+    left: px2rem(55)
+
+  .announcement-comment
+    height: 100%
+    background-color: #fff
+    textarea
+      width: px2rem(702)
+      height: px2rem(240)
+      margin-top: px2rem(24)
+      margin-bottom: px2rem(64)
+      margin-left: px2rem(24)
+      margin-right: px2rem(24)
+      padding: px2rem(24)
+      font-size: px2rem(28)
+      color: $color-Z2
+      border: 1px solid $color-Z3
+      border-radius: px2rem(4)
+
+  .announcement-comment-submit
+    height: px2rem(88)
+    width: px2rem(702)
+    line-height: px2rem(88)
+    display: inline-block
+    margin-left: px2rem(24)
+    margin-right: px2rem(24)
+    text-align: center
+    background-color: #38acff
+    font-size: px2rem(32)
+    color: #fff
+    border-radius: px2rem(8)
+    &.disabled
+      background-color: #a0d6ff
+      color: rgba(255,255,255,0.48)
+
+  .announcement-comments-count
+    background-color: #e4f4ff
+    text-align: center
+    color: $color-Z2
+    font-size: px2rem(28)
+    height: px2rem(56)
+    line-height: px2rem(56)
+
+  .announcement-comments-item
+    margin-bottom: px2rem(16)
+    background-color: #fff
+    padding: px2rem(24)
+
+  .announcement-comments-item-header
+    clearfix()
+
+  .announcement-comments-item-username
+    float: left
+    font-size: px2rem(30)
+    line-height: px2rem(30)
+    height: px2rem(30)
+    color: $color-Z1
+    font-weight: bold
+
+  .announcement-comments-item-dept
+    float: right
+    font-size: px2rem(22)
+    line-height: px2rem(22)
+    height: px2rem(22)
+    color: $color-Z3
+
+  .announcement-comments-item-content
+    margin-top: px2rem(16)
+    font-size: px2rem(26)
+    color: $color-Z2
+    line-height: px2rem(42)
+    word-break: break-all
+
+  .announcement-comments-item-date
+    margin-top: px2rem(16)
+    font-size: px2rem(22)
+    color: $color-Z3
+    line-height: px2rem(22)
+    height: px2rem(22)
+
+  .nowrap-multi
+    display: -webkit-box
+    overflow: hidden
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 2
+
+  .nowrap-flex {
+    overflow: hidden
+    text-overflow: ellipsis
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 1
+    -webkit-box-flex: 1
+    height: inherit
+}

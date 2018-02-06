@@ -1,0 +1,65 @@
+.slide-nav-wrap
+  position fixed
+  z-index 99
+  top 0
+  bottom 0
+  left 0
+  right 0
+  background-color rgba(0, 0, 0, .5)
+  opacity 0
+  -webkit-transition opacity .1s;
+  -moz-transition opacity .1s;
+  transition opacity .1s;
+  .slide-nav
+    position absolute
+    right px2rem(-264)
+    background-color #FFF
+    width px2rem(264)
+    height 100%
+    padding-top px2rem(24)
+    -webkit-transition right .1s;
+    -moz-transition right .1s;
+    transition right .1s;
+    .nav
+      padding-left px2rem(24)
+      .slide-nav-title
+        color $color-Z3
+        font-size px2rem(28)
+        margin-bottom px2rem(16)
+      ul
+        margin 0
+        padding 0
+        list-style none
+        li
+          width px2rem(176)
+          height px2rem(64)
+          line-height px2rem(64)
+          text-align center
+          background-color #E4E4E4
+          border-radius 5px
+          margin-bottom px2rem(24)
+          white-space nowrap
+          &.active
+            background-color $color-A1
+            color #FFF
+    .nav-footer
+      height px2rem(97)
+      margin-top px2rem(24)
+      button
+        position fixed
+        bottom 0
+        width px2rem(264)
+        background-color $color-A1
+        height px2rem(97)
+        line-height px2rem(97)
+        font-size px2rem(32)
+        border none
+        color #FFF
+  &.slide-in
+    opacity 1
+    .slide-nav
+      right 0
+body.fixed-navbar-top
+  .slide-nav-wrap
+    .slide-nav
+      padding-top $navbar-height + px2rem(24) !important

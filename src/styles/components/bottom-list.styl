@@ -1,0 +1,44 @@
+.bottom-list-wrap
+  position fixed
+  z-index 10
+  top 0
+  bottom 0
+  left 0
+  right 0
+  background-color rgba(0, 0, 0, .5)
+  .bottom-list
+    position fixed
+    bottom px2rem(97)
+    width 100%
+    .bottom-list-header
+      background-color $color-A0
+      height px2rem(76)
+      display-flex(flex-start)
+      box-pack end
+      justify-content flex-end
+      .close
+        display block
+        width px2rem(28)
+        height px2rem(28)
+        background url("~img/icon_close.png") no-repeat center
+        background-size contain
+        margin px2rem(24) px2rem(24) 0 0
+        &:acitve
+          background-image url("~img/icon_close_active.png")
+    .bottom-list-body
+      background #FFF
+      .delete
+        position absolute
+        display block
+        right px2rem(48)
+        bottom px2rem(24)
+        background url("~img/icon_delete.png") no-repeat center
+        width px2rem(28)
+        height px2rem(28)
+        background-size contain
+        &:active
+          background-image url("~img/icon_delete_active.png")
+      .refreshWebLoadTop
+        margin-top px2rem(76)
+      .refreshNoBarTop
+        margin-top px2rem(76)

@@ -1,0 +1,175 @@
+.survey
+  padding-top 24px
+  padding-bottom: 278px;
+  a
+   text-decoration none
+  ul
+    list-style-type none
+    margin 0
+    padding 0
+  .sheet
+    &-header
+      position relative
+      background-color #fff
+      padding 24px
+    &-name
+      display inline-block
+      font-size 18px
+      color $color-Z1
+      line-height 18px
+      height 18px
+      margin-bottom 24px
+    &-submit
+      float right
+      width 78px
+      height 30px
+      text-align center
+      color #fff
+      font-size 14px
+      line-height 30px
+      background-color $color-A1
+      cursor pointer
+    &-panel
+      background-color #fff
+      margin-bottom 24px
+      clearfix()
+    &-number
+      float left
+      width 40px
+      height 40px
+      line-height 40px
+      margin-top 4.48px
+      margin-right 4.48px
+      font-size 14px
+      color $color-Z2
+      background-color $color-A0
+      text-align center
+      position relative
+      &.active
+        color #fff
+        background-color $color-A1
+      &:nth-child(26n+0)
+        margin-right 0
+    &-taggle
+      font-size 14px
+      color $color-Z2
+      text-align center
+      &-bar
+        &.up
+          &:after
+            content ''
+            position relative
+            display inline-block
+            width 11px
+            height 7px
+            margin-left 8px
+            top -1px
+            background url(./img/icon_up.png) no-repeat
+            background-size contain
+        &.down
+          &:after
+            content ''
+            position relative
+            display inline-block
+            width 11px
+            height 7px
+            margin-left 8px
+            top -1px
+            background url(./img/icon_down.png) no-repeat
+            background-size contain
+  .question
+    &-list
+      padding: 24px
+      background-color #fff
+      margin-top 24px
+    &-item
+      background-color #fff
+      margin-bottom 12px
+    &-content
+      line-height 40px
+      .content
+        font-size 14px
+        color $color-Z1
+        word-break break-all
+        word-wrap break-word
+      .type
+        display inline-block
+        border-radius 4px
+        padding 0 5px
+        line-height 20px
+        margin-right 8px
+        &.single
+          border 1px solid $color-B3
+          color $color-B3
+        &.multi
+          border 1px solid $color-A1
+          color $color-A1
+    &-imgs
+      margin-bottom 8px
+      margin-left 22px
+      line-height 0
+    &-img
+      display inline-block
+      margin-right 20px
+      height 128px
+      width 218px
+      cursor pointer
+      margin-top 20px !important
+      &:nth-child(4n+0)
+        margin-right 0
+      &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+        margin-top 0 !important
+    &-option
+      color $color-Z2
+      font-size 14px
+      padding-left 22px !important
+      &-item
+        line-height 40px
+        cursor pointer
+        &:before
+          content ''
+          width 16px
+          height 16px
+          margin-right 8px
+          display inline-block
+          vertical-align sub
+        &.multi
+          &:before
+            background url(./img/icon_multi.png) no-repeat
+            background-size cover
+          &.active
+            &:before
+              background url(./img/icon_multi_active.png) no-repeat
+              background-size cover
+        &.single
+          &:before
+            background url(./img/icon_nomulti.png) no-repeat
+            background-size cover
+          &.active
+            &:before
+              background url(./img/icon_nomulti_active.png) no-repeat
+              background-size cover
+        &:last-child
+          margin-bottom 12px
+        &-title
+          word-break break-all
+          word-wrap break-word
+    .option-img
+      margin-bottom 8px !important
+      line-height 0
+  .empty
+    width 250px
+    margin 130px auto
+    img
+      width 200px
+      height 200px
+      margin 0 auto
+      display block
+    span
+      color $color-Z3
+      font-size 14px
+      display block
+      text-align center
+      margin-top 10px
+  .exams-sticky
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.12), 0px 2px 4px rgba(0,0,0,0.24)

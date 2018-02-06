@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="referrer" content="always" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="多学">
+  <meta content="telephone=no" name="format-detection" />
+  <meta content="email=no" name="format-detection" />
+  <meta name="browsermode" content="application">
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <meta name="x5-page-mode" content="app">
+  <title>多学</title>
+  <script>!function () { var e = document.documentElement, t = document.createElement("style"), n = .1 * e.clientWidth; e.firstElementChild.appendChild(t), t.innerHTML = "html{font-size:" + n + "px!important;}" }()</script>
+  <script>
+    window.matchMedia = window.matchMedia || function () {
+        return {
+          matches: false,
+          addListener: function () {},
+          removeListener: function () {}
+        };
+      };
+  </script>
+</head>
+<body>
+<% if (htmlWebpackPlugin.options.platform.dingtalk) { %>
+<!-- loading -->
+<div class="app-loding-wrapper" id="app-loding">
+  <div class="logo"></div>
+  <div class="app-loding">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+  </div>
+  <p id="login-msg"></p>
+</div>
+<% } %>
+<!-- dingtalk home -->
+<% if (htmlWebpackPlugin.options.platform.dingtalk) { %>
+<div id="dd-home" class="dd-home" style="display:none;">
+  <div class="dd-carousel swipe" id="dd-carousel">
+    <div class="inner swipe-wrap"></div>
+    <div class="dot"></div>
+  </div>
+  <div class="dd-entrance" id="dd-entrance"></div>
+  <div class="dd-section dd-s1" id="dd-s1">
+    <h2><span class="ico"></span>热门课程</h2>
+    <div></div>
+  </div>
+  <div class="dd-section dd-s2" id="dd-s2">
+    <h2><span class="ico"></span>快速充电</h2>
+    <dl></dl>
+  </div>
+  <div class="dd-section dd-s3" id="dd-s3">
+    <h2><span class="ico"></span>多学优势</h2>
+    <dl></dl>
+  </div>
+  <div class="footer"><div class="fixed-bottom"><ul><li><a class="menu_home active" href="#/home" id="to_course_center"><span>课程中心</span></a></li><li><a class="menu_mall" href="#/mall"><span>多学课堂</span></a></li><li><a class="menu_profile" href="#/profile"><span>个人中心</span></a></li></ul></div></div>
+</div>
+<% } %>
+<!-- react root -->
+<div id="root"></div>
+<script>
+  !function () {
+    function getParameterByName(name, url) {
+      if (!url) {
+        url = window.location.href;
+      }
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    var debug = getParameterByName('debug');
+    if (debug) {
+      window._dxDebugMode = true;
+      window._dxInitTime = Date.now();
+
+      var debugStartTimes = {};
+      window._dxRecord = {};
+      window._dxDebugStart = function (name) {
+        debugStartTimes[name] = Date.now();
+      };
+      window._dxDebugEnd = function (name) {
+        window._dxRecord[name] = Date.now() - debugStartTimes[name];
+        window._dxPrintLogger()
+      }
+
+      window._dxDebugStart('加载脚本');
+      var box = document.createElement('div');
+      document.body.insertBefore(box, document.body.firstChild);
+      var debugBox = document.body.firstChild;
+      debugBox.style.backgroundColor = 'rgba(0, 0 ,0 , .5)';
+      debugBox.style.color = '#ffffff';
+      debugBox.style.zIndex = '9999';
+      debugBox.style.position = 'fixed';
+      debugBox.style.overflow = 'auto';
+      window._dxPrintLogger = function () {
+        var record = window._dxRecord;
+        var debugInfo = '';
+        for (var prop in window._dxRecord) {
+          var propMeaning = prop;
+          var usage = record[prop];
+          debugInfo += propMeaning + ' : ' + usage;
+          debugInfo = '<p>' + debugInfo + '</p>'
+        }
+
+        debugBox.innerHTML = debugInfo;
+      }
+      window._dxPrintLogger()
+    }
+
+  }()
+</script>
+<!-- scripts -->
+<!-- dingtalk sdk -->
+<% if (htmlWebpackPlugin.options.platform.dingtalk) { %>
+<script src="http://g.alicdn.com/dingding/open-develop/1.0.0/dingtalk.js"></script>
+<script>dd.ui.webViewBounce.disable()</script> <!-- 禁止iOS下拉泛白 -->
+<% } %>
+<% if (!htmlWebpackPlugin.options.platform.dingtalk) { %>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?c24c9f9502d0dfbdbea1dfcb0c45937b";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+<% } %>
+<% if (!htmlWebpackPlugin.options.platform.dingtalk) { %>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?c24c9f9502d0dfbdbea1dfcb0c45937b";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+<% } %>
+</body>
+<script>
+  if (window._dxDebugMode) window._dxDebugEnd('加载脚本');
+</script>
+</html>

@@ -1,0 +1,18 @@
+export default {
+  title: { id: 'app.search.title', en: 'Search for course', zh: '搜索课程' },
+  live: { id: 'app.search.live', en: 'live', zh: '直播' },
+  course: { id: 'app.search.course', en: 'micro', zh: '微课' },
+  series: { id: 'app.search.series', en: 'series', zh: '系列课' },
+  placeholder: { id: 'app.search.placeholder', en: 'Search: Course Name', zh: '搜索: 课程名称' },
+  general: { id: 'app.search.general', en: 'Synthesis', zh: '综合' },
+  sales: { id: 'app.search.sales', en: 'Sales', zh: '销量' },
+  price: { id: 'app.search.price', en: 'Price', zh: '价格' },
+  filter: { id: 'app.search.filter', en: 'Filter', zh: '筛选' },
+  type: { id: 'app.search.type', en: 'Course Type', zh: '课程类型' },
+  typeAll: { id: 'app.search.typeAll', en: 'All', zh: '全部' },
+  typeSeries: { id: 'app.search.typeSeries', en: 'Series', zh: '系列课' },
+  typeCourse: { id: 'app.search.typeCourse', en: 'Micro', zh: '微课' },
+  typeLive: { id: 'app.search.typeLive', en: 'Live', zh: '直播' },
+  ok: { id: 'app.search.ok', en: 'OK', zh: '确定' },
+  noneData: { id: 'app.search.noneData', en: "Your search didn't match any courses.", zh: '暂时没有满足条件的课程' },
+};

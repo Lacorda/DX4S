@@ -1,0 +1,72 @@
+.my-exams
+  .card.card-horizontal
+    .card-text
+      height px2rem(134)
+    .name
+      display-flex(flex-start)
+      a
+        display block
+        box-flex(1)
+        line-height px2rem(40)
+        max-height px2rem(80)
+        overflow hidden
+        word-break: break-all;
+      .score
+        position relative
+        display inline-block
+        width px2rem(104)
+        height px2rem(36)
+        line-height px2rem(36)
+        margin-left px2rem(10)
+        border-radius px2rem(20)
+        font-size px2rem(20)
+        text-align center
+        color #fff
+        &:before
+          content ''
+          display inline-block
+          width px2rem(14)
+          height px2rem(8)
+          position absolute
+          left px2rem(26)
+          bottom px2rem(-8)
+
+        &.passed
+          background-color #82c650
+          &:before
+            background url('img/point_passed.png') no-repeat
+            background-size contain
+        &.failed
+          background-color #fa3c3c
+          &:before
+            background url('img/point_failed.png') no-repeat
+            background-size contain
+    .rest-chance
+      margin-top px2rem(16)
+      a
+        font-size px2rem(24)
+        color $color-Z2
+    .pass-status
+      position absolute
+      left 0
+      bottom px2rem(10)
+      font-size px2rem(24)
+      &:before
+        content ''
+        position relative
+        top px2rem(4)
+        display inline-block
+        width px2rem(24)
+        height px2rem(24)
+        margin-right px2rem(10)
+      &.passed
+        color #82c650
+        &:before
+          background url('img/passed.png') no-repeat
+          background-size contain
+      &.failed
+        color #fa3c3c
+        &:before
+          background url('img/failed.png') no-repeat
+          background-size contain
+

@@ -1,0 +1,12 @@
+input-checkbox(size = 40)
+  -webkit-appearance none
+  appearance none
+  border none
+  width px2rem(size)
+  height px2rem(size)
+  background url("~img/checkbox.png") no-repeat center
+  background-size px2rem(39)
+  &:checked
+    background-image url("~img/checkbox_checked.png")
+  &[disabled]
+    background-image url("~img/checkbox_disable.png")

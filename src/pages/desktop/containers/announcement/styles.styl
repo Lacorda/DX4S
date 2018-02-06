@@ -1,0 +1,355 @@
+.announcement
+  *
+    box-sizing: border-box
+
+  height: 100%;
+  padding-bottom: 300px
+
+  a:hover
+    text-decoration: none
+
+  ul, ol
+    list-style-type: none
+    margin: 0
+    padding: 0
+
+  h1, h2, h3, h4, h5, h6, p
+    margin: 0
+    font-weight: normal
+
+  .announcement-header
+    width: 100%
+    height: 40px
+    line-height: 40px
+    background-color: #202028
+    margin-bottom: 24px
+
+  .announcement-header-container
+    width: 1200px
+    margin: auto
+
+  .announcement-title
+    width: 224px
+    background-color: $color-A1
+    text-align: center
+    color: #fff
+    font-size: 14px
+
+  .icon-task
+    position: relative
+    right: 10px
+    width: 18px
+    height: 18px
+    background: url(./img/icon-location.png) no-repeat
+    background-size: cover
+    display: inline-block
+    vertical-align: sub
+
+  .announcement-list
+    width: 1200px
+    margin: auto
+
+  .announcement-icon
+    display: inline-block
+
+  .announcement-item
+    position: relative;
+    padding-left: 49px
+    padding-right: 55px
+    padding-top: 12px
+    padding-bottom: 12px
+    background-color: #fff
+    border-bottom: 1px solid $color-L1
+
+  .announcement-item-header
+    clearfix()
+
+  .announcement-item-title
+    font-size: 14px
+    color: $color-Z1
+    float: left
+
+  .announcement-item-date
+    font-size: 14px
+    color: $color-Z3
+    float: right
+
+  .announcement-item-content
+    font-size: 14px
+    color: $color-Z2
+    margin-top: 12px
+
+  .icon-new
+    width: 28px
+    height: 16px
+    background: url(./img/icon-new.png) no-repeat
+    background-size: cover
+    margin-left: 12px
+    vertical-align: middle
+
+  .icon-enter
+    position: absolute
+    right: 24px
+    top: 0
+    bottom: 0
+    margin: auto
+    width: 7px
+    height: 11px
+    background: url(./img/icon-enter.png) no-repeat
+    background-size: cover
+
+  .icon-type
+    position: absolute
+    left: 24px
+    top: 12px
+    width: 17px
+    height: 18px
+    background: url(./img/icon_type.png) no-repeat
+    background-size: cover
+
+  .announcement-footer
+    width: 1200px
+    margin: auto
+    padding-bottom: 24px
+    padding-top: 80px
+    background-color: #fff
+
+  .announcement-next
+    background-color: #b1b1b1
+    text-align: center
+    color: #fff
+    font-size: 14px
+    height: 48px
+    line-height: 48px
+    cursor: pointer
+    &.disable
+      color: rgba(255, 255, 255, 0.48)
+
+  .announcement-detail
+    width: 1200px
+    margin: auto
+    padding: 20px
+    background-color: #fff
+    text-align: center
+
+  .announcement-detail-header
+    margin-bottom: 30px
+
+  .announcement-detail-title
+    font-size: 24px
+    color: $color-Z1
+
+  .announcement-detail-info
+    margin-top: 16px
+
+  .announcement-detail-publisher, .announcement-detail-date
+    font-size: 16px
+    color: $color-Z3
+
+  .announcement-detail-publisher
+    margin-left: 30px
+
+  .announcement-detail-content
+    font-size: 18px
+    color: $color-Z1
+    padding-bottom: 40px
+    word-break: break-all
+    word-wrap: break-word
+    width: 100%
+    text-align: left
+    a
+      color: $color-A1
+    img
+      max-width: 100%
+      margin: auto
+
+  .announcement-detail-accessories
+    text-align: left
+    background-color: $color-A0
+    padding: 20px
+
+  .announcement-detail-accessories-header
+    margin-bottom: 20px
+
+  .icon-paperclip
+    display: inline-block
+    width: 24px
+    height: 24px
+    background: url(./img/icon-paperclip.png) no-repeat
+    background-size: cover
+    margin-right: 10px
+    vertical-align: bottom
+
+  .accessories-tag
+    font-size: 24px
+    color: $color-Z1
+    line-height: 24px
+    height: 24px
+
+  .accessories-tag-number
+    font-size: 18px
+    color: $color-Z2
+    line-height: 18px
+    height: 18px
+
+  .announcement-detail-accessory
+    position: relative
+    font-size: 18px
+    color: $color-Z1
+    padding: 16px 70px 16px 20px
+    background-color: #fff
+    margin-top: 10px
+    &:first-child
+      margin-top: 0
+    .span
+      color: $color-A1
+      position: absolute
+      top: 0
+      bottom: 0
+      margin: auto
+      right: 20px
+      height: 18px
+      cursor: pointer
+
+  .announcement-detail-like
+    position: fixed
+    bottom: 260px
+    right: 205px
+    z-index: 2;
+    width: 80px
+    height: 80px
+    background: url(./img/icon-like.png) no-repeat
+    background-size: cover
+    cursor: pointer
+    &.liked
+      background: url(./img/icon-like-active.png) no-repeat
+      background-size: cover
+
+  .announcement-detail-like-count
+    display: inline-block
+    font-size: 16px
+    position: relative;
+    top: 2px
+    left: 58px
+    width: 24px
+    height: 24px
+    background: url(./img/icon-info.png) no-repeat
+    background-size: cover
+    color: #fff
+    line-height: 25px
+    text-align: center
+    &.max
+      width: 32px
+      height: 24px
+      background: url(./img/icon-info1.png) no-repeat
+      background-size: cover
+
+  .announcement-comment
+    margin: auto
+    margin-top: 20px
+    padding: 20px
+    background-color: #fff
+    width: 1200px
+    textarea
+      outline: none
+      width: 100%
+      height: 162px
+      margin-bottom: 12px
+      padding: 10px
+      font-size: 14px
+      color: $color-Z4
+      border: 1px solid #dcdcdc
+
+  .announcement-comment-submit
+    height: 30px
+    width: 78px
+    line-height: 30px
+    display: inline-block
+    text-align: center
+    background-color: $color-A1
+    font-size: 14px
+    color: #fff
+    cursor: pointer
+    &.disabled
+      background-color: #a0d6ff
+      color: rgba(255,255,255,0.48)
+
+  .announcement-comments
+    margin: auto
+    padding: 20px
+    background-color: #fff
+    width: 1200px
+
+  .announcement-comments-count
+    background-color: #e4f4ff
+    text-align: center
+    color: $color-Z2
+    font-size: 14px
+    height: 32px
+    line-height: 32px
+
+  .announcement-comments-item
+    padding-top: 20px
+    padding-bottom: 20px
+    border-bottom: 1px solid $color-L1
+
+  .announcement-comments-item-header
+    padding-bottom: 20px
+    clearfix()
+
+  .announcement-comments-item-username
+    float: left
+    font-size: 18px
+    line-height: 18px
+    color: $color-Z1
+
+  .announcement-comments-item-dept
+    float: right
+    font-size: 16px
+    line-height: 16px
+    color: $color-Z3
+
+  .announcement-comments-item-content
+    margin-bottom: 16px
+    font-size: 16px
+    color: $color-Z2
+    word-break: break-all
+
+  .announcement-comments-item-date
+    font-size: 16px
+    color: $color-Z3
+    line-height: 16px
+    height: 16px
+
+  .announcement-comments-footer
+    padding-top: 20px
+    text-align: center
+    font-size: 16px
+    color: $color-Z2
+    .disable
+      color: $color-Z4
+
+
+  .announcement-comment-info-icon
+    display: inline-block
+    width: 16px
+    height: 16px
+    background: url(./img/icon-no.png) no-repeat
+    background-size: cover
+    vertical-align: text-bottom
+    margin-right: 10px
+
+  .nowrap-multi
+    display: -webkit-box
+    overflow: hidden
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 2
+
+  .nowrap-flex {
+    overflow: hidden
+    text-overflow: ellipsis
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 1
+    -webkit-box-flex: 1
+    height: inherit
+}

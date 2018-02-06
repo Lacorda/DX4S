@@ -1,0 +1,725 @@
+.exams
+  padding-bottom: px2rem(96)
+  ul
+    margin: 0
+    padding: 0
+    list-style-type: none
+
+  .loading-center
+    width: 64px
+    height: 64px
+    margin: auto
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+
+  .info-cover
+    width: 100%
+
+  .info-footer
+    position: fixed
+    bottom: 0
+    left: 0
+    right: 0
+    text-align: center
+    border-top: 1px solid $color-L2
+
+    a
+      display: inline-block
+      line-height: px2rem(96)
+      font-size: px2rem(32)
+
+    .history
+      width: px2rem(300)
+      background: #fff
+      color: $color-Z1
+      transition: all .3s ease-in-out;
+      &:active
+        color: rgba(51,51,51,0.48)
+        background: rgba(255,255,255,0.64)
+      &.disabled
+        color: rgba(255,255,255,0.64)
+        background: #dcdcdc
+
+    .start
+      width: px2rem(450)
+      color: #fff
+      background: $color-A1
+      transition: all .3s ease-in-out;
+      &:active
+        background: #2a98e6
+      &.disabled
+        color: rgba(255,255,255,0.48)
+        background:  #a0d6ff
+
+  .info-title
+    display-flex(center)
+    margin-bottom: px2rem(24)
+  .info-name
+    box-flex(1)
+    color: $color-Z1
+    margin: 0
+    // margin-bottom: px2rem(24)
+    font-size: px2rem(28)
+    font-weight: normal
+    line-height: px2rem(28)
+  .info-opt
+    font-size px2rem(24)
+    color $color-A1
+    &:active
+      -moz-opacity 0.48
+      opacity 0.48
+    &-enroll
+      &:before
+        content ''
+        position relative
+        display inline-block
+        width px2rem(24)
+        height px2rem(24)
+        margin-right px2rem(8)
+        background url(../../../../img/icon_add.png) no-repeat
+        background-size contain
+    &-withdraw
+      &:before
+        content ''
+        position relative
+        display inline-block
+        width px2rem(24)
+        height px2rem(24)
+        margin-right px2rem(8)
+        background url(../../../../img/icon_abandon.png) no-repeat
+        background-size contain
+
+
+  .info-staff, .info-standard
+    margin: 0
+    font-size: px2rem(24)
+    color: $color-Z2
+    margin-bottom: px2rem(16)
+    line-height: px2rem(24)
+
+  .info-standard
+    margin-bottom: px2rem(24)
+
+  .info-best
+    margin-left: px2rem(64)
+    color: #fa3c3c
+
+  .info-time, .info-exercise, .info-try
+    margin: 0
+    display: inline-block
+    font-size: px2rem(24)
+    color: $color-Z2
+    line-height: px2rem(24)
+    i
+      width: px2rem(24)
+      height: px2rem(24)
+      display: inline-block
+      margin-right: px2rem(8)
+      vertical-align: bottom
+
+  .info-rank
+    position: fixed
+    bottom: px2rem(124)
+    right: px2rem(20)
+    width: px2rem(122)
+    height: px2rem(122)
+    &.en
+      background: url(./img/en-rank.png) no-repeat
+      background-size: cover
+    &.zh
+      background: url(./img/zh-rank.png) no-repeat
+      background-size: cover
+
+
+  .icon-time
+    background: url(./img/icon-time.png) no-repeat
+    background-size: cover
+  .icon-wrong
+    background: url(./img/icon-wrong.png) no-repeat
+    background-size: cover
+  .icon-active-wrong
+    background: url(./img/icon-active-wrong.png) no-repeat
+    background-size: cover
+  .icon-count
+    background: url(./img/icon-count.png) no-repeat
+    background-size: cover
+
+  .icon-try
+    background: url(./img/icon-try.png) no-repeat
+    background-size: cover
+
+  .info-source-name
+    color: $color-Z1
+    margin: 0
+    font-size: px2rem(28)
+    font-weight: normal
+
+  .icon-enter
+    position: absolute
+    right: px2rem(24)
+    top: 0
+    bottom: 0
+    margin: auto
+    width: px2rem(24)
+    height: px2rem(24)
+    background: url(./img/icon-enter.png) no-repeat
+    background-size: cover
+
+  .icon-pass, .icon-no-pass, .en-icon-no-pass, .en-icon-pass
+    position: absolute
+    right: px2rem(24)
+    top: px2rem(2)
+    width: px2rem(120)
+    height: px2rem(120)
+
+  .icon-no-pass
+    background: url(./img/no-pass.png) no-repeat
+    background-size: cover
+
+  .en-icon-no-pass
+    background: url(./img/en-no-pass.png) no-repeat
+    background-size: cover
+
+  .icon-pass
+    background: url(./img/pass.png) no-repeat
+    background-size: cover
+
+  .en-icon-pass
+    background: url(./img/en-pass.png) no-repeat
+    background-size: cover
+
+  .record
+    border-top: 1px solid $color-L1
+    background: #fff
+    padding: 0 px2rem(24)
+    line-height: px2rem(128)
+    div
+      display: inline-block
+    &:first-child
+      border-top: none
+
+  .record-score
+    width: px2rem(112)
+    margin-right: px2rem(16)
+    text-align: center
+
+  .score
+    width: px2rem(112)
+    font-size: px2rem(42)
+    line-height: px2rem(42)
+    color: $color-Z1
+    font-weight: bold
+    font-style: oblique
+    vertical-align: text-bottom
+    margin-right: px2rem(6)
+
+  .score-unit
+    color: $color-Z1
+    font-size: px2rem(28)
+    line-height: px2rem(28)
+
+  .record-time
+    position: absolute
+    top: 0
+    bottom: 0
+    margin: auto
+    height: px2rem(64)
+    padding-left: px2rem(24)
+
+  .record-spend, .record-create
+    line-height: 0
+    margin: 0
+    color: $color-Z3
+    font-size: px2rem(24)
+    line-height: px2rem(24)
+
+  .record-spend
+    margin-bottom: px2rem(16)
+    i
+      width: px2rem(24)
+      height: px2rem(24)
+      display: inline-block
+      margin-right: px2rem(8)
+      vertical-align: bottom
+
+  .record-review
+    position: absolute
+    right: px2rem(24)
+    color: $color-A1
+    font-size: px2rem(24)
+    line-height: px2rem(24)
+    top: 0
+    bottom: 0
+    height: px2rem(24)
+    margin: auto
+    transition: all .3s ease-in-out;
+    &:hover
+      color: rgba(56,172,255,0.48)
+
+  .rank
+    border-top: 1px solid $color-L1
+    background: #fff
+    padding: 0 px2rem(24)
+    line-height: px2rem(120)
+    &:first-child
+      border-top: none
+
+  .icon-NO1, .icon-NO2, .icon-NO3
+    width: px2rem(56)
+    height: px2rem(56)
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+  .icon-NO1
+    background: url(./img/NO1.png) no-repeat
+    background-size: cover
+
+  .icon-NO2
+    background: url(./img/NO2.png) no-repeat
+    background-size: cover
+
+  .icon-NO3
+    background: url(./img/NO3.png) no-repeat
+    background-size: cover
+
+  .rank-NO
+    width: px2rem(56)
+    text-align: center
+    font-style: oblique
+    font-size: px2rem(42)
+    line-height: px2rem(42)
+    color: $color-Z2
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: px2rem(42)
+
+  .rank-img
+    width: px2rem(80)
+    height: px2rem(80)
+    border-radius: 50%
+    margin-left: px2rem(80)
+    margin-right: px2rem(16)
+
+  .rank-name
+    display: inline-block
+    color: $color-Z1
+    font-size: px2rem(32)
+    line-height: px2rem(32)
+    width: px2rem(360)
+
+  .rank-spend
+    display: inline-block
+    color: $color-Z2
+    font-size: px2rem(28)
+    line-height: px2rem(28)
+
+  .rank-score
+    position: absolute
+    top: 0
+    bottom: 0
+    right: px2rem(24)
+    margin: auto
+    height: px2rem(42)
+    line-height: 0;
+
+  .rank-score-num
+    font-size: px2rem(42)
+    line-height: px2rem(42)
+    color: $color-Z1
+    font-style: oblique
+    margin-right: px2rem(8)
+
+  .rank-score-unit
+    color: $color-Z2
+    font-size: px2rem(32)
+    line-height: px2rem(32)
+
+  .rank-notify
+    height: px2rem(80)
+    line-height: px2rem(80)
+    margin-bottom: px2rem(16)
+    color: $color-Z4
+    font-size: px2rem(24)
+    padding-left: px2rem(24)
+    background-color: #fff
+
+  .rank-list
+    padding-bottom: px2rem(104)
+
+  .rank-footer
+    position: fixed
+    bottom: 0
+    left: 0
+    right: 0
+    text-align: center
+    height: px2rem(104)
+    line-height: px2rem(104)
+    font-size: px2rem(32)
+    color: #fff
+    background-color: $color-A1
+
+  .process-header
+    position: relative
+    background-color: #fff
+    border-bottom: 1px solid $color-L2
+    border-top: 1px solid $color-L1
+    height: px2rem(88)
+    line-height: px2rem(88)
+    text-align: center
+
+  .process-time, .process-number, .process-submit,.process-wrong
+    width: px2rem(250)
+    display: inline-block
+    font-size: px2rem(28)
+    color: $color-Z2
+    i
+      width: px2rem(24)
+      height: px2rem(24)
+      display: inline-block
+      margin-right: px2rem(8)
+    &.active
+      color: $color-A1
+      font-weight: bold
+
+  .result-header
+    margin-top: px2rem(64)
+    margin-bottom: px2rem(48)
+
+  .icon-user-deck
+    width: px2rem(362)
+    height: px2rem(236)
+    margin: 0 auto
+    background: url(./img/icon-user-deck.png) no-repeat
+    background-size: cover
+
+  .icon-user-default-img
+    width: px2rem(236)
+    height: px2rem(236)
+    margin: 0 auto
+    background: url(./img/icon-user-img.png) no-repeat
+    background-size: cover
+
+  .icon-user-img
+    width: px2rem(236)
+    height: px2rem(236)
+    margin: 0 auto
+    border: px2rem(8) solid #585858;
+    border-radius: 50%
+
+  .icon-score-deck
+    width: px2rem(408)
+    height: px2rem(96)
+    margin: 0 auto
+    background: url(./img/icon-score-deck.png) no-repeat
+    background-size: cover
+    text-align: center
+    color: #fff
+    padding-top: px2rem(2)
+    margin-top: px2rem(-24)
+
+  .exam-score
+    margin-bottom: px2rem(10)
+    line-height: 0
+
+  .process-score
+    font-size: px2rem(42)
+    height: px2rem(42)
+    line-height: px2rem(42)
+
+  .process-score-unit
+    font-size: px2rem(24)
+    height: px2rem(24)
+    line-height: px2rem(24)
+
+  .exam-time
+    font-size: px2rem(22)
+    height: px2rem(22)
+    line-height: px2rem(22)
+
+  .result-body
+    margin-bottom: px2rem(120)
+    text-align: center
+
+  .exam-status
+    color: $color-Z1
+    font-size: px2rem(36)
+    font-weight: bold
+    height: px2rem(36)
+    line-height: px2rem(36)
+    margin-bottom: px2rem(32)
+
+  .exam-best-score
+    color: $color-Z1
+    font-size: px2rem(32)
+    height: px2rem(32)
+    line-height: px2rem(32)
+    margin-bottom: px2rem(32)
+
+  .exam-chance
+    color: $color-Z2
+    font-size: px2rem(32)
+    height: px2rem(32)
+    line-height: px2rem(32)
+
+  .exam-reviewable
+    color: $color-A1
+    font-size: px2rem(28)
+    height: px2rem(28)
+    line-height: px2rem(28)
+
+
+  .result-footer
+    text-align: center
+
+  .go-back-btn, .submit-best-btn
+    display: inline-block
+    text-align: center
+    height: px2rem(88)
+    width: px2rem(648)
+    line-height: px2rem(88)
+    font-size: px2rem(32)
+    color: #fff
+    background-color: #38acff
+    border-radius: px2rem(8)
+    &:active
+      background-color: #2a98e6
+
+  .go-back-btn
+    margin-bottom: px2rem(40)
+
+  .icon-active-time
+    background: url(./img/icon-active-time.png) no-repeat
+    background-size: cover
+    position: relative
+    top: px2rem(1)
+
+  .icon-number
+    background: url(./img/icon-number.png) no-repeat
+    background-size: cover
+    position: relative
+    top: px2rem(1)
+    &.active
+      background: url(./img/icon-active-number.png) no-repeat
+      background-size: cover
+
+  .icon-submit
+    background: url(./img/icon-submit.png) no-repeat
+    background-size: cover
+    position: relative
+    top: px2rem(2)
+
+  .process-submit:active
+    color: rgba(51,51,51,0.48)
+    .icon-submit
+      background: url(./img/icon-active-submit.png) no-repeat
+      background-size: cover
+
+  .process-footer
+    position: fixed
+    bottom: 0
+    text-align: center
+    left: 0
+    right: 0
+    margin: auto
+    height: px2rem(112)
+    line-height: px2rem(112)
+    border-top: 1px solid $color-L2
+    background-color: #fff
+
+  .process-prev, .process-next
+    position: absolute
+    width: px2rem(160)
+    height: px2rem(64)
+    line-height: px2rem(64)
+    font-size: px2rem(28)
+    color: $color-Z1
+    margin: auto
+    top: 0
+    bottom: 0
+    border-radius: px2rem(4)
+    border: 1px solid #a0a0a0
+    &.disabled
+      color: #bec0c0
+      border: 1px solid #bec0c0
+
+  .process-prev
+    left: px2rem(24)
+    &:before
+      content: ''
+      position: relative
+      bottom: px2rem(2)
+      display: inline-block
+      width: px2rem(10)
+      height: px2rem(16)
+      margin-right: px2rem(8)
+      background: url(./img/icon-left.png) no-repeat
+      background-size: cover
+    &.disabled
+      &:before
+        background: url(./img/icon-left-disabled.png) no-repeat
+        background-size: cover
+
+
+  .process-next
+    right: px2rem(24)
+    &:after
+      content: ''
+      position: relative
+      bottom: px2rem(2)
+      display: inline-block
+      width: px2rem(10)
+      height: px2rem(16)
+      margin-left: px2rem(8)
+      background: url(./img/icon-right.png) no-repeat
+      background-size: cover
+    &.disabled
+      &:after
+        background: url(./img/icon-right-disabled.png) no-repeat
+        background-size: cover
+
+  .process-panel
+    position: absolute
+    top: px2rem(88)
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: #fff
+    padding-left: px2rem(27)
+    padding-right: px2rem(27)
+
+  .process
+    padding-bottom: px2rem(138)
+
+  .process-panel-web
+    position: absolute
+    top: px2rem(88)
+    bottom: 0
+    left: 0
+    right: 0
+    margin-top: $navbar-height
+    background-color: #fff
+    padding-left: px2rem(27)
+    padding-right: px2rem(27)
+
+  .exercises-number-item
+    float: left
+    border-radius: 50%
+    width: px2rem(82)
+    height: px2rem(82)
+    line-height: px2rem(82)
+    margin-top: px2rem(40)
+    margin-right: px2rem(20)
+    font-size: px2rem(36)
+    color: $color-Z1
+    background-color: #ececec
+    text-align: center;
+    &.active
+      color: #fff
+      background-color: $color-A1
+    &:nth-child(7n+0)
+      margin-right: 0
+
+  .br48
+    border-right: 1px solid $color-L1
+    display: inline-block;
+    height: px2rem(48)
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+  .br40
+    border-right: 1px solid $color-L1
+    display: inline-block;
+    height: px2rem(40)
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+  .b40
+    border-right: 1px solid $color-L1
+    height: px2rem(40)
+
+  .ml24
+    margin-left: px2rem(24)
+
+  .mlr40
+    margin-left: px2rem(40)
+    margin-right: px2rem(40)
+
+  .border-color-b1
+    border-color: #fff
+
+  .text-color-h1
+    color: #fff000
+
+  .bb
+    border-bottom: 1px solid $color-L1
+
+  .pt24
+    padding-top: px2rem(24)
+
+  .pb32
+    padding-bottom: px2rem(32)
+
+  .plr24
+    padding-left: px2rem(24)
+    padding-right: px2rem(24)
+
+  .pt32
+    padding-top: px2rem(32)
+
+  .bgf
+    background: #fff
+
+  .mr64
+    margin-right: px2rem(64)
+
+  .mb16
+    margin-bottom: px2rem(16)
+
+  .lh24
+    line-height: px2rem(24)
+
+  .lh96
+    line-height: px2rem(96)
+
+  .cB2
+    color: $color-B2
+
+  .pr
+    position: relative
+
+  .red
+    color: $color-B4
+
+  .bgblue
+    background: #e4f4ff
+
+  .cOrange
+    color: #eaae34
+
+  .no-msg
+    text-align: center
+    color: #bec0c0
+  .no-rank
+    &:before
+      content: ''
+      display: inline-block;
+      width: px2rem(280);
+      height: px2rem(280);
+      margin-top: px2rem(160);
+      background: url(./img/rank-null.png) no-repeat;
+      background-size: contain;
+
+  .revocation
+    text-align: center
+    margin-top: px2rem(100)

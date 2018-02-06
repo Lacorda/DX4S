@@ -1,0 +1,175 @@
+.staffTask
+  height: 100%
+  ul
+    margin: 0
+    padding: 0
+    list-style-type: none
+
+  .loading-center
+    width: 64px
+    height: 64px
+    margin: auto
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+
+  .task-list
+    background-color: #fff
+    padding-left: px2rem(24)
+
+  .task-item
+    height: px2rem(200)
+    border-bottom: 1px solid $color-L1
+    padding-top: px2rem(24)
+    padding-bottom: px2rem(24)
+    position: relative
+
+  .task-item-img
+    display: inline-block
+    margin-right: px2rem(24)
+    width: px2rem(240)
+    height: px2rem(152)
+    line-height: 0
+    vertical-align: bottom
+
+  .task-item-info
+    display: inline-block
+    width: px2rem(390)
+    height: px2rem(152)
+
+  .task-item-name
+    display: -webkit-box
+    overflow: hidden
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: 2
+    color: $color-Z1
+    font-size: px2rem(28)
+    height: px2rem(78)
+    position: relative;
+    bottom: px2rem(4);
+    word-break: break-all
+    word-wrap: break-word
+
+  .task-item-finishRate
+    color: $color-Z2
+    font-size: px2rem(24)
+
+  .task-item-time
+    color: $color-Z3
+    font-size: px2rem(24)
+    position: relative
+    top: px2rem(10)
+
+  .icon-enter
+    position: absolute
+    right: px2rem(24)
+    top: 0
+    bottom: 0
+    margin: auto
+    width: px2rem(24)
+    height: px2rem(24)
+    background: url(./img/icon-enter.png) no-repeat
+    background-size: cover
+
+  .task-href
+    display: block
+
+  .play-img
+    height: px2rem(300)
+    width: 100%
+
+  .play-staff-task-icon
+    position: absolute
+    left: px2rem(24)
+    top: px2rem(198)
+    width: px2rem(176)
+    height: px2rem(34)
+    background: url(./img/rwxq-staff-task.png) no-repeat
+    background-size: cover
+
+  .play-name
+    position: absolute
+    left: px2rem(24)
+    top: px2rem(250)
+    color: #fff
+    font-size: px2rem(28)
+    font-weight: bold
+
+  .task-item-lock
+    color: $color-Z3
+    font-size: px2rem(24)
+    line-height: px2rem(24)
+    position: relative
+    top: 10px
+    &:before
+      content: ''
+      display: inline-block
+      width: px2rem(24)
+      height: px2rem(24)
+      background: url(./img/rwxq-locking-icon.png) no-repeat
+      background-size: cover
+      margin-right: px2rem(8)
+      vertical-align: bottom
+
+  .task-item-complete
+    color: $color-B3
+    font-size: px2rem(24)
+    line-height: px2rem(24)
+    position: relative
+    top: 10px
+    &:before
+      content: ''
+      display: inline-block
+      width: px2rem(24)
+      height: px2rem(24)
+      background: url(./img/rwxq-complete-icon.png) no-repeat
+      background-size: cover
+      margin-right: px2rem(8)
+      vertical-align: bottom
+  .task-item-inread
+    color: $color-A1
+    font-size: px2rem(24)
+    line-height: px2rem(24)
+    position: relative
+    top: 10px
+    &:before
+      content: ''
+      display: inline-block
+      width: px2rem(24)
+      height: px2rem(24)
+      background: url(./img/rwxq-inread-icon.png) no-repeat
+      background-size: cover
+      margin-right: px2rem(8)
+      vertical-align: bottom
+
+  .staffTask-detail
+    position: relative
+    .task-item-info
+      width: px2rem(435)
+    &-header
+      height px2rem(300)
+      position relative
+    &-exp
+      background-color #38acff
+      height px2rem(80)
+      display flex
+      align-items center
+      justify-content center
+      text-align center
+      color #fff
+      strong
+        color #daff83
+      .left
+        flex 2
+        font-size px2rem(18)
+        text-align left
+        padding-left px2rem(10)
+      .middle
+        flex 1
+        img
+          width px2rem(64)
+          height px2rem(30)
+      .right
+        flex 2
